@@ -4,75 +4,162 @@ $pageDesc = 'Mercora International is a registered multidisciplinary firm delive
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<!-- 1.1 Hero Section -->
-<section class="relative bg-white border-b border-slate-200 overflow-hidden py-16 sm:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-            <!-- Left Hero Content -->
-            <div class="lg:col-span-7 space-y-6">
+<!-- 1.1 Hero Section (Full Screen Edge-to-Edge with Synchronized Sliding Background & Flagship Card) -->
+<section
+    class="relative w-full min-h-[calc(100svh-5rem)] lg:min-h-[calc(100vh-6.8rem)] lg:h-[calc(100vh-6.8rem)] flex items-center bg-slate-950 overflow-hidden border-b border-slate-800/80 py-8 lg:py-0">
+
+    <!-- Sliding Background Images (Cross-fading with subtle scale effect) -->
+    <div id="mcHeroBgSlider" class="absolute inset-0 z-0">
+        <!-- Slide 1: Smart Crop Doctor -->
+        <div class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-100">
+            <img src="<?= url('assets/images/mercora/current/Heroimg1.png') ?>" alt="Smart Crop Doctor"
+                class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
+        </div>
+        <!-- Slide 2: Native Araku Coffee -->
+        <div
+            class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-0 pointer-events-none">
+            <img src="<?= url('assets/images/coffee/araku-valley.jpeg') ?>" alt="Native Araku Coffee"
+                class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
+        </div>
+        <!-- Slide 3: WHITE WORLD -->
+        <div
+            class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-0 pointer-events-none">
+            <img src="<?= url('assets/images/industries/textile.jpg') ?>" alt="WHITE WORLD"
+                class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
+        </div>
+    </div>
+
+    <!-- Vignette Gradient Overlays: Deep rich contrast on the left for text readability, clear and vibrant on the right -->
+    <div
+        class="absolute inset-0 bg-gradient-to-r from-slate-800 via-slate-800/85 via-50% to-slate-800/25 z-10 pointer-events-none">
+    </div>
+    <div
+        class="absolute inset-0 bg-gradient-to-t from-slate-800 via-transparent to-slate-800/30 z-10 pointer-events-none">
+    </div>
+
+    <!-- Hero Content Container (2-Column Grid Layout matching Agrove & Flagship reference) -->
+    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 relative z-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+
+            <!-- Left Column: Authority Headline, Narrative, CTAs & Snapshot Metrics -->
+            <div class="lg:col-span-7 space-y-4 sm:space-y-5 lg:space-y-5">
                 <div>
                     <span
-                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
-                        <i class="ri-shield-check-fill text-amber-600"></i> DPIIT Recognised Startup · DIPP258473
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 backdrop-blur-md shadow-sm">
+                        <i class="ri-shield-check-fill text-amber-400"></i> DPIIT Recognised Startup · DIPP258473
                     </span>
                 </div>
+
                 <h1
-                    class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.12]">
-                    Empowering Enterprises. Transforming Communities. <span class="text-amber-600">Connecting the
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] xl:text-[3.1rem] font-extrabold tracking-tight text-white leading-snug sm:leading-tight lg:leading-[1.24] drop-shadow-md">
+                    Empowering Enterprises. Transforming Communities. <span class="text-amber-400">Connecting the
                         World.</span>
                 </h1>
-                <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
+
+                <p class="text-sm sm:text-base text-slate-200 leading-relaxed max-w-xl drop-shadow-sm font-normal">
                     Mercora International partners with enterprises, governments, startups, and institutions to engineer
                     scalable, innovation-led solutions across 11 business verticals.
                 </p>
+
                 <div class="flex flex-wrap items-center gap-4 pt-2">
                     <a href="<?= url('/it-services') ?>"
-                        class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition shadow-sm">
-                        Explore Our Services <i class="ri-arrow-right-line ml-2"></i>
+                        class="inline-flex items-center justify-center px-6 sm:px-7 py-3.5 text-sm sm:text-[15px] font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5 tracking-wide">
+                        <span>Explore Our Services</span>
+                        <i class="ri-arrow-right-line ml-2.5 text-base"></i>
                     </a>
                     <a href="<?= url('/contact') ?>"
-                        class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition">
-                        Get in Touch
+                        class="inline-flex items-center justify-center px-6 sm:px-7 py-3.5 text-sm sm:text-[15px] font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
+                        <span>Get in Touch</span>
                     </a>
                 </div>
 
-                <!-- Snapshot Metrics Row with Clean Spacing -->
-                <div class="pt-8 border-t border-slate-200 grid grid-cols-3 gap-6 max-w-lg">
+                <!-- Snapshot Metrics Strip (Directly anchoring the left column) -->
+                <div class="pt-4 border-t border-white/15 flex flex-wrap items-center gap-6 sm:gap-8">
                     <div>
-                        <div class="text-3xl sm:text-4xl font-extrabold text-slate-900">11+</div>
-                        <div class="text-xs sm:text-sm font-medium text-slate-500 mt-1">Business Verticals</div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-sm">11+</div>
+                        <div class="text-xs font-medium text-slate-300 mt-0.5">Business Verticals</div>
                     </div>
+                    <div class="h-7 w-px bg-white/20"></div>
                     <div>
-                        <div class="text-3xl sm:text-4xl font-extrabold text-slate-900">7</div>
-                        <div class="text-xs sm:text-sm font-medium text-slate-500 mt-1">Signed MOUs</div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 drop-shadow-sm">7</div>
+                        <div class="text-xs font-medium text-slate-300 mt-0.5">Signed MOUs</div>
                     </div>
+                    <div class="h-7 w-px bg-white/20"></div>
                     <div>
-                        <div class="text-3xl sm:text-4xl font-extrabold text-slate-900">18</div>
-                        <div class="text-xs sm:text-sm font-medium text-slate-500 mt-1">MOU Engagements</div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-sm">18</div>
+                        <div class="text-xs font-medium text-slate-300 mt-0.5">MOU Engagements</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Visual Slide Frame -->
-            <div class="lg:col-span-5">
-                <div class="relative bg-slate-100 p-2 sm:p-3 rounded-2xl border border-slate-200 shadow-lg">
-                    <img id="mcHeroSlideImg" src="<?= url('assets/images/mercora/current/Heroimg1.png') ?>"
-                        alt="AgriTech & Smart Crop Doctor" class="w-full h-80 sm:h-96 object-cover rounded-xl" />
-                    <div class="p-4 bg-white rounded-xl mt-3 border border-slate-100">
-                        <div class="text-xs font-bold text-amber-700 uppercase tracking-wider">Featured Mandate</div>
-                        <h4 id="mcHeroSlideTitle" class="text-base font-bold text-slate-900 mt-0.5">AgriTech & Smart
-                            Crop Doctor</h4>
-                        <p id="mcHeroSlideDesc" class="text-xs text-slate-600 mt-1">AI, drone surveys & multispectral
-                            analytics transforming agriculture across India.</p>
-                        <div class="flex gap-1.5 mt-3">
-                            <button type="button" class="mc-hero-dot w-6 h-1.5 rounded-full bg-slate-900 transition"
-                                aria-label="Slide 1"></button>
+            <!-- Right Column: Prominent Flagship Initiatives Sliding Card (matching hero-graphic.png) -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                <div
+                    class="w-full max-w-[400px] bg-slate-950/75 backdrop-blur-xl border border-white/20 rounded-3xl p-5 sm:p-5.5 shadow-2xl relative overflow-hidden group">
+                    <!-- Card Top Header -->
+                    <div class="flex items-center justify-between gap-3 mb-2.5">
+                        <span id="mcSlideBadge"
+                            class="inline-flex items-center text-[10.5px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                            Flagship AgriTech
+                        </span>
+                        <div class="flex items-center gap-2">
+                            <button type="button" id="mcHeroPrev"
+                                class="w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center text-xs transition"
+                                aria-label="Previous slide">
+                                <i class="ri-arrow-left-s-line"></i>
+                            </button>
+                            <span id="mcHeroCounter"
+                                class="text-xs font-bold text-slate-300 tracking-wider font-mono">01 / 03</span>
+                            <button type="button" id="mcHeroNext"
+                                class="w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center text-xs transition"
+                                aria-label="Next slide">
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Featured Visual Window (Preview thumbnail with title overlay) -->
+                    <div
+                        class="relative w-full h-36 sm:h-40 rounded-2xl overflow-hidden my-2.5 border border-white/15 shadow-inner">
+                        <img id="mcSlideThumb" src="<?= url('assets/images/mercora/current/Heroimg1.png') ?>"
+                            alt="Initiative Preview"
+                            class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105 transition-transform duration-500" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent">
+                        </div>
+                        <div class="absolute bottom-2.5 left-3 right-3">
+                            <h3 id="mcSlideTitle"
+                                class="text-base sm:text-lg font-bold text-white drop-shadow-md truncate">
+                                Smart Crop Doctor
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Initiative Narrative Text -->
+                    <p id="mcSlideDesc"
+                        class="text-xs sm:text-sm text-slate-200 leading-relaxed line-clamp-2 transition-opacity duration-300">
+                        India's next-generation precision agriculture platform using AI, drone technology, multispectral
+                        imaging and predictive analytics.
+                    </p>
+
+                    <!-- Card Footer: CTA Link + Clickable Slide Indicator Dots -->
+                    <div class="flex items-center justify-between pt-3 mt-3 border-t border-white/15">
+                        <a id="mcSlideLink" href="<?= url('/it-services') ?>#agritech"
+                            class="inline-flex items-center text-xs sm:text-sm font-bold text-amber-400 hover:text-amber-300 transition group/link">
+                            <span id="mcSlideLinkText">Learn More</span> <i
+                                class="ri-arrow-right-line ml-1.5 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+
+                        <div class="flex items-center gap-1.5">
                             <button type="button"
-                                class="mc-hero-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-500 transition"
-                                aria-label="Slide 2"></button>
+                                class="mc-hero-dot w-6 h-1.5 rounded-full bg-amber-400 transition-all duration-300"
+                                data-slide="0" aria-label="Slide 1"></button>
                             <button type="button"
-                                class="mc-hero-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-500 transition"
-                                aria-label="Slide 3"></button>
+                                class="mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300"
+                                data-slide="1" aria-label="Slide 2"></button>
+                            <button type="button"
+                                class="mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300"
+                                data-slide="2" aria-label="Slide 3"></button>
                         </div>
                     </div>
                 </div>
@@ -112,7 +199,7 @@ require_once __DIR__ . '/includes/header.php';
 
                     <!-- Dark Vignette Gradient Overlay for high text readability -->
                     <div
-                        class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/80 to-slate-950/65 transition-opacity duration-300">
+                        class="absolute inset-0 bg-gradient-to-t from-slate-800/85 via-slate-800/70 to-slate-950/65 transition-opacity duration-300">
                     </div>
 
                     <!-- Card Content -->
@@ -120,11 +207,11 @@ require_once __DIR__ . '/includes/header.php';
                         <div>
                             <div class="flex items-center justify-between mb-4">
                                 <div
-                                    class="w-10 h-10 rounded-lg bg-gray-400 text-white flex items-center justify-center text-xl">
+                                    class="w-10 h-10 rounded-lg bg-gray-600 text-white flex items-center justify-center text-xl">
                                     <i class="<?= e($vertical['icon']) ?>"></i>
                                 </div>
                                 <span
-                                    class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-gray-400 text-white">
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-gray-600 text-white">
                                     <?= e($vertical['tag']) ?>
                                 </span>
                             </div>

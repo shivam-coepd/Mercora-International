@@ -3,75 +3,148 @@
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-    // 1. Hero Visual Slideshow (Homepage)
-    const heroSlides = [
+    // 1. Synchronized Hero Slideshow (Background + Bottom-Right Flagship Card)
+    const flagshipInitiatives = [
         {
-            img: "assets/images/mercora/current/Heroimg1.png",
-            title: "AgriTech & Smart Crop Doctor",
-            desc: "AI, drone surveys & multispectral analytics transforming agriculture across India."
+            badge: "Flagship AgriTech",
+            badgeClass: "bg-amber-500/20 text-amber-300 border-amber-500/30",
+            title: "Smart Crop Doctor",
+            desc: "India's next-generation precision agriculture platform using AI, drone technology, multispectral imaging and predictive analytics.",
+            link: "/it-services#agritech",
+            linkText: "Learn More",
+            thumb: "/assets/images/mercora/current/Heroimg1.png"
         },
         {
-            img: "assets/images/mercora/current/s4.jpg",
-            title: "Enterprise Technology & PMO",
-            desc: "Delivering digital transformation, software QA & cloud governance."
+            badge: "GI-Tagged Specialty",
+            badgeClass: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
+            title: "Native Araku Coffee",
+            desc: "Empowering tribal farmers and promoting GI-tagged Araku coffee across India and the global market.",
+            link: "/coffee-products",
+            linkText: "Explore Coffee",
+            thumb: "/assets/images/coffee/nac-hero.jpeg"
         },
         {
-            img: "assets/images/mercora/current/carousel-1.jpg",
-            title: "Global Trade & Native Araku Coffee",
-            desc: "Authorised franchise development and sustainable tribal empowerment."
+            badge: "Launching Soon",
+            badgeClass: "bg-sky-500/20 text-sky-300 border-sky-500/30",
+            title: "WHITE WORLD",
+            desc: "A curated e-commerce platform exclusively dedicated to white — premium apparel, accessories and lifestyle products.",
+            link: "/industries#textile",
+            linkText: "Coming Soon",
+            thumb: "/assets/images/industries/textile.jpg"
         }
     ];
 
-    const heroImgEl = document.getElementById("mcHeroSlideImg");
-    const heroTitleEl = document.getElementById("mcHeroSlideTitle");
-    const heroDescEl = document.getElementById("mcHeroSlideDesc");
+    const bgSlides = document.querySelectorAll(".mc-hero-bg");
+    const badgeEl = document.getElementById("mcSlideBadge");
+    const titleEl = document.getElementById("mcSlideTitle");
+    const descEl = document.getElementById("mcSlideDesc");
+    const linkEl = document.getElementById("mcSlideLink");
+    const linkTextEl = document.getElementById("mcSlideLinkText");
+    const thumbEl = document.getElementById("mcSlideThumb");
+    const counterEl = document.getElementById("mcHeroCounter");
+    const prevBtn = document.getElementById("mcHeroPrev");
+    const nextBtn = document.getElementById("mcHeroNext");
     const heroDots = document.querySelectorAll(".mc-hero-dot");
 
-    if (heroImgEl && heroSlides.length) {
+    if (bgSlides.length > 0) {
         let currentSlide = 0;
-        let slideInterval = null;
+        let slideTimer = null;
+        const totalSlides = bgSlides.length;
 
-        const showSlide = (index) => {
-            currentSlide = (index + heroSlides.length) % heroSlides.length;
-            const slide = heroSlides[currentSlide];
+        const updateHeroSlide = (index) => {
+            currentSlide = (index + totalSlides) % totalSlides;
+            const data = flagshipInitiatives[currentSlide] || flagshipInitiatives[0];
 
-            heroImgEl.style.opacity = "0.4";
+            // 1. Synchronize Background Slide (cross-fade + Ken Burns)
+            bgSlides.forEach((slide, i) => {
+                const img = slide.querySelector("img");
+                if (i === currentSlide) {
+                    slide.classList.remove("opacity-0", "pointer-events-none");
+                    slide.classList.add("opacity-100");
+                    if (img) img.classList.add("scale-105");
+                } else {
+                    slide.classList.remove("opacity-100");
+                    slide.classList.add("opacity-0", "pointer-events-none");
+                    if (img) img.classList.remove("scale-105");
+                }
+            });
+
+            // 2. Synchronize Flagship Card Content with soft fade transition
+            const elementsToFade = [titleEl, descEl, thumbEl, badgeEl].filter(Boolean);
+            elementsToFade.forEach((el) => (el.style.opacity = "0.2"));
+
             setTimeout(() => {
-                heroImgEl.src = slide.img;
-                heroImgEl.alt = slide.title;
-                if (heroTitleEl) heroTitleEl.textContent = slide.title;
-                if (heroDescEl) heroDescEl.textContent = slide.desc;
-                heroImgEl.style.opacity = "1";
+                if (badgeEl) {
+                    badgeEl.textContent = data.badge;
+                    badgeEl.className = `inline-flex items-center text-[10.5px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${data.badgeClass || 'bg-amber-500/20 text-amber-300 border-amber-500/30'}`;
+                }
+                if (titleEl) titleEl.textContent = data.title;
+                if (descEl) descEl.textContent = data.desc;
+                if (linkEl) linkEl.href = data.link;
+                if (linkTextEl) linkTextEl.textContent = data.linkText;
+                if (thumbEl) {
+                    thumbEl.src = data.thumb;
+                    thumbEl.alt = data.title;
+                }
+                if (counterEl) {
+                    counterEl.textContent = `0${currentSlide + 1} / 0${totalSlides}`;
+                }
+                elementsToFade.forEach((el) => (el.style.opacity = "1"));
             }, 180);
 
+            // 3. Update Indicator Dots
             heroDots.forEach((dot, i) => {
                 if (i === currentSlide) {
-                    dot.className = "mc-hero-dot w-6 h-1.5 rounded-full bg-slate-900 transition";
+                    dot.className = "mc-hero-dot w-6 h-1.5 rounded-full bg-amber-400 transition-all duration-300";
                 } else {
-                    dot.className = "mc-hero-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-500 transition";
+                    dot.className = "mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300";
                 }
             });
         };
 
-        heroDots.forEach((dot, i) => {
+        const nextSlide = () => updateHeroSlide(currentSlide + 1);
+        const prevSlide = () => updateHeroSlide(currentSlide - 1);
+
+        const startTimer = () => {
+            stopTimer();
+            slideTimer = setInterval(nextSlide, 6000);
+        };
+
+        const stopTimer = () => {
+            if (slideTimer) clearInterval(slideTimer);
+        };
+
+        if (nextBtn) {
+            nextBtn.addEventListener("click", () => {
+                nextSlide();
+                startTimer();
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener("click", () => {
+                prevSlide();
+                startTimer();
+            });
+        }
+
+        heroDots.forEach((dot) => {
             dot.addEventListener("click", () => {
-                showSlide(i);
-                resetInterval();
+                const targetIdx = parseInt(dot.getAttribute("data-slide"), 10);
+                if (!isNaN(targetIdx)) {
+                    updateHeroSlide(targetIdx);
+                    startTimer();
+                }
             });
         });
 
-        const startInterval = () => {
-            slideInterval = setInterval(() => {
-                showSlide(currentSlide + 1);
-            }, 5500);
-        };
+        const cardWidget = badgeEl?.closest(".group");
+        if (cardWidget) {
+            cardWidget.addEventListener("mouseenter", stopTimer);
+            cardWidget.addEventListener("mouseleave", startTimer);
+        }
 
-        const resetInterval = () => {
-            if (slideInterval) clearInterval(slideInterval);
-            startInterval();
-        };
-
-        startInterval();
+        startTimer();
     }
 
     // 2. Partner Modal Handler (Tailwind CSS)
@@ -156,11 +229,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const toast = document.createElement("div");
         const isSuccess = type === "success";
-        toast.className = `pointer-events-auto flex items-center gap-3 p-4 rounded-xl shadow-xl border text-sm font-medium transition-all duration-300 transform translate-y-2 opacity-0 ${
-            isSuccess 
-                ? "bg-slate-900 border-emerald-500/50 text-white" 
+        toast.className = `pointer-events-auto flex items-center gap-3 p-4 rounded-xl shadow-xl border text-sm font-medium transition-all duration-300 transform translate-y-2 opacity-0 ${isSuccess
+                ? "bg-slate-900 border-emerald-500/50 text-white"
                 : "bg-slate-900 border-rose-500/50 text-white"
-        }`;
+            }`;
         const icon = isSuccess ? "ri-checkbox-circle-fill text-emerald-400 text-lg" : "ri-error-warning-fill text-rose-400 text-lg";
         toast.innerHTML = `<i class="${icon}"></i> <span class="flex-1 text-xs sm:text-sm leading-relaxed">${message}</span>`;
         container.appendChild(toast);
