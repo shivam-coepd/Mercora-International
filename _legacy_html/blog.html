@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+<title>Blog | Mercora International</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description"
+  content="Mercora International delivers technology, business solutions, premium coffee experiences, sustainable trade, and inclusive growth initiatives." />
+<meta name="keywords"
+  content="Mercora International, IT services, premium coffee, business solutions, global trade, sustainable growth" />
+<link rel="shortcut icon" href="assets/images/mercora/favicon.png" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+ <link rel="stylesheet" href="assets/css/mercora.css" />
+
+</head>
+
+<body>
+  <header class="mc-header">
+  <div class="mc-shell mc-header-inner">
+    <a class="mc-logo-link" href="index.html" aria-label="Mercora International home">
+      <img src="assets/images/mercora/mercora-logo-light.png" alt="Mercora International" />
+    </a>
+
+    <button class="mc-menu-toggle" type="button" aria-label="Open navigation" aria-controls="mcNav"
+      aria-expanded="false">
+      <i class="ri-menu-3-line"></i>
+    </button>
+
+    <nav id="mcNav" class="mc-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="abouts.html">About</a>
+
+      <div class="mc-nav-group">
+        <button type="button" aria-expanded="false">
+          Solutions
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="mc-nav-menu">
+          <a href="it-services.html">IT Services</a>
+          <a href="business-solutions.html">Business Solutions</a>
+          <a href="industries.html">Industries We Serve</a>
+        </div>
+      </div>
+
+      <a href="coffee-products.html">Coffee Products</a>
+      <a href="partnerships.html">Partnerships</a>
+      <a href="blog.html">Blog</a>
+      <a href="customer-support.html">Support</a>
+      <a class="mc-nav-contact" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".mc-menu-toggle");
+    const nav = document.getElementById("mcNav");
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+    document.querySelectorAll(".mc-nav a").forEach((link) => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("is-active");
+      }
+    });
+
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        const open = nav.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.innerHTML = open ? '<i class="ri-close-line"></i>' : '<i class="ri-menu-3-line"></i>';
+      });
+    }
+
+    document.querySelectorAll(".mc-nav-group > button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const expanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!expanded));
+        button.parentElement.classList.toggle("is-open", !expanded);
+      });
+    });
+  });
+</script>
+
+
+  <main>
+    <section class="mc-page-hero" style="background-image: url('assets/images/mercora/current/blog-1.jpg');">
+      <div class="mc-shell">
+        <span class="mc-eyebrow">Blog and Updates</span>
+        <h1 class="headline">Stories, field notes and customer success updates.</h1>
+        <p>
+          A bright editorial space for social sharing, comments, news, event updates, customer stories and sector
+          insights.
+        </p>
+      </div>
+    </section>
+
+    <section class="mc-section">
+      <div class="mc-shell">
+        <div class="mc-section-title">
+          <span class="mc-eyebrow">Latest updates</span>
+          <h2 class="headline">From meetings to market opportunities.</h2>
+        </div>
+        <div class="mc-grid three">
+          <article class="mc-image-card">
+            <img src="assets/images/mercora/current/blog-1.jpg" alt="Mercora leadership meeting" />
+            <div class="mc-card">
+              <p class="mc-eyebrow">Hyderabad | 30 Jul 2025</p>
+              <h3>Meeting with Shri G. Niranjan</h3>
+              <p>Mercora International continues conversations around community-focused initiatives and inclusive growth.</p>
+              <div class="mc-actions">
+                <a class="mc-button-secondary" href="blogDetail.html">Read More</a>
+              </div>
+            </div>
+          </article>
+          <article class="mc-image-card">
+            <img src="assets/images/mercora/current/blog-2.jpg" alt="Mercora meeting in Nellore" />
+            <div class="mc-card">
+              <p class="mc-eyebrow">Nellore | 18 Aug 2025</p>
+              <h3>Meeting with Mr. Vemireddy Prabhakar Reddy</h3>
+              <p>Field engagement and public leadership conversations that support wider Mercora initiatives.</p>
+              <div class="mc-actions">
+                <a class="mc-button-secondary" href="blogDetail.html">Read More</a>
+              </div>
+            </div>
+          </article>
+          <article class="mc-image-card">
+            <img src="assets/images/mercora/current/newsImgs/23.jpeg" alt="Native Aaraku Coffee visit" />
+            <div class="mc-card">
+              <p class="mc-eyebrow">Araku Valley | 04 Oct 2025</p>
+              <h3>Native Aaraku Coffee visit</h3>
+              <p>Mercora International explored premium coffee experiences and product-led growth opportunities.</p>
+              <div class="mc-actions">
+                <a class="mc-button-secondary" href="coffee-products.html">View Coffee Page</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mc-section mc-section-soft">
+      <div class="mc-shell mc-split">
+        <div>
+          <div class="mc-section-title">
+            <span class="mc-eyebrow">Social sharing</span>
+            <h2 class="headline">Make every update easy to share.</h2>
+            <p>
+              The blog structure supports quick sharing to Facebook, LinkedIn, X and WhatsApp, plus a simple comment
+              system for visitor engagement.
+            </p>
+          </div>
+          <div class="mc-socials" style="margin-top: 0;">
+            <a href="#" aria-label="Share on Facebook"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#" aria-label="Share on LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="#" aria-label="Share on X"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" aria-label="Share on WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+          </div>
+        </div>
+        <div class="mc-card">
+          <h3>Commenting system</h3>
+          <form class="mc-form">
+            <div class="mc-form-grid">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <textarea rows="4" placeholder="Write a comment"></textarea>
+            <button class="mc-button" type="submit">Post Comment</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mc-footer">
+  <div class="mc-shell mc-footer-grid">
+    <div class="mc-footer-brand">
+      <img src="assets/images/mercora/mercora-logo-light.png" alt="Mercora International" />
+      <p>
+        Mercora International advances technology, sustainable trade, premium coffee experiences, and inclusive growth
+        through sector-focused solutions.
+      </p>
+      <div class="mc-socials" aria-label="Social links">
+        <a href="#" aria-label="Facebook"><i class="ri-facebook-circle-fill"></i></a>
+        <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="#" aria-label="X"><i class="ri-twitter-x-line"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Pages</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="abouts.html">About Us</a></li>
+        <li><a href="it-services.html">IT Services</a></li>
+        <li><a href="coffee-products.html">Coffee Products</a></li>
+        <li><a href="business-solutions.html">Business Solutions</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="industries.html">Industries We Serve</a></li>
+        <li><a href="partnerships.html">Partnerships</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="customer-support.html">Customer Support</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <ul class="mc-footer-contact">
+        <li><i class="ri-map-pin-2-fill"></i><span>A-212, Prime Legend, Botanical Garden Rd, Kondapur, Hyderabad,
+            Telangana 500084, India</span></li>
+        <li><i class="ri-mail-fill"></i><a href="mailto:info@mercorainternational.com">info@mercorainternational.com</a>
+        </li>
+        <li><i class="ri-phone-fill"></i><a href="tel:+917680077222">+91 768 007 7222</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mc-footer-bottom">
+    <p>Copyright 2025 Mercora International. All Rights Reserved.</p>
+  </div>
+</footer>
+ <button id="to-top-button" onclick="goToTop()" title="Go To Top" class="mc-back-to-top hidden">
+  <i class="ri-arrow-up-line"></i>
+</button>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.AOS) {
+      AOS.init({
+        once: true,
+        duration: 900,
+        easing: "ease-out-cubic",
+        offset: 80
+      });
+    }
+
+    if (window.Swiper) {
+      if (document.querySelector(".mc-hero-swiper")) {
+        new Swiper(".mc-hero-swiper", {
+          loop: true,
+          speed: 1100,
+          effect: "fade",
+          autoplay: {
+            delay: 4200,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: ".mc-hero-pagination",
+            clickable: true
+          }
+        });
+      }
+
+      if (document.querySelector(".mc-gallery-swiper")) {
+        new Swiper(".mc-gallery-swiper", {
+          loop: true,
+          speed: 800,
+          spaceBetween: 18,
+          autoplay: {
+            delay: 2400,
+            disableOnInteraction: false
+          },
+          breakpoints: {
+            0: { slidesPerView: 1.15 },
+            640: { slidesPerView: 2.1 },
+            980: { slidesPerView: 3.2 },
+            1200: { slidesPerView: 4 }
+          }
+        });
+      }
+
+      if (document.querySelector(".mc-testimonial-swiper")) {
+        new Swiper(".mc-testimonial-swiper", {
+          loop: true,
+          speed: 800,
+          spaceBetween: 20,
+          autoplay: {
+            delay: 3600,
+            disableOnInteraction: false
+          },
+          navigation: {
+            nextEl: ".mc-testimonial-next",
+            prevEl: ".mc-testimonial-prev"
+          },
+          breakpoints: {
+            0: { slidesPerView: 1 },
+            760: { slidesPerView: 2 },
+            1100: { slidesPerView: 3 }
+          }
+        });
+      }
+    }
+
+    if (window.GLightbox) {
+      GLightbox({ selector: ".glightbox" });
+    }
+
+    document.querySelectorAll(".mc-process-card").forEach((card) => {
+      const activate = () => {
+        const parent = card.closest(".mc-process-flow");
+        if (!parent) return;
+        parent.querySelectorAll(".mc-process-card").forEach((item) => item.classList.remove("active"));
+        card.classList.add("active");
+      };
+      card.addEventListener("mouseenter", activate);
+      card.addEventListener("focusin", activate);
+      card.addEventListener("click", activate);
+    });
+
+    const animateCounter = (counter) => {
+      const target = Number(counter.getAttribute("data-target") || 0);
+      const suffix = counter.getAttribute("data-suffix") || "";
+      const duration = 1200;
+      const start = performance.now();
+      const tick = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        counter.textContent = Math.round(target * eased) + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+
+    const counters = document.querySelectorAll(".mc-counter");
+    if ("IntersectionObserver" in window) {
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.45 });
+      counters.forEach((counter) => counterObserver.observe(counter));
+    } else {
+      counters.forEach(animateCounter);
+    }
+
+    const toTopButton = document.getElementById("to-top-button");
+    if (toTopButton) {
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 500) {
+          toTopButton.classList.remove("hidden");
+        } else {
+          toTopButton.classList.add("hidden");
+        }
+      });
+
+      window.goToTop = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    }
+
+    document.querySelectorAll(".mc-form").forEach((form) => {
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let message = form.querySelector(".mc-form-message");
+        if (!message) {
+          message = document.createElement("p");
+          message.className = "mc-form-message";
+          form.appendChild(message);
+        }
+        message.textContent = "Thank you. Your enquiry has been captured for follow-up.";
+        form.reset();
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>
+
