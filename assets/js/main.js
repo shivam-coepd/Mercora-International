@@ -114,19 +114,22 @@ document.addEventListener("DOMContentLoaded", function () {
             if (slideTimer) clearInterval(slideTimer);
         };
 
-        if (nextBtn) {
-            nextBtn.addEventListener("click", () => {
-                nextSlide();
-                startTimer();
-            });
-        }
+        const prevBtns = document.querySelectorAll(".mc-hero-prev, #mcHeroPrev");
+        const nextBtns = document.querySelectorAll(".mc-hero-next, #mcHeroNext");
 
-        if (prevBtn) {
-            prevBtn.addEventListener("click", () => {
+        prevBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
                 prevSlide();
                 startTimer();
             });
-        }
+        });
+
+        nextBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                nextSlide();
+                startTimer();
+            });
+        });
 
         heroDots.forEach((dot) => {
             dot.addEventListener("click", () => {

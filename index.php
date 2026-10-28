@@ -12,19 +12,19 @@ require_once __DIR__ . '/includes/header.php';
     <div id="mcHeroBgSlider" class="absolute inset-0 z-0">
         <!-- Slide 1: Smart Crop Doctor -->
         <div class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-100">
-            <img src="<?= url('assets/images/mercora/current/Heroimg1.png') ?>" alt="Smart Crop Doctor"
+            <img src="<?= url('assets/images/mercora/trade_globe.png') ?>" alt="Smart Crop Doctor"
                 class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
         </div>
         <!-- Slide 2: Native Araku Coffee -->
         <div
             class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-0 pointer-events-none">
-            <img src="<?= url('assets/images/coffee/araku-valley.jpeg') ?>" alt="Native Araku Coffee"
+            <img src="<?= url('assets/images/mercora/consulting_boardroom.jpg') ?>" alt="Native Araku Coffee"
                 class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
         </div>
         <!-- Slide 3: WHITE WORLD -->
         <div
             class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-0 pointer-events-none">
-            <img src="<?= url('assets/images/industries/textile.jpg') ?>" alt="WHITE WORLD"
+            <img src="<?= url('assets/images/mercora/drone_over_farmland.png') ?>" alt="WHITE WORLD"
                 class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
         </div>
     </div>
@@ -37,133 +37,95 @@ require_once __DIR__ . '/includes/header.php';
         class="absolute inset-0 bg-gradient-to-t from-slate-800 via-transparent to-slate-800/30 z-10 pointer-events-none">
     </div>
 
-    <!-- Hero Content Container (2-Column Grid Layout matching Agrove & Flagship reference) -->
+    <!-- Hero Content Container (Full Width Balanced Authority Layout) -->
     <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 relative z-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div class="max-w-3xl lg:max-w-4xl space-y-4 sm:space-y-5">
+            <div>
+                <span
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 backdrop-blur-md shadow-sm">
+                    <i class="ri-shield-check-fill text-amber-400"></i> DPIIT Recognised Startup · DIPP258473
+                </span>
+            </div>
 
-            <!-- Left Column: Authority Headline, Narrative, CTAs & Snapshot Metrics -->
-            <div class="lg:col-span-7 space-y-4 sm:space-y-5 lg:space-y-5">
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] xl:text-[3rem] font-extrabold tracking-tight text-white leading-snug sm:leading-tight lg:leading-[1.2] drop-shadow-md">
+                Empowering Enterprises. Transforming Communities. <span class="text-amber-400">Connecting the
+                    World.</span>
+            </h1>
+
+            <p class="text-sm sm:text-base text-slate-200 leading-relaxed max-w-2xl drop-shadow-sm font-normal">
+                Mercora International partners with enterprises, governments, startups, and institutions to engineer
+                scalable, innovation-led solutions across 11 business verticals.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 pt-1">
+                <a href="<?= url('/it-services') ?>"
+                    class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5 tracking-wide">
+                    <span>Explore Our Services</span>
+                    <i class="ri-arrow-right-line ml-2.5 text-base"></i>
+                </a>
+                <a href="<?= url('/contact') ?>"
+                    class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+
+            <!-- Snapshot Metrics Strip -->
+            <div class="pt-4 sm:pt-5 border-t border-white/15 flex flex-wrap items-center gap-6 sm:gap-8">
                 <div>
-                    <span
-                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 backdrop-blur-md shadow-sm">
-                        <i class="ri-shield-check-fill text-amber-400"></i> DPIIT Recognised Startup · DIPP258473
-                    </span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-sm">11+</div>
+                    <div class="text-xs font-medium text-slate-300 mt-0.5">Business Verticals</div>
                 </div>
-
-                <h1
-                    class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] xl:text-[3.1rem] font-extrabold tracking-tight text-white leading-snug sm:leading-tight lg:leading-[1.24] drop-shadow-md">
-                    Empowering Enterprises. Transforming Communities. <span class="text-amber-400">Connecting the
-                        World.</span>
-                </h1>
-
-                <p class="text-sm sm:text-base text-slate-200 leading-relaxed max-w-xl drop-shadow-sm font-normal">
-                    Mercora International partners with enterprises, governments, startups, and institutions to engineer
-                    scalable, innovation-led solutions across 11 business verticals.
-                </p>
-
-                <div class="flex flex-wrap items-center gap-4 pt-2">
-                    <a href="<?= url('/it-services') ?>"
-                        class="inline-flex items-center justify-center px-6 sm:px-7 py-3.5 text-sm sm:text-[15px] font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5 tracking-wide">
-                        <span>Explore Our Services</span>
-                        <i class="ri-arrow-right-line ml-2.5 text-base"></i>
-                    </a>
-                    <a href="<?= url('/contact') ?>"
-                        class="inline-flex items-center justify-center px-6 sm:px-7 py-3.5 text-sm sm:text-[15px] font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
-                        <span>Get in Touch</span>
-                    </a>
+                <div class="h-7 w-px bg-white/20"></div>
+                <div>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 drop-shadow-sm">7</div>
+                    <div class="text-xs font-medium text-slate-300 mt-0.5">Signed MOUs</div>
                 </div>
-
-                <!-- Snapshot Metrics Strip (Directly anchoring the left column) -->
-                <div class="pt-4 border-t border-white/15 flex flex-wrap items-center gap-6 sm:gap-8">
-                    <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-sm">11+</div>
-                        <div class="text-xs font-medium text-slate-300 mt-0.5">Business Verticals</div>
-                    </div>
-                    <div class="h-7 w-px bg-white/20"></div>
-                    <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 drop-shadow-sm">7</div>
-                        <div class="text-xs font-medium text-slate-300 mt-0.5">Signed MOUs</div>
-                    </div>
-                    <div class="h-7 w-px bg-white/20"></div>
-                    <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-sm">18</div>
-                        <div class="text-xs font-medium text-slate-300 mt-0.5">MOU Engagements</div>
-                    </div>
+                <div class="h-7 w-px bg-white/20"></div>
+                <div>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-sm">18</div>
+                    <div class="text-xs font-medium text-slate-300 mt-0.5">MOU Engagements</div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Right Column: Prominent Flagship Initiatives Sliding Card (matching hero-graphic.png) -->
-            <div class="lg:col-span-5 flex justify-center lg:justify-end">
-                <div
-                    class="w-full max-w-[400px] bg-slate-950/75 backdrop-blur-xl border border-white/20 rounded-3xl p-5 sm:p-5.5 shadow-2xl relative overflow-hidden group">
-                    <!-- Card Top Header -->
-                    <div class="flex items-center justify-between gap-3 mb-2.5">
-                        <span id="mcSlideBadge"
-                            class="inline-flex items-center text-[10.5px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                            Flagship AgriTech
-                        </span>
-                        <div class="flex items-center gap-2">
-                            <button type="button" id="mcHeroPrev"
-                                class="w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center text-xs transition"
-                                aria-label="Previous slide">
-                                <i class="ri-arrow-left-s-line"></i>
-                            </button>
-                            <span id="mcHeroCounter"
-                                class="text-xs font-bold text-slate-300 tracking-wider font-mono">01 / 03</span>
-                            <button type="button" id="mcHeroNext"
-                                class="w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center text-xs transition"
-                                aria-label="Next slide">
-                                <i class="ri-arrow-right-line"></i>
-                            </button>
-                        </div>
-                    </div>
+    <!-- Side Previous / Next Navigation Arrows -->
+    <button type="button" id="mcHeroPrev"
+        class="mc-hero-prev hidden sm:flex absolute left-3 sm:left-6 lg:left-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-slate-900/60 hover:bg-slate-900/90 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition shadow-lg hover:scale-105"
+        aria-label="Previous slide">
+        <i class="ri-arrow-left-s-line text-2xl"></i>
+    </button>
+    <button type="button" id="mcHeroNext"
+        class="mc-hero-next hidden sm:flex absolute right-3 sm:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-slate-900/60 hover:bg-slate-900/90 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition shadow-lg hover:scale-105"
+        aria-label="Next slide">
+        <i class="ri-arrow-right-line text-2xl"></i>
+    </button>
 
-                    <!-- Featured Visual Window (Preview thumbnail with title overlay) -->
-                    <div
-                        class="relative w-full h-36 sm:h-40 rounded-2xl overflow-hidden my-2.5 border border-white/15 shadow-inner">
-                        <img id="mcSlideThumb" src="<?= url('assets/images/mercora/current/Heroimg1.png') ?>"
-                            alt="Initiative Preview"
-                            class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105 transition-transform duration-500" />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent">
-                        </div>
-                        <div class="absolute bottom-2.5 left-3 right-3">
-                            <h3 id="mcSlideTitle"
-                                class="text-base sm:text-lg font-bold text-white drop-shadow-md truncate">
-                                Smart Crop Doctor
-                            </h3>
-                        </div>
-                    </div>
-
-                    <!-- Initiative Narrative Text -->
-                    <p id="mcSlideDesc"
-                        class="text-xs sm:text-sm text-slate-200 leading-relaxed line-clamp-2 transition-opacity duration-300">
-                        India's next-generation precision agriculture platform using AI, drone technology, multispectral
-                        imaging and predictive analytics.
-                    </p>
-
-                    <!-- Card Footer: CTA Link + Clickable Slide Indicator Dots -->
-                    <div class="flex items-center justify-between pt-3 mt-3 border-t border-white/15">
-                        <a id="mcSlideLink" href="<?= url('/it-services') ?>#agritech"
-                            class="inline-flex items-center text-xs sm:text-sm font-bold text-amber-400 hover:text-amber-300 transition group/link">
-                            <span id="mcSlideLinkText">Learn More</span> <i
-                                class="ri-arrow-right-line ml-1.5 group-hover/link:translate-x-1 transition-transform"></i>
-                        </a>
-
-                        <div class="flex items-center gap-1.5">
-                            <button type="button"
-                                class="mc-hero-dot w-6 h-1.5 rounded-full bg-amber-400 transition-all duration-300"
-                                data-slide="0" aria-label="Slide 1"></button>
-                            <button type="button"
-                                class="mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300"
-                                data-slide="1" aria-label="Slide 2"></button>
-                            <button type="button"
-                                class="mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300"
-                                data-slide="2" aria-label="Slide 3"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Slide Controller Bar (Bottom Right) with Counter & Dots -->
+    <div
+        class="absolute right-4 sm:right-8 lg:right-12 bottom-6 sm:bottom-8 z-30 flex items-center gap-3 bg-slate-900/70 backdrop-blur-md border border-white/20 px-4 py-2.5 rounded-full shadow-2xl">
+        <button type="button"
+            class="mc-hero-prev w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center text-xs transition"
+            aria-label="Previous slide">
+            <i class="ri-arrow-left-s-line"></i>
+        </button>
+        <span id="mcHeroCounter" class="text-xs font-mono font-bold text-slate-200 tracking-wider">01 / 03</span>
+        <button type="button"
+            class="mc-hero-next w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center text-xs transition"
+            aria-label="Next slide">
+            <i class="ri-arrow-right-line"></i>
+        </button>
+        <div class="h-4 w-px bg-white/20 mx-0.5"></div>
+        <div class="flex items-center gap-1.5">
+            <button type="button" class="mc-hero-dot w-6 h-1.5 rounded-full bg-amber-400 transition-all duration-300"
+                data-slide="0" aria-label="Slide 1"></button>
+            <button type="button"
+                class="mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300"
+                data-slide="1" aria-label="Slide 2"></button>
+            <button type="button"
+                class="mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300"
+                data-slide="2" aria-label="Slide 3"></button>
         </div>
     </div>
 </section>
