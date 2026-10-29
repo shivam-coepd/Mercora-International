@@ -6,7 +6,7 @@ require_once __DIR__ . '/includes/header.php';
 
 <!-- 1.1 Hero Section (Full Screen Edge-to-Edge with Synchronized Sliding Background & Flagship Card) -->
 <section
-    class="relative w-full min-h-[calc(100svh-5rem)] lg:min-h-[calc(100vh-6.8rem)] lg:h-[calc(100vh-6.8rem)] flex items-center bg-slate-950 overflow-hidden border-b border-slate-800/80 py-8 lg:py-0">
+    class="relative w-full min-h-[calc(100svh-5rem)] lg:min-h-[calc(100vh-6.8rem)] lg:h-[calc(100vh-6.8rem)] flex items-center bg-white overflow-hidden border-b border-slate-200 py-8 lg:py-0">
 
     <!-- Sliding Background Images (Cross-fading with subtle scale effect) -->
     <div id="mcHeroBgSlider" class="absolute inset-0 z-0">
@@ -29,12 +29,10 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </div>
 
-    <!-- Vignette Gradient Overlays: Deep rich contrast on the left for text readability, clear and vibrant on the right -->
-    <div
-        class="absolute inset-0 bg-gradient-to-r from-slate-800 via-slate-800/85 via-50% to-slate-800/25 z-10 pointer-events-none">
+    <!-- Vignette Gradient Overlays: Light and clean on the left for maximum text readability, transitioning to reveal the background image on the right -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 via-20% to-white/10 z-10 pointer-events-none">
     </div>
-    <div
-        class="absolute inset-0 bg-gradient-to-t from-slate-800 via-transparent to-slate-800/30 z-10 pointer-events-none">
+    <div class="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-white/20 z-10 pointer-events-none">
     </div>
 
     <!-- Hero Content Container (Full Width Balanced Authority Layout) -->
@@ -42,18 +40,18 @@ require_once __DIR__ . '/includes/header.php';
         <div class="max-w-3xl lg:max-w-4xl space-y-4 sm:space-y-5">
             <div>
                 <span
-                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 backdrop-blur-md shadow-sm">
-                    <i class="ri-shield-check-fill text-amber-400"></i> DPIIT Recognised Startup · DIPP258473
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-800 border border-amber-500/25 shadow-sm">
+                    <i class="ri-shield-check-fill text-amber-600"></i> DPIIT Recognised Startup · DIPP258473
                 </span>
             </div>
 
             <h1
-                class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] xl:text-[3rem] font-extrabold tracking-tight text-white leading-snug sm:leading-tight lg:leading-[1.2] drop-shadow-md">
-                Empowering Enterprises. Transforming Communities. <span class="text-amber-400">Connecting the
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] xl:text-[3rem] font-extrabold tracking-tight text-slate-900 leading-snug sm:leading-tight lg:leading-[1.2]">
+                Empowering Enterprises. Transforming Communities. <span class="text-amber-600">Connecting the
                     World.</span>
             </h1>
 
-            <p class="text-sm sm:text-base text-slate-200 leading-relaxed max-w-2xl drop-shadow-sm font-normal">
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl font-normal">
                 Mercora International partners with enterprises, governments, startups, and institutions to engineer
                 scalable, innovation-led solutions across 11 business verticals.
             </p>
@@ -65,26 +63,26 @@ require_once __DIR__ . '/includes/header.php';
                     <i class="ri-arrow-right-line ml-2.5 text-base"></i>
                 </a>
                 <a href="<?= url('/contact') ?>"
-                    class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
+                    class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-sm transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
                     <span>Get in Touch</span>
                 </a>
             </div>
 
             <!-- Snapshot Metrics Strip -->
-            <div class="pt-4 sm:pt-5 border-t border-white/15 flex flex-wrap items-center gap-6 sm:gap-8">
+            <div class="pt-4 sm:pt-5 border-t border-slate-200 flex flex-wrap items-center gap-6 sm:gap-8">
                 <div>
-                    <div class="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-sm">11+</div>
-                    <div class="text-xs font-medium text-slate-300 mt-0.5">Business Verticals</div>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">11+</div>
+                    <div class="text-xs font-medium text-slate-500 mt-0.5">Business Verticals</div>
                 </div>
-                <div class="h-7 w-px bg-white/20"></div>
+                <div class="h-7 w-px bg-slate-300"></div>
                 <div>
-                    <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 drop-shadow-sm">7</div>
-                    <div class="text-xs font-medium text-slate-300 mt-0.5">Signed MOUs</div>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-amber-600">7</div>
+                    <div class="text-xs font-medium text-slate-500 mt-0.5">Signed MOUs</div>
                 </div>
-                <div class="h-7 w-px bg-white/20"></div>
+                <div class="h-7 w-px bg-slate-300"></div>
                 <div>
-                    <div class="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-sm">18</div>
-                    <div class="text-xs font-medium text-slate-300 mt-0.5">MOU Engagements</div>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">18</div>
+                    <div class="text-xs font-medium text-slate-500 mt-0.5">MOU Engagements</div>
                 </div>
             </div>
         </div>
@@ -92,39 +90,39 @@ require_once __DIR__ . '/includes/header.php';
 
     <!-- Side Previous / Next Navigation Arrows -->
     <button type="button" id="mcHeroPrev"
-        class="mc-hero-prev hidden sm:flex absolute left-3 sm:left-6 lg:left-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-slate-900/60 hover:bg-slate-900/90 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition shadow-lg hover:scale-105"
+        class="mc-hero-prev hidden sm:flex absolute left-3 sm:left-6 lg:left-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/85 hover:bg-white text-slate-700 hover:text-slate-950 border border-slate-200/80 shadow-md backdrop-blur-md items-center justify-center transition hover:scale-105"
         aria-label="Previous slide">
         <i class="ri-arrow-left-s-line text-2xl"></i>
     </button>
     <button type="button" id="mcHeroNext"
-        class="mc-hero-next hidden sm:flex absolute right-3 sm:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-slate-900/60 hover:bg-slate-900/90 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition shadow-lg hover:scale-105"
+        class="mc-hero-next hidden sm:flex absolute right-3 sm:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/85 hover:bg-white text-slate-700 hover:text-slate-950 border border-slate-200/80 shadow-md backdrop-blur-md items-center justify-center transition hover:scale-105"
         aria-label="Next slide">
         <i class="ri-arrow-right-line text-2xl"></i>
     </button>
 
     <!-- Slide Controller Bar (Bottom Right) with Counter & Dots -->
     <div
-        class="absolute right-4 sm:right-8 lg:right-12 bottom-6 sm:bottom-8 z-30 flex items-center gap-3 bg-slate-900/70 backdrop-blur-md border border-white/20 px-4 py-2.5 rounded-full shadow-2xl">
+        class="absolute right-4 sm:right-8 lg:right-12 bottom-6 sm:bottom-8 z-30 flex items-center gap-3 bg-white/90 backdrop-blur-md border border-slate-200/80 px-4 py-2.5 rounded-full shadow-lg">
         <button type="button"
-            class="mc-hero-prev w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center text-xs transition"
+            class="mc-hero-prev w-7 h-7 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center text-xs transition"
             aria-label="Previous slide">
             <i class="ri-arrow-left-s-line"></i>
         </button>
-        <span id="mcHeroCounter" class="text-xs font-mono font-bold text-slate-200 tracking-wider">01 / 03</span>
+        <span id="mcHeroCounter" class="text-xs font-mono font-bold text-slate-700 tracking-wider">01 / 03</span>
         <button type="button"
-            class="mc-hero-next w-7 h-7 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center text-xs transition"
+            class="mc-hero-next w-7 h-7 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center text-xs transition"
             aria-label="Next slide">
             <i class="ri-arrow-right-line"></i>
         </button>
-        <div class="h-4 w-px bg-white/20 mx-0.5"></div>
+        <div class="h-4 w-px bg-slate-200 mx-0.5"></div>
         <div class="flex items-center gap-1.5">
-            <button type="button" class="mc-hero-dot w-6 h-1.5 rounded-full bg-amber-400 transition-all duration-300"
+            <button type="button" class="mc-hero-dot w-6 h-1.5 rounded-full bg-amber-500 transition-all duration-300"
                 data-slide="0" aria-label="Slide 1"></button>
             <button type="button"
-                class="mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300"
+                class="mc-hero-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300"
                 data-slide="1" aria-label="Slide 2"></button>
             <button type="button"
-                class="mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300"
+                class="mc-hero-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300"
                 data-slide="2" aria-label="Slide 3"></button>
         </div>
     </div>
@@ -254,8 +252,8 @@ require_once __DIR__ . '/includes/header.php';
                             <i class="ri-handshake-line"></i>
                         </div>
                         <div>
-                            <div class="text-sm font-bold text-slate-900">7 Confirmed Signed MOUs</div>
-                            <div class="text-xs text-slate-500">18 Active Enterprise & Government Engagements</div>
+                            <div class="text-sm font-bold text-slate-900">Mrs. D. Jaya Geetha Kiran</div>
+                            <div class="text-xs text-slate-500">Founder & Managing Partner</div>
                         </div>
                     </div>
                 </div>

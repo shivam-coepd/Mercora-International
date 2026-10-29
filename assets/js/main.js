@@ -95,9 +95,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // 3. Update Indicator Dots
             heroDots.forEach((dot, i) => {
                 if (i === currentSlide) {
-                    dot.className = "mc-hero-dot w-6 h-1.5 rounded-full bg-amber-400 transition-all duration-300";
+                    dot.className = "mc-hero-dot w-6 h-1.5 rounded-full bg-amber-500 transition-all duration-300";
                 } else {
-                    dot.className = "mc-hero-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300";
+                    dot.className = "mc-hero-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300";
                 }
             });
         };
