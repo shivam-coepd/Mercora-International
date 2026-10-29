@@ -27,11 +27,12 @@ $pageKeywords = isset($pageKeywords) ? $pageKeywords : 'Mercora International, A
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?= url('assets/images/mercora/mercora-favicon.png') ?>" type="image/png" />
 
-    <!-- Simple, Clean, Modern Font: Inter (Zero Fancy/Serif Fonts) -->
+    <!-- Typography: Oxygen, Scope One, Sansation, Plus Jakarta Sans, Outfit & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Scope+One&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
 
     <!-- Icons & Third-Party UI Plugins -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -46,7 +47,12 @@ $pageKeywords = isset($pageKeywords) ? $pageKeywords : 'Mercora International, A
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                        oxygen: ['Oxygen', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        sansation: ['Sansation', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        scope: ['Scope One', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                        display: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
                     },
                     colors: {
                         brand: {
@@ -88,6 +94,15 @@ $pageKeywords = isset($pageKeywords) ? $pageKeywords : 'Mercora International, A
     <style>
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .font-oxygen {
+            font-family: 'Oxygen', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+        }
+        .font-sansation {
+            font-family: 'Sansation', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+        }
+        .font-scope {
+            font-family: 'Scope One', Georgia, Cambria, 'Times New Roman', serif !important;
         }
     </style>
 </head>

@@ -3,48 +3,12 @@
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-    // 1. Synchronized Hero Slideshow (Background + Bottom-Right Flagship Card)
-    const flagshipInitiatives = [
-        {
-            badge: "Flagship AgriTech",
-            badgeClass: "bg-amber-500/20 text-amber-300 border-amber-500/30",
-            title: "Smart Crop Doctor",
-            desc: "India's next-generation precision agriculture platform using AI, drone technology, multispectral imaging and predictive analytics.",
-            link: "/it-services#agritech",
-            linkText: "Learn More",
-            thumb: "/assets/images/mercora/current/Heroimg1.png"
-        },
-        {
-            badge: "GI-Tagged Specialty",
-            badgeClass: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
-            title: "Native Araku Coffee",
-            desc: "Empowering tribal farmers and promoting GI-tagged Araku coffee across India and the global market.",
-            link: "/coffee-products",
-            linkText: "Explore Coffee",
-            thumb: "/assets/images/coffee/nac-hero.jpeg"
-        },
-        {
-            badge: "Launching Soon",
-            badgeClass: "bg-sky-500/20 text-sky-300 border-sky-500/30",
-            title: "WHITE WORLD",
-            desc: "A curated e-commerce platform exclusively dedicated to white — premium apparel, accessories and lifestyle products.",
-            link: "/industries#textile",
-            linkText: "Coming Soon",
-            thumb: "/assets/images/industries/textile.jpg"
-        }
-    ];
-
+    // 1. Synchronized Hero Slideshow (Background + Content Slide + Tab Controllers)
     const bgSlides = document.querySelectorAll(".mc-hero-bg");
-    const badgeEl = document.getElementById("mcSlideBadge");
-    const titleEl = document.getElementById("mcSlideTitle");
-    const descEl = document.getElementById("mcSlideDesc");
-    const linkEl = document.getElementById("mcSlideLink");
-    const linkTextEl = document.getElementById("mcSlideLinkText");
-    const thumbEl = document.getElementById("mcSlideThumb");
+    const contentSlides = document.querySelectorAll(".mc-hero-content");
+    const heroTabs = document.querySelectorAll(".mc-hero-tab");
     const counterEl = document.getElementById("mcHeroCounter");
-    const prevBtn = document.getElementById("mcHeroPrev");
-    const nextBtn = document.getElementById("mcHeroNext");
-    const heroDots = document.querySelectorAll(".mc-hero-dot");
+    const heroSection = document.getElementById("mcHeroBgSlider")?.closest("section");
 
     if (bgSlides.length > 0) {
         let currentSlide = 0;
@@ -53,9 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const updateHeroSlide = (index) => {
             currentSlide = (index + totalSlides) % totalSlides;
-            const data = flagshipInitiatives[currentSlide] || flagshipInitiatives[0];
 
-            // 1. Synchronize Background Slide (cross-fade + Ken Burns)
+            // 1. Cross-fade background slide images with smooth Ken Burns scale
             bgSlides.forEach((slide, i) => {
                 const img = slide.querySelector("img");
                 if (i === currentSlide) {
@@ -69,35 +32,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            // 2. Synchronize Flagship Card Content with soft fade transition
-            const elementsToFade = [titleEl, descEl, thumbEl, badgeEl].filter(Boolean);
-            elementsToFade.forEach((el) => (el.style.opacity = "0.2"));
-
-            setTimeout(() => {
-                if (badgeEl) {
-                    badgeEl.textContent = data.badge;
-                    badgeEl.className = `inline-flex items-center text-[10.5px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${data.badgeClass || 'bg-amber-500/20 text-amber-300 border-amber-500/30'}`;
-                }
-                if (titleEl) titleEl.textContent = data.title;
-                if (descEl) descEl.textContent = data.desc;
-                if (linkEl) linkEl.href = data.link;
-                if (linkTextEl) linkTextEl.textContent = data.linkText;
-                if (thumbEl) {
-                    thumbEl.src = data.thumb;
-                    thumbEl.alt = data.title;
-                }
-                if (counterEl) {
-                    counterEl.textContent = `0${currentSlide + 1} / 0${totalSlides}`;
-                }
-                elementsToFade.forEach((el) => (el.style.opacity = "1"));
-            }, 180);
-
-            // 3. Update Indicator Dots
-            heroDots.forEach((dot, i) => {
+            // 2. Cross-fade dynamic text and feature content cleanly without ghosting
+            contentSlides.forEach((content, i) => {
                 if (i === currentSlide) {
-                    dot.className = "mc-hero-dot w-6 h-1.5 rounded-full bg-amber-500 transition-all duration-300";
+                    content.classList.remove("opacity-0", "translate-y-2", "pointer-events-none", "invisible");
+                    content.classList.add("opacity-100", "translate-y-0", "pointer-events-auto", "visible");
                 } else {
-                    dot.className = "mc-hero-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300";
+                    content.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto", "visible");
+                    content.classList.add("opacity-0", "translate-y-2", "pointer-events-none", "invisible");
+                }
+            });
+
+            // 3. Update counter text
+            if (counterEl) {
+                counterEl.textContent = `0${currentSlide + 1} / 0${totalSlides}`;
+            }
+
+            // 4. Update interactive controller tabs
+            heroTabs.forEach((tab, i) => {
+                if (i === currentSlide) {
+                    tab.className = "mc-hero-tab px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold bg-amber-500 text-slate-950 transition-all duration-300 shadow-xs";
+                } else {
+                    tab.className = "mc-hero-tab px-2.5 sm:px-3 py-1 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300";
                 }
             });
         };
@@ -107,13 +63,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const startTimer = () => {
             stopTimer();
-            slideTimer = setInterval(nextSlide, 6000);
+            slideTimer = setInterval(nextSlide, 7000);
         };
 
         const stopTimer = () => {
             if (slideTimer) clearInterval(slideTimer);
         };
 
+        // Navigation buttons (side arrows and controller bar buttons)
         const prevBtns = document.querySelectorAll(".mc-hero-prev, #mcHeroPrev");
         const nextBtns = document.querySelectorAll(".mc-hero-next, #mcHeroNext");
 
@@ -131,9 +88,10 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        heroDots.forEach((dot) => {
-            dot.addEventListener("click", () => {
-                const targetIdx = parseInt(dot.getAttribute("data-slide"), 10);
+        // Clickable interactive tabs
+        heroTabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                const targetIdx = parseInt(tab.getAttribute("data-slide"), 10);
                 if (!isNaN(targetIdx)) {
                     updateHeroSlide(targetIdx);
                     startTimer();
@@ -141,11 +99,32 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        const cardWidget = badgeEl?.closest(".group");
-        if (cardWidget) {
-            cardWidget.addEventListener("mouseenter", stopTimer);
-            cardWidget.addEventListener("mouseleave", startTimer);
+        // Pause on hover
+        if (heroSection) {
+            heroSection.addEventListener("mouseenter", stopTimer);
+            heroSection.addEventListener("mouseleave", startTimer);
         }
+
+        // Mobile touch swipe gesture support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        heroSection?.addEventListener("touchstart", (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        heroSection?.addEventListener("touchend", (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diffX = touchEndX - touchStartX;
+            if (Math.abs(diffX) > 45) {
+                if (diffX < 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+                startTimer();
+            }
+        }, { passive: true });
 
         startTimer();
     }
