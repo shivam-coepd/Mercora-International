@@ -4,87 +4,286 @@ $pageDesc = 'Mercora International is a registered multidisciplinary firm delive
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<!-- 1.1 Hero Section (Full Screen Edge-to-Edge with Synchronized Sliding Background & Flagship Card) -->
+<!-- 1.1 Hero Section (Full Screen Edge-to-Edge with Synchronized Backgrounds & Dynamic Slide Content) -->
 <section
-    class="relative w-full min-h-[calc(100svh-5rem)] lg:min-h-[calc(100vh-6.8rem)] lg:h-[calc(100vh-6.8rem)] flex items-center bg-white overflow-hidden border-b border-slate-200 py-8 lg:py-0">
+    class="relative w-full min-h-[calc(100svh-5rem)] lg:min-h-[calc(100vh-7.5rem)] flex items-center bg-white overflow-hidden border-b border-slate-200 py-12 sm:py-14 lg:py-16">
 
-    <!-- Sliding Background Images (Cross-fading with subtle scale effect) -->
+    <!-- Sliding Background Images (Photorealistic Architectural Executive Studios) -->
     <div id="mcHeroBgSlider" class="absolute inset-0 z-0">
-        <!-- Slide 1: Smart Crop Doctor -->
+        <!-- Slide 1: Global Business Strategy & Corporate Advisory -->
         <div class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-100">
-            <img src="<?= url('assets/images/mercora/trade_globe.png') ?>" alt="Smart Crop Doctor"
+            <img src="<?= url('assets/images/mercora/hero_slide_strategy.jpg') ?>"
+                alt="Corporate Strategy & Global Trade"
                 class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
         </div>
-        <!-- Slide 2: Native Araku Coffee -->
+        <!-- Slide 2: AgriTech & Precision Agriculture -->
         <div
             class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-0 pointer-events-none">
-            <img src="<?= url('assets/images/mercora/consulting_boardroom.jpg') ?>" alt="Native Araku Coffee"
+            <img src="<?= url('assets/images/mercora/hero_slide_agritech.jpg') ?>"
+                alt="AgriTech & Precision Agriculture"
                 class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
         </div>
-        <!-- Slide 3: WHITE WORLD -->
+        <!-- Slide 3: Digital Transformation & Enterprise Systems -->
         <div
             class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-0 pointer-events-none">
-            <img src="<?= url('assets/images/mercora/drone_over_farmland.png') ?>" alt="WHITE WORLD"
+            <img src="<?= url('assets/images/mercora/hero_slide_tech.jpg') ?>" alt="Digital Transformation & Deep Tech"
                 class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
         </div>
     </div>
 
-    <!-- Vignette Gradient Overlays: Light and clean on the left for maximum text readability, transitioning to reveal the background image on the right -->
-    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 via-20% to-white/10 z-10 pointer-events-none">
+    <!-- Vignette Gradient Overlays: Subtle light fade to guarantee high text readability on all viewports while keeping the desk and panoramic window view vibrant -->
+    <div
+        class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 via-35% to-transparent lg:from-white/70 lg:via-white/70 lg:via-30% lg:to-transparent z-10 pointer-events-none">
     </div>
-    <div class="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-white/20 z-10 pointer-events-none">
+    <div
+        class="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent z-10 pointer-events-none">
     </div>
 
-    <!-- Hero Content Container (Full Width Balanced Authority Layout) -->
+    <!-- Hero Content Container with CSS Grid Overlay (Zero layout jump between slides) -->
     <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 relative z-20">
-        <div class="max-w-3xl lg:max-w-4xl space-y-4 sm:space-y-5">
-            <div>
-                <span
-                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-800 border border-amber-500/25 shadow-sm">
-                    <i class="ri-shield-check-fill text-amber-600"></i> DPIIT Recognised Startup · DIPP258473
-                </span>
+        <div class="grid grid-cols-1 grid-rows-1 items-center">
+
+            <!-- Slide Content 1: Global Business Strategy -->
+            <div
+                class="mc-hero-content col-start-1 row-start-1 transition-all duration-300 ease-out opacity-100 translate-y-0 pointer-events-auto visible">
+                <div class="max-w-2xl lg:max-w-3xl space-y-4 sm:space-y-5">
+                    <div>
+                        <span
+                            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-900 border border-amber-500/30 shadow-xs tracking-wide">
+                            <i class="ri-shield-star-fill text-amber-600"></i> Strategy · Advisory · Solutions · Global
+                            Opportunities
+                        </span>
+                    </div>
+
+                    <h1
+                        class="font-oxygen text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
+                        Turning Visionary Ideas into <span class="text-amber-600">Sustainable Global Growth.</span>
+                    </h1>
+
+                    <p
+                        class="font-scope text-base sm:text-lg lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        Mercora International partners with enterprises, governments, startups, and institutions to
+                        engineer agile strategies, high-yield trade corridors, and sustainable competitive advantages
+                        across 11 business verticals.
+                    </p>
+
+                    <!-- Creative Capability Feature Strip -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-2xl">
+                        <div
+                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-xl">
+                                <i class="ri-compass-3-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
+                                    Strategy Advisory</h4>
+                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Enterprise
+                                    Execution</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-blue-500/40 transition">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-700 flex items-center justify-center shrink-0 text-xl">
+                                <i class="ri-global-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
+                                    DGFT Trade</h4>
+                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">IEC ACEFM7191A
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-slate-400 transition">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-slate-900/10 text-slate-800 flex items-center justify-center shrink-0 text-xl">
+                                <i class="ri-shake-hands-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
+                                    7+ Signed MOUs</h4>
+                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Institutional
+                                    Alliances</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-4 pt-1">
+                        <a href="<?= url('/it-services') ?>"
+                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
+                            <span>Explore Our Services</span>
+                            <i class="ri-arrow-right-line ml-2.5 text-base"></i>
+                        </a>
+                        <a href="<?= url('/about') ?>"
+                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
+                            <span>Corporate Credentials</span>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <h1
-                class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] xl:text-[3rem] font-extrabold tracking-tight text-slate-900 leading-snug sm:leading-tight lg:leading-[1.2]">
-                Empowering Enterprises. Transforming Communities. <span class="text-amber-600">Connecting the
-                    World.</span>
-            </h1>
+            <!-- Slide Content 2: AgriTech & Precision Agriculture -->
+            <div
+                class="mc-hero-content col-start-1 row-start-1 transition-all duration-300 ease-out opacity-0 translate-y-2 pointer-events-none invisible">
+                <div class="max-w-2xl lg:max-w-3xl space-y-4 sm:space-y-5">
+                    <div>
+                        <span
+                            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-900 border border-emerald-500/30 shadow-xs tracking-wide">
+                            <i class="ri-plant-fill text-emerald-600"></i> AgriTech &amp; Precision Farming · Smart Crop
+                            Doctor
+                        </span>
+                    </div>
 
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl font-normal">
-                Mercora International partners with enterprises, governments, startups, and institutions to engineer
-                scalable, innovation-led solutions across 11 business verticals.
-            </p>
+                    <h1
+                        class="font-oxygen text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
+                        Transforming Agriculture with <span class="text-amber-600">Autonomous Drones &amp; AI.</span>
+                    </h1>
 
-            <div class="flex flex-wrap items-center gap-4 pt-1">
-                <a href="<?= url('/it-services') ?>"
-                    class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5 tracking-wide">
-                    <span>Explore Our Services</span>
-                    <i class="ri-arrow-right-line ml-2.5 text-base"></i>
-                </a>
-                <a href="<?= url('/contact') ?>"
-                    class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-sm transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
-                    <span>Get in Touch</span>
-                </a>
+                    <p
+                        class="font-scope text-base sm:text-lg lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        Empowering farming communities with real-time multispectral disease diagnostics, precision drone
+                        spraying, and fair-trade coffee value chains including Native Araku Coffee.
+                    </p>
+
+                    <!-- Creative Capability Feature Strip -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-2xl">
+                        <div
+                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-emerald-500/40 transition">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-700 flex items-center justify-center shrink-0 text-xl">
+                                <i class="ri-flight-takeoff-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
+                                    Precision Drones</h4>
+                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">10x Spraying
+                                    Efficiency</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-xl">
+                                <i class="ri-scan-2-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
+                                    Crop Doctor AI</h4>
+                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Early Pest
+                                    Diagnostics</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-orange-500/40 transition">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-700 flex items-center justify-center shrink-0 text-xl">
+                                <i class="ri-cup-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
+                                    Araku Coffee</h4>
+                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">100 Women-Led
+                                    Cafes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-4 pt-1">
+                        <a href="<?= url('/industries') ?>#agritech"
+                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
+                            <span>Explore AgriTech</span>
+                            <i class="ri-arrow-right-line ml-2.5 text-base"></i>
+                        </a>
+                        <a href="<?= url('/coffee-products') ?>"
+                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
+                            <span>Discover Araku Coffee</span>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <!-- Snapshot Metrics Strip -->
-            <div class="pt-4 sm:pt-5 border-t border-slate-200 flex flex-wrap items-center gap-6 sm:gap-8">
-                <div>
-                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">11+</div>
-                    <div class="text-xs font-medium text-slate-500 mt-0.5">Business Verticals</div>
-                </div>
-                <div class="h-7 w-px bg-slate-300"></div>
-                <div>
-                    <div class="text-2xl sm:text-3xl font-extrabold text-amber-600">7</div>
-                    <div class="text-xs font-medium text-slate-500 mt-0.5">Signed MOUs</div>
-                </div>
-                <div class="h-7 w-px bg-slate-300"></div>
-                <div>
-                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">18</div>
-                    <div class="text-xs font-medium text-slate-500 mt-0.5">MOU Engagements</div>
+            <!-- Slide Content 3: Digital Transformation & Deep-Tech -->
+            <div
+                class="mc-hero-content col-start-1 row-start-1 transition-all duration-300 ease-out opacity-0 translate-y-2 pointer-events-none invisible">
+                <div class="max-w-2xl lg:max-w-3xl space-y-4 sm:space-y-5">
+                    <div>
+                        <span
+                            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-900 border border-sky-500/30 shadow-xs tracking-wide">
+                            <i class="ri-cpu-fill text-sky-600"></i> Digital Transformation &amp; Defense Deep-Tech
+                        </span>
+                    </div>
+
+                    <h1
+                        class="font-oxygen text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
+                        Architecting Scalable Enterprises with <span class="text-amber-600">Intelligent Digital
+                            Systems.</span>
+                    </h1>
+
+                    <p
+                        class="font-scope text-base sm:text-lg lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        Delivering cloud enterprise modernization, proprietary SaaS solutions, and iDEX defense
+                        acceleration backed by verified statutory governance and global standards.
+                    </p>
+
+                    <!-- Creative Capability Feature Strip -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-2xl">
+                        <div
+                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-sky-500/40 transition">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-700 flex items-center justify-center shrink-0 text-xl">
+                                <i class="ri-terminal-box-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
+                                    Cloud &amp; SaaS</h4>
+                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Scalable
+                                    Microservices</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-xl">
+                                <i class="ri-shield-flash-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
+                                    Deep-Tech &amp; iDEX</h4>
+                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Defense &amp;
+                                    SISFS Grants</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-indigo-500/40 transition">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-700 flex items-center justify-center shrink-0 text-xl">
+                                <i class="ri-line-chart-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
+                                    18 Engagements</h4>
+                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Active
+                                    Projects</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-4 pt-1">
+                        <a href="<?= url('/it-services') ?>"
+                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
+                            <span>Explore Digital Services</span>
+                            <i class="ri-arrow-right-line ml-2.5 text-base"></i>
+                        </a>
+                        <a href="<?= url('/contact') ?>"
+                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
+                            <span>Partner With Us</span>
+                        </a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -100,9 +299,9 @@ require_once __DIR__ . '/includes/header.php';
         <i class="ri-arrow-right-line text-2xl"></i>
     </button>
 
-    <!-- Slide Controller Bar (Bottom Right) with Counter & Dots -->
+    <!-- Slide Controller Bar (Bottom Right) with Counter, Navigation & Interactive Vertical Tabs -->
     <div
-        class="absolute right-4 sm:right-8 lg:right-12 bottom-6 sm:bottom-8 z-30 flex items-center gap-3 bg-white/90 backdrop-blur-md border border-slate-200/80 px-4 py-2.5 rounded-full shadow-lg">
+        class="absolute right-4 sm:right-8 lg:right-12 bottom-5 sm:bottom-7 z-30 flex items-center gap-2.5 bg-white/90 backdrop-blur-md border border-slate-200/80 px-3 sm:px-4 py-2 rounded-full shadow-lg">
         <button type="button"
             class="mc-hero-prev w-7 h-7 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center text-xs transition"
             aria-label="Previous slide">
@@ -114,16 +313,23 @@ require_once __DIR__ . '/includes/header.php';
             aria-label="Next slide">
             <i class="ri-arrow-right-line"></i>
         </button>
-        <div class="h-4 w-px bg-slate-200 mx-0.5"></div>
+        <div class="h-4 w-px bg-slate-200 mx-1"></div>
         <div class="flex items-center gap-1.5">
-            <button type="button" class="mc-hero-dot w-6 h-1.5 rounded-full bg-amber-500 transition-all duration-300"
-                data-slide="0" aria-label="Slide 1"></button>
             <button type="button"
-                class="mc-hero-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300"
-                data-slide="1" aria-label="Slide 2"></button>
+                class="mc-hero-tab px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold bg-amber-500 text-slate-950 transition-all duration-300 shadow-xs"
+                data-slide="0" aria-label="Strategy slide">
+                <span class="hidden sm:inline">01</span> Strategy
+            </button>
             <button type="button"
-                class="mc-hero-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300"
-                data-slide="2" aria-label="Slide 3"></button>
+                class="mc-hero-tab px-2.5 sm:px-3 py-1 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300"
+                data-slide="1" aria-label="AgriTech slide">
+                <span class="hidden sm:inline">02</span> AgriTech
+            </button>
+            <button type="button"
+                class="mc-hero-tab px-2.5 sm:px-3 py-1 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300"
+                data-slide="2" aria-label="Digital Tech slide">
+                <span class="hidden sm:inline">03</span> Tech
+            </button>
         </div>
     </div>
 </section>

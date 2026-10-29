@@ -240,21 +240,21 @@ $LEADERSHIP_TEAM = [
         'name' => 'Mrs. D. Jaya Geetha Kiran',
         'role' => 'Founder & Managing Partner',
         'qualification' => 'M.Sc Computer Science',
-        'photo' => 'assets/images/team/jaya-geetha-kiran.png',
+        'photo' => 'assets/images/team/jaya-geetha-kiran.jpeg',
         'bio' => 'An entrepreneur with over 15 years of cross-industry leadership spanning HR, Operations, Pharmaceutical Manufacturing, Compliance, and Strategic Management. She steers Mercora\'s strategic vision, business ecosystem development, and its commitment to innovation, inclusive growth, and women entrepreneurship across global markets. She promotes farmers to agri-entrepreneurs, drives grassroot-to-global initiatives, and champions renewable energy and waste-to-energy innovations — converting household waste into biofuels and sustainable energy resources.'
     ],
     [
         'name' => 'Ms. A. Manasa Raj',
         'role' => 'Co-Founder & Partner',
         'qualification' => 'Strategic Innovation & Community Ecosystems',
-        'photo' => 'assets/images/team/manasa-raj.png',
+        'photo' => 'assets/images/team/manasa-raj.jpeg',
         'bio' => 'A strategic leader focused on innovation ecosystems, entrepreneurship development, arts, culture, heritage promotion, and scalable business platforms for rural communities and AgriTech initiatives. She drives Mercora\'s community impact programmes and fosters inclusive, partnership-led growth models across industry and social sectors.'
     ],
     [
         'name' => 'Mr. Subbarao Kalluri',
         'role' => 'Technology Consultant',
         'qualification' => 'PMP®, PRINCE2®, CEH, ISO Certified (20+ Years Exp)',
-        'photo' => 'assets/images/team/subbarao-kalluri.png',
+        'photo' => 'assets/images/team/subbarao-kalluri.jpeg',
         'bio' => 'A Digital Transformation and IT leader with 20+ years of experience in enterprise applications, programme management, quality engineering, and global technology delivery. A PMP®, PRINCE2®, CEH, and ISO-certified professional, he anchors Mercora\'s technology consulting practice and leads digital modernisation mandates for enterprise clients.'
     ],
     [
@@ -282,7 +282,7 @@ $LEADERSHIP_TEAM = [
         'name' => 'D. Veda Anjali',
         'role' => 'Youth Ambassador, White Brand Initiative',
         'qualification' => 'Grade 10 Student & Social Impact Champion',
-        'photo' => 'assets/images/team/veda-anjali.png',
+        'photo' => 'assets/images/team/veda-anjali.jpeg',
         'bio' => 'A motivated Grade 10 student and Youth Ambassador for the White Brand Initiative at Mercora International. Passionate about sustainable fashion, social impact, and community development, she actively supports initiatives that promote inclusive growth and responsible apparel practices. She is particularly interested in empowering women tailors, tribal artisans, persons with disabilities, and underprivileged youth through skill development and livelihood opportunities.'
     ],
 ];
