@@ -57,7 +57,8 @@ require_once __DIR__ . '/includes/header.php';
 
                     <h1
                         class="font-oxygen text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
-                        Turning Visionary Ideas into <span class="text-amber-600">Sustainable Global Growth.</span>
+                        Empowering the Global Vision <span class="text-amber-600">through Innovation and
+                            Inclusion</span>
                     </h1>
 
                     <p
@@ -138,7 +139,8 @@ require_once __DIR__ . '/includes/header.php';
 
                     <h1
                         class="font-oxygen text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
-                        Transforming Agriculture with <span class="text-amber-600">Autonomous Drones &amp; AI.</span>
+                        Empowering the Global Vision <span class="text-amber-600">through Innovation and
+                            Inclusion</span>
                     </h1>
 
                     <p
@@ -217,8 +219,8 @@ require_once __DIR__ . '/includes/header.php';
 
                     <h1
                         class="font-oxygen text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
-                        Architecting Scalable Enterprises with <span class="text-amber-600">Intelligent Digital
-                            Systems.</span>
+                        Empowering the Global Vision <span class="text-amber-600">through Innovation and
+                            Inclusion</span>
                     </h1>
 
                     <p
