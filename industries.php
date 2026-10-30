@@ -256,15 +256,6 @@ $INDUSTRIES = [
                 </div>
             <?php endforeach; ?>
         </div>
-
-        <!-- Bottom Action Button as shown in Reference Screenshot -->
-        <div class="mt-14 sm:mt-16 text-center">
-            <a href="<?= url('/contact') ?>"
-                class="inline-flex items-center justify-center px-7 py-3 text-sm font-bold text-slate-900 bg-white border border-slate-300 rounded-xl hover:bg-slate-50 hover:border-slate-400 shadow-sm transition">
-                <span>View All Industries</span>
-                <i class="ri-arrow-right-line ml-2"></i>
-            </a>
-        </div>
     </div>
 </section>
 

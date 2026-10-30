@@ -50,7 +50,7 @@ function navActive($route)
             <!-- Brand Logo -->
             <a href="<?= url('/') ?>" class="flex-shrink-0 flex items-center gap-3">
                 <img src="<?= url('assets/images/mercora/mercora-logo-light.png') ?>" alt="Mercora International"
-                    class="h-10 w-auto object-contain" />
+                    class="h-14 w-auto object-contain" />
             </a>
 
             <!-- Desktop Navigation Links -->

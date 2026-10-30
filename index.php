@@ -6,7 +6,7 @@ require_once __DIR__ . '/includes/header.php';
 
 <!-- 1.1 Hero Section (Full Screen Edge-to-Edge with Synchronized Backgrounds & Dynamic Slide Content) -->
 <section
-    class="relative w-full min-h-[calc(100svh-5rem)] lg:min-h-[calc(100vh-7.5rem)] flex items-center bg-white overflow-hidden border-b border-slate-200 py-12 sm:py-14 lg:py-16">
+    class="relative w-full min-h-0 sm:min-h-[calc(100svh-5rem)] lg:min-h-[calc(100vh-7.5rem)] flex flex-col sm:flex-row sm:items-center justify-start sm:justify-center bg-white overflow-hidden border-b border-slate-200 pt-7 pb-8 sm:py-14 lg:py-16">
 
     <!-- Sliding Background Images (Photorealistic Architectural Executive Studios) -->
     <div id="mcHeroBgSlider" class="absolute inset-0 z-0">
@@ -25,13 +25,13 @@ require_once __DIR__ . '/includes/header.php';
         </div>
         <!-- Slide 3: Digital Transformation & Enterprise Systems -->
         <div
-            class="mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-0 pointer-events-none">
+            class="mc-hero-content-bg mc-hero-bg absolute inset-0 transition-opacity duration-1000 ease-out opacity-0 pointer-events-none">
             <img src="<?= url('assets/images/mercora/hero_slide_tech.jpg') ?>" alt="Digital Transformation & Deep Tech"
                 class="w-full h-full object-cover transition-transform duration-[7000ms] ease-out scale-105" />
         </div>
     </div>
 
-    <!-- Vignette Gradient Overlays: Subtle light fade to guarantee high text readability on all viewports while keeping the desk and panoramic window view vibrant -->
+    <!-- Vignette Gradient Overlays: Original desktop light fade and vibrant panoramic window view -->
     <div
         class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 via-35% to-transparent lg:from-white/70 lg:via-white/70 lg:via-30% lg:to-transparent z-10 pointer-events-none">
     </div>
@@ -46,79 +46,79 @@ require_once __DIR__ . '/includes/header.php';
             <!-- Slide Content 1: Global Business Strategy -->
             <div
                 class="mc-hero-content col-start-1 row-start-1 transition-all duration-300 ease-out opacity-100 translate-y-0 pointer-events-auto visible">
-                <div class="max-w-2xl lg:max-w-3xl space-y-4 sm:space-y-5">
+                <div class="max-w-2xl lg:max-w-3xl space-y-3.5 sm:space-y-5">
                     <div>
                         <span
-                            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-900 border border-amber-500/30 shadow-xs tracking-wide">
+                            class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-semibold bg-amber-500/10 text-amber-900 border border-amber-500/30 shadow-xs tracking-wide">
                             <i class="ri-shield-star-fill text-amber-600"></i> Strategy · Advisory · Solutions · Global
                             Opportunities
                         </span>
                     </div>
 
                     <h1
-                        class="font-oxygen text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
+                        class="font-oxygen text-2xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
                         Empowering the Global Vision <span class="text-amber-600">through Innovation and
                             Inclusion</span>
                     </h1>
 
                     <p
-                        class="font-scope text-base sm:text-lg lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
                         Mercora International partners with enterprises, governments, startups, and institutions to
                         engineer agile strategies, high-yield trade corridors, and sustainable competitive advantages
                         across 11 business verticals.
                     </p>
 
                     <!-- Creative Capability Feature Strip -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-2xl">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 pt-0.5 sm:pt-1 max-w-2xl">
                         <div
-                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
+                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
                             <div
-                                class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-xl">
+                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
                                 <i class="ri-compass-3-line"></i>
                             </div>
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Strategy Advisory</h4>
-                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Enterprise
+                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Enterprise
                                     Execution</p>
                             </div>
                         </div>
                         <div
-                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-blue-500/40 transition">
+                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-blue-500/40 transition">
                             <div
-                                class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-700 flex items-center justify-center shrink-0 text-xl">
+                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-blue-500/10 text-blue-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
                                 <i class="ri-global-line"></i>
                             </div>
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     DGFT Trade</h4>
-                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">IEC ACEFM7191A
+                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">IEC ACEFM7191A
                                 </p>
                             </div>
                         </div>
                         <div
-                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-slate-400 transition">
+                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-slate-400 transition">
                             <div
-                                class="w-10 h-10 rounded-lg bg-slate-900/10 text-slate-800 flex items-center justify-center shrink-0 text-xl">
+                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-slate-900/10 text-slate-800 flex items-center justify-center shrink-0 text-base sm:text-xl">
                                 <i class="ri-shake-hands-line"></i>
                             </div>
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     7+ Signed MOUs</h4>
-                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Institutional
+                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Institutional
                                     Alliances</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap items-center gap-4 pt-1">
+                    <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
                         <a href="<?= url('/it-services') ?>"
-                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
+                            class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
                             <span>Explore Our Services</span>
-                            <i class="ri-arrow-right-line ml-2.5 text-base"></i>
+                            <i class="ri-arrow-right-line ml-2 sm:ml-2.5 text-sm sm:text-base"></i>
                         </a>
                         <a href="<?= url('/about') ?>"
-                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
+                            class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
                             <span>Corporate Credentials</span>
                         </a>
                     </div>
@@ -128,78 +128,78 @@ require_once __DIR__ . '/includes/header.php';
             <!-- Slide Content 2: AgriTech & Precision Agriculture -->
             <div
                 class="mc-hero-content col-start-1 row-start-1 transition-all duration-300 ease-out opacity-0 translate-y-2 pointer-events-none invisible">
-                <div class="max-w-2xl lg:max-w-3xl space-y-4 sm:space-y-5">
+                <div class="max-w-2xl lg:max-w-3xl space-y-3.5 sm:space-y-5">
                     <div>
                         <span
-                            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-900 border border-emerald-500/30 shadow-xs tracking-wide">
+                            class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-semibold bg-emerald-500/10 text-emerald-900 border border-emerald-500/30 shadow-xs tracking-wide">
                             <i class="ri-plant-fill text-emerald-600"></i> AgriTech &amp; Precision Farming · Smart Crop
                             Doctor
                         </span>
                     </div>
 
                     <h1
-                        class="font-oxygen text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
+                        class="font-oxygen text-2xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
                         Empowering the Global Vision <span class="text-amber-600">through Innovation and
                             Inclusion</span>
                     </h1>
 
                     <p
-                        class="font-scope text-base sm:text-lg lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
                         Empowering farming communities with real-time multispectral disease diagnostics, precision drone
                         spraying, and fair-trade coffee value chains including Native Araku Coffee.
                     </p>
 
                     <!-- Creative Capability Feature Strip -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-2xl">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 pt-0.5 sm:pt-1 max-w-2xl">
                         <div
-                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-emerald-500/40 transition">
+                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-emerald-500/40 transition">
                             <div
-                                class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-700 flex items-center justify-center shrink-0 text-xl">
+                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-emerald-500/10 text-emerald-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
                                 <i class="ri-flight-takeoff-line"></i>
                             </div>
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Precision Drones</h4>
-                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">10x Spraying
+                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">10x Spraying
                                     Efficiency</p>
                             </div>
                         </div>
                         <div
-                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
+                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
                             <div
-                                class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-xl">
+                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
                                 <i class="ri-scan-2-line"></i>
                             </div>
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Crop Doctor AI</h4>
-                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Early Pest
+                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Early Pest
                                     Diagnostics</p>
                             </div>
                         </div>
                         <div
-                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-orange-500/40 transition">
+                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-orange-500/40 transition">
                             <div
-                                class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-700 flex items-center justify-center shrink-0 text-xl">
+                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-orange-500/10 text-orange-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
                                 <i class="ri-cup-line"></i>
                             </div>
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Araku Coffee</h4>
-                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">100 Women-Led
+                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">100 Women-Led
                                     Cafes</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap items-center gap-4 pt-1">
+                    <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
                         <a href="<?= url('/industries') ?>#agritech"
-                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
+                            class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
                             <span>Explore AgriTech</span>
-                            <i class="ri-arrow-right-line ml-2.5 text-base"></i>
+                            <i class="ri-arrow-right-line ml-2 sm:ml-2.5 text-sm sm:text-base"></i>
                         </a>
                         <a href="<?= url('/coffee-products') ?>"
-                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
+                            class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
                             <span>Discover Araku Coffee</span>
                         </a>
                     </div>
@@ -209,77 +209,77 @@ require_once __DIR__ . '/includes/header.php';
             <!-- Slide Content 3: Digital Transformation & Deep-Tech -->
             <div
                 class="mc-hero-content col-start-1 row-start-1 transition-all duration-300 ease-out opacity-0 translate-y-2 pointer-events-none invisible">
-                <div class="max-w-2xl lg:max-w-3xl space-y-4 sm:space-y-5">
+                <div class="max-w-2xl lg:max-w-3xl space-y-3.5 sm:space-y-5">
                     <div>
                         <span
-                            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-900 border border-sky-500/30 shadow-xs tracking-wide">
+                            class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-semibold bg-sky-500/10 text-sky-900 border border-sky-500/30 shadow-xs tracking-wide">
                             <i class="ri-cpu-fill text-sky-600"></i> Digital Transformation &amp; Defense Deep-Tech
                         </span>
                     </div>
 
                     <h1
-                        class="font-oxygen text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
+                        class="font-oxygen text-2xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
                         Empowering the Global Vision <span class="text-amber-600">through Innovation and
                             Inclusion</span>
                     </h1>
 
                     <p
-                        class="font-scope text-base sm:text-lg lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
                         Delivering cloud enterprise modernization, proprietary SaaS solutions, and iDEX defense
                         acceleration backed by verified statutory governance and global standards.
                     </p>
 
                     <!-- Creative Capability Feature Strip -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-2xl">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 pt-0.5 sm:pt-1 max-w-2xl">
                         <div
-                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-sky-500/40 transition">
+                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-sky-500/40 transition">
                             <div
-                                class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-700 flex items-center justify-center shrink-0 text-xl">
+                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-sky-500/10 text-sky-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
                                 <i class="ri-terminal-box-line"></i>
                             </div>
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Cloud &amp; SaaS</h4>
-                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Scalable
+                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Scalable
                                     Microservices</p>
                             </div>
                         </div>
                         <div
-                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
+                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
                             <div
-                                class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-xl">
+                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
                                 <i class="ri-shield-flash-line"></i>
                             </div>
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Deep-Tech &amp; iDEX</h4>
-                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Defense &amp;
+                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Defense &amp;
                                     SISFS Grants</p>
                             </div>
                         </div>
                         <div
-                            class="flex items-center gap-3 p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-indigo-500/40 transition">
+                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-indigo-500/40 transition">
                             <div
-                                class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-700 flex items-center justify-center shrink-0 text-xl">
+                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-indigo-500/10 text-indigo-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
                                 <i class="ri-line-chart-line"></i>
                             </div>
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     18 Engagements</h4>
-                                <p class="font-sans text-[11px] text-slate-500 font-medium leading-tight">Active
+                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Active
                                     Projects</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap items-center gap-4 pt-1">
+                    <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
                         <a href="<?= url('/it-services') ?>"
-                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
+                            class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
                             <span>Explore Digital Services</span>
-                            <i class="ri-arrow-right-line ml-2.5 text-base"></i>
+                            <i class="ri-arrow-right-line ml-2 sm:ml-2.5 text-sm sm:text-base"></i>
                         </a>
                         <a href="<?= url('/contact') ?>"
-                            class="inline-flex items-center justify-center px-6 sm:px-7 py-3 text-sm sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
+                            class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
                             <span>Partner With Us</span>
                         </a>
                     </div>
@@ -301,9 +301,9 @@ require_once __DIR__ . '/includes/header.php';
         <i class="ri-arrow-right-line text-2xl"></i>
     </button>
 
-    <!-- Slide Controller Bar (Bottom Right) with Counter, Navigation & Interactive Vertical Tabs -->
+    <!-- Slide Controller Bar (Bottom Right on Desktop/Laptop; Centered below content on Mobile) -->
     <div
-        class="absolute right-4 sm:right-8 lg:right-12 bottom-5 sm:bottom-7 z-30 flex items-center gap-2.5 bg-white/90 backdrop-blur-md border border-slate-200/80 px-3 sm:px-4 py-2 rounded-full shadow-lg">
+        class="relative sm:absolute right-auto sm:right-8 lg:right-12 bottom-auto sm:bottom-5 lg:bottom-7 z-30 mt-6 sm:mt-0 mx-auto sm:mx-0 w-fit flex items-center gap-2 sm:gap-2.5 bg-white/90 backdrop-blur-md border border-slate-200/80 px-3 sm:px-4 py-2 rounded-full shadow-lg">
         <button type="button"
             class="mc-hero-prev w-7 h-7 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center text-xs transition"
             aria-label="Previous slide">
