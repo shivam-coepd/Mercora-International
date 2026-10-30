@@ -62,27 +62,34 @@ $BUSINESS_SOLUTIONS = [
 ?>
 
 <!-- Hero Section -->
-<section class="bg-slate-900 border-b border-slate-800 text-white py-16 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl space-y-5">
-            <div>
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
-                    <i class="ri-line-chart-line text-amber-400"></i> Strategic Growth Practice
-                </span>
+<section class="relative bg-slate-900 border-b border-slate-800 text-white py-14 sm:py-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div class="lg:col-span-7 space-y-5">
+                <div>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
+                        <i class="ri-line-chart-line text-amber-400"></i> Strategic Growth Practice
+                    </span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                    Business Solutions & Management Consulting
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+                    Mercora's Business Solutions vertical helps organisations navigate complexity, unlock new markets, and build sustainable competitive advantage through consulting, trade facilitation, franchise development, and technology advisory.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#proposal-form" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg transition shadow-sm">
+                        Request Strategic Proposal <i class="ri-arrow-down-line ml-2"></i>
+                    </a>
+                    <a href="<?= url('/partnerships') ?>" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition">
+                        View Strategic Alliances
+                    </a>
+                </div>
             </div>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                Business Solutions & Management Consulting
-            </h1>
-            <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-                Mercora's Business Solutions vertical helps organisations navigate complexity, unlock new markets, and build sustainable competitive advantage through consulting, trade facilitation, franchise development, and technology advisory.
-            </p>
-            <div class="flex flex-wrap items-center gap-4 pt-2">
-                <a href="#proposal-form" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg transition shadow-sm">
-                    Request Strategic Proposal <i class="ri-arrow-down-line ml-2"></i>
-                </a>
-                <a href="<?= url('/partnerships') ?>" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition">
-                    View Strategic Alliances
-                </a>
+            <div class="lg:col-span-5">
+                <div class="relative rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl bg-slate-800/50 p-2 group hover:border-amber-500/40 transition duration-300">
+                    <img src="<?= url('assets/images/mercora/hero_business_solutions.png') ?>" alt="Business Solutions & Management Consulting" class="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-xl transition duration-500 group-hover:scale-[1.02]" />
+                </div>
             </div>
         </div>
     </div>

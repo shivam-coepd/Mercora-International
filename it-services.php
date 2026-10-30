@@ -73,27 +73,34 @@ $TECH_STACK = [
 ?>
 
 <!-- Hero Section -->
-<section class="bg-slate-900 border-b border-slate-800 text-white py-16 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl space-y-5">
-            <div>
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
-                    <i class="ri-cpu-line text-amber-400"></i> Vertical 2: Technology & Digital Solutions
-                </span>
+<section class="relative bg-slate-900 border-b border-slate-800 text-white py-14 sm:py-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div class="lg:col-span-7 space-y-5">
+                <div>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
+                        <i class="ri-cpu-line text-amber-400"></i> Vertical 2: Technology & Digital Solutions
+                    </span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                    Digital Transformation & IT Services
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+                    Mercora architects and delivers end-to-end digital transformation strategies — spanning enterprise application development, cloud migration, AI/ML integration, SaaS platforms (Mercosys), and intelligent process automation.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#enquiry" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg transition shadow-sm">
+                        Submit Project RFP <i class="ri-arrow-down-line ml-2"></i>
+                    </a>
+                    <a href="#tech-stack" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition">
+                        Explore Technology Stack
+                    </a>
+                </div>
             </div>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                Digital Transformation & IT Services
-            </h1>
-            <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-                Mercora architects and delivers end-to-end digital transformation strategies — spanning enterprise application development, cloud migration, AI/ML integration, SaaS platforms (Mercosys), and intelligent process automation.
-            </p>
-            <div class="flex flex-wrap items-center gap-4 pt-2">
-                <a href="#enquiry" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg transition shadow-sm">
-                    Submit Project RFP <i class="ri-arrow-down-line ml-2"></i>
-                </a>
-                <a href="#tech-stack" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition">
-                    Explore Technology Stack
-                </a>
+            <div class="lg:col-span-5">
+                <div class="relative rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl bg-slate-800/50 p-2 group hover:border-amber-500/40 transition duration-300">
+                    <img src="<?= url('assets/images/mercora/hero_it_services.png') ?>" alt="Digital Transformation & IT Services" class="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-xl transition duration-500 group-hover:scale-[1.02]" />
+                </div>
             </div>
         </div>
     </div>
@@ -265,30 +272,30 @@ $TECH_STACK = [
                         Access comprehensive briefs, solution specifications, and technical whitepapers.
                     </p>
                     <ul class="space-y-3">
-                        <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl">
+                        <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl hover:border-amber-500/30 transition">
                             <div>
-                                <span class="block text-sm font-semibold text-slate-900">IT & Digital Services Brochure</span>
-                                <span class="text-xs text-slate-500">PDF Document · 2.4 MB</span>
+                                <a href="<?= url('assets/resources/' . rawurlencode('IT & Digital Services Brochure.pdf')) ?>" download="IT & Digital Services Brochure.pdf" class="block text-sm font-semibold text-slate-900 hover:text-amber-600 transition">IT & Digital Services Brochure</a>
+                                <span class="text-xs text-slate-500">PDF Document · Official Overview</span>
                             </div>
-                            <a href="<?= url('/contact') ?>?ref=it_brochure" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition" title="Request Brochure">
+                            <a href="<?= url('assets/resources/' . rawurlencode('IT & Digital Services Brochure.pdf')) ?>" download="IT & Digital Services Brochure.pdf" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-700 flex items-center justify-center transition" title="Download IT & Digital Services Brochure">
                                 <i class="ri-download-2-line text-base"></i>
                             </a>
                         </li>
-                        <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl">
+                        <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl hover:border-amber-500/30 transition">
                             <div>
-                                <span class="block text-sm font-semibold text-slate-900">Smart Crop Doctor Product Sheet</span>
-                                <span class="text-xs text-slate-500">DPIIT Recognized (DIPP258473)</span>
+                                <a href="<?= url('assets/resources/' . rawurlencode('Smart Crop Doctor Product Sheet Brochure.pdf')) ?>" download="Smart Crop Doctor Product Sheet Brochure.pdf" class="block text-sm font-semibold text-slate-900 hover:text-amber-600 transition">Smart Crop Doctor Product Sheet</a>
+                                <span class="text-xs text-slate-500">DPIIT Recognized (DIPP258473) · PDF</span>
                             </div>
-                            <a href="<?= url('/contact') ?>?ref=crop_doctor" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition" title="Request Product Sheet">
+                            <a href="<?= url('assets/resources/' . rawurlencode('Smart Crop Doctor Product Sheet Brochure.pdf')) ?>" download="Smart Crop Doctor Product Sheet Brochure.pdf" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-700 flex items-center justify-center transition" title="Download Smart Crop Doctor Product Sheet">
                                 <i class="ri-download-2-line text-base"></i>
                             </a>
                         </li>
-                        <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl">
+                        <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl hover:border-amber-500/30 transition">
                             <div>
-                                <span class="block text-sm font-semibold text-slate-900">Corporate Profile V1 (2026)</span>
-                                <span class="text-xs text-slate-500">11 Verticals & 7 Signed MOUs</span>
+                                <a href="<?= url('assets/resources/' . rawurlencode('Corporate Profile V1 (2026) Brochure.pdf')) ?>" download="Corporate Profile V1 (2026) Brochure.pdf" class="block text-sm font-semibold text-slate-900 hover:text-amber-600 transition">Corporate Profile V1 (2026)</a>
+                                <span class="text-xs text-slate-500">11 Verticals & 7 Signed MOUs · PDF</span>
                             </div>
-                            <a href="<?= url('/contact') ?>?ref=corp_profile" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition" title="Request Profile">
+                            <a href="<?= url('assets/resources/' . rawurlencode('Corporate Profile V1 (2026) Brochure.pdf')) ?>" download="Corporate Profile V1 (2026) Brochure.pdf" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-700 flex items-center justify-center transition" title="Download Corporate Profile">
                                 <i class="ri-download-2-line text-base"></i>
                             </a>
                         </li>

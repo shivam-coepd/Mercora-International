@@ -118,31 +118,41 @@ $INDUSTRIES = [
 ?>
 
 <!-- Hero Section -->
-<section class="bg-slate-900 border-b border-slate-800 text-white py-16 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl space-y-5">
-            <div>
-                <span
-                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
-                    <i class="ri-building-line text-amber-400"></i> Cross-Industry Expertise
-                </span>
+<section class="relative bg-slate-900 border-b border-slate-800 text-white py-14 sm:py-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div class="lg:col-span-7 space-y-5">
+                <div>
+                    <span
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
+                        <i class="ri-building-line text-amber-400"></i> Cross-Industry Expertise
+                    </span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                    Industries We Serve
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+                    Mercora's integrated service ecosystem enables measurable impact across 11 industries and community
+                    sectors, aligning commercial growth with sustainable human progress.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#industries-list"
+                        class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg transition shadow-sm">
+                        Browse All 11 Sectors <i class="ri-arrow-down-line ml-2"></i>
+                    </a>
+                    <a href="<?= url('/contact') ?>"
+                        class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition">
+                        Inquire for Your Industry
+                    </a>
+                </div>
             </div>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                Industries We Serve
-            </h1>
-            <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-                Mercora's integrated service ecosystem enables measurable impact across 11 industries and community
-                sectors, aligning commercial growth with sustainable human progress.
-            </p>
-            <div class="flex flex-wrap items-center gap-4 pt-2">
-                <a href="#industries-list"
-                    class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg transition shadow-sm">
-                    Browse All 11 Sectors <i class="ri-arrow-down-line ml-2"></i>
-                </a>
-                <a href="<?= url('/contact') ?>"
-                    class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition">
-                    Inquire for Your Industry
-                </a>
+            <div class="lg:col-span-5">
+                <div
+                    class="relative rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl bg-slate-800/50 p-2 group hover:border-amber-500/40 transition duration-300">
+                    <img src="<?= url('assets/images/mercora/hero_industries.png') ?>"
+                        alt="Industries We Serve - 11 Business Verticals"
+                        class="w-full h-48 sm:h-64 lg:h-72 object-cover rounded-xl transition duration-500 group-hover:scale-[1.02]" />
+                </div>
             </div>
         </div>
     </div>
@@ -255,15 +265,6 @@ $INDUSTRIES = [
                     </div>
                 </div>
             <?php endforeach; ?>
-        </div>
-
-        <!-- Bottom Action Button as shown in Reference Screenshot -->
-        <div class="mt-14 sm:mt-16 text-center">
-            <a href="<?= url('/contact') ?>"
-                class="inline-flex items-center justify-center px-7 py-3 text-sm font-bold text-slate-900 bg-white border border-slate-300 rounded-xl hover:bg-slate-50 hover:border-slate-400 shadow-sm transition">
-                <span>View All Industries</span>
-                <i class="ri-arrow-right-line ml-2"></i>
-            </a>
         </div>
     </div>
 </section>
