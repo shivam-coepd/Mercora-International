@@ -7,7 +7,8 @@ $uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 $path = rtrim($uri, '/');
 if ($path === '') $path = '/';
 
-$targetFile = __DIR__ . $uri;
+$decodedUri = rawurldecode($uri);
+$targetFile = __DIR__ . $decodedUri;
 
 // 1. If static file exists, return false to let PHP's web server serve it directly
 if ($uri !== '/' && file_exists($targetFile) && !is_dir($targetFile)) {
