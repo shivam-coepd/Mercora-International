@@ -79,7 +79,9 @@ require_once __DIR__ . '/includes/header.php';
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Strategy Advisory</h4>
-                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Enterprise
+                                <p
+                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
+                                    Enterprise
                                     Execution</p>
                             </div>
                         </div>
@@ -92,7 +94,9 @@ require_once __DIR__ . '/includes/header.php';
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     DGFT Trade</h4>
-                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">IEC ACEFM7191A
+                                <p
+                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
+                                    IEC ACEFM7191A
                                 </p>
                             </div>
                         </div>
@@ -105,7 +109,9 @@ require_once __DIR__ . '/includes/header.php';
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     7+ Signed MOUs</h4>
-                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Institutional
+                                <p
+                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
+                                    Institutional
                                     Alliances</p>
                             </div>
                         </div>
@@ -160,7 +166,9 @@ require_once __DIR__ . '/includes/header.php';
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Precision Drones</h4>
-                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">10x Spraying
+                                <p
+                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
+                                    10x Spraying
                                     Efficiency</p>
                             </div>
                         </div>
@@ -173,7 +181,9 @@ require_once __DIR__ . '/includes/header.php';
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Crop Doctor AI</h4>
-                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Early Pest
+                                <p
+                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
+                                    Early Pest
                                     Diagnostics</p>
                             </div>
                         </div>
@@ -186,7 +196,9 @@ require_once __DIR__ . '/includes/header.php';
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Araku Coffee</h4>
-                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">100 Women-Led
+                                <p
+                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
+                                    100 Women-Led
                                     Cafes</p>
                             </div>
                         </div>
@@ -240,7 +252,9 @@ require_once __DIR__ . '/includes/header.php';
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Cloud &amp; SaaS</h4>
-                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Scalable
+                                <p
+                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
+                                    Scalable
                                     Microservices</p>
                             </div>
                         </div>
@@ -253,7 +267,9 @@ require_once __DIR__ . '/includes/header.php';
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     Deep-Tech &amp; iDEX</h4>
-                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Defense &amp;
+                                <p
+                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
+                                    Defense &amp;
                                     SISFS Grants</p>
                             </div>
                         </div>
@@ -266,7 +282,9 @@ require_once __DIR__ . '/includes/header.php';
                             <div>
                                 <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
                                     18 Engagements</h4>
-                                <p class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">Active
+                                <p
+                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
+                                    Active
                                     Projects</p>
                             </div>
                         </div>
@@ -451,8 +469,8 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="lg:col-span-5">
                 <div class="relative bg-slate-100 p-3 rounded-2xl border border-slate-200 shadow-md">
-                    <img src="<?= url('assets/images/mercora/current/team-1.png') ?>" alt="Mercora Leadership"
-                        class="w-full h-96 object-cover rounded-xl" />
+                    <img src="<?= url('assets/images/team/jaya-geetha-kiran.jpeg') ?>" alt="Mercora Leadership"
+                        class="w-full h-150 object-cover rounded-xl" />
                     <div
                         class="absolute -bottom-6 left-6 right-6 bg-white p-4 rounded-xl shadow-lg border border-slate-200 flex items-center gap-4">
                         <div

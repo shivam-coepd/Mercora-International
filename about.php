@@ -5,21 +5,43 @@ require_once __DIR__ . '/includes/header.php';
 ?>
 
 <!-- 2.1 Hero / Introduction -->
-<section class="bg-white border-b border-slate-200 py-16 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">About Mercora International</span>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 mt-2 mb-6">
-                Multidisciplinary Consulting, Technology & Business Transformation
-            </h1>
-            <p class="text-lg text-slate-600 leading-relaxed mb-6">
-                Mercora International is a registered partnership firm (Firm Reg. <strong><?= e(FIRM_REG_NO) ?></strong>), incorporated <strong><?= e(FIRM_INC_DATE) ?></strong>, based in Kondapur, Hyderabad. We partner with enterprises, government bodies, startups, and institutions to engineer scalable, innovation-led solutions that deliver measurable impact across industries and geographies.
-            </p>
-            <div class="flex flex-wrap gap-2 text-xs">
-                <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 font-medium">DPIIT: <?= e(DPIIT_NO) ?></span>
-                <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 font-medium">MSME Udyam: <?= e(UDYAM_REG_NO) ?></span>
-                <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 font-medium">DGFT IEC: <?= e(IEC_CODE) ?></span>
-                <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 font-medium">GSTIN: <?= e(GSTIN_NO) ?></span>
+<section class="relative bg-white border-b border-slate-200 py-14 sm:py-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div class="lg:col-span-7 space-y-5">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-600">About Mercora International</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                    Multidisciplinary Consulting, Technology & Business Transformation
+                </h1>
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                    Mercora International is a registered partnership firm (Firm Reg. <strong><?= e(FIRM_REG_NO) ?></strong>), incorporated <strong><?= e(FIRM_INC_DATE) ?></strong>, based in Kondapur, Hyderabad. We partner with enterprises, government bodies, startups, and institutions to engineer scalable, innovation-led solutions that deliver measurable impact across industries and geographies.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-1 text-xs">
+                    <span class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">DPIIT: <?= e(DPIIT_NO) ?></span>
+                    <span class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">MSME Udyam: <?= e(UDYAM_REG_NO) ?></span>
+                    <span class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">DGFT IEC: <?= e(IEC_CODE) ?></span>
+                    <span class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">GSTIN: <?= e(GSTIN_NO) ?></span>
+                </div>
+            </div>
+            <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                <div class="relative w-full max-w-sm sm:max-w-md lg:max-w-none rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-50 p-2 group hover:border-amber-500/40 transition duration-300">
+                    <div class="relative overflow-hidden rounded-xl bg-slate-100">
+                        <img src="<?= url('assets/images/mercora/live/hero_about_us.jpeg') ?>" 
+                             alt="Mercora Leadership at National Workshop for Future Farming" 
+                             class="w-full h-80 sm:h-96 lg:h-[460px] object-cover object-top rounded-xl transition duration-500 group-hover:scale-[1.02]" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none rounded-xl"></div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white text-xs">
+                            <div class="bg-slate-900/85 backdrop-blur-md border border-white/10 px-3.5 py-2.5 rounded-lg shadow-lg">
+                                <p class="font-semibold text-white text-[13px] leading-tight flex items-center gap-1.5">
+                                    <i class="ri-government-line text-amber-400"></i> National Workshop for Future Farming
+                                </p>
+                                <p class="text-slate-300 text-[11px] mt-0.5">Leveraging Carbon Markets for Climate Resilience · New Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -96,39 +118,57 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8">
-                <div class="w-12 h-12 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-6">
-                    <i class="ri-eye-line"></i>
+            <!-- Vision Card -->
+            <div class="relative overflow-hidden bg-slate-50 border border-slate-200 rounded-2xl p-8 group hover:border-amber-500/40 transition duration-300 shadow-sm">
+                <div class="absolute inset-0 pointer-events-none overflow-hidden rounded-2xl">
+                    <img src="<?= url('assets/images/mercora/about_vision.png') ?>" 
+                         alt="" 
+                         aria-hidden="true" 
+                         class="w-full h-full object-cover object-center opacity-15 group-hover:opacity-25 transition-opacity duration-300 select-none" />
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Vision</h3>
-                <p class="text-slate-600 text-base leading-relaxed">
-                    To be a globally trusted innovation and consulting partner — empowering entities through technology, sustainability, and strategic growth.
-                </p>
+                <div class="relative z-10">
+                    <div class="w-12 h-12 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                        <i class="ri-eye-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Vision</h3>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        To be a globally trusted innovation and consulting partner — empowering entities through technology, sustainability, and strategic growth.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8">
-                <div class="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-6">
-                    <i class="ri-compass-3-line"></i>
+            <!-- Mission Card -->
+            <div class="relative overflow-hidden bg-slate-50 border border-slate-200 rounded-2xl p-8 group hover:border-emerald-500/40 transition duration-300 shadow-sm">
+                <div class="absolute inset-0 pointer-events-none overflow-hidden rounded-2xl">
+                    <img src="<?= url('assets/images/mercora/about_mission.png') ?>" 
+                         alt="" 
+                         aria-hidden="true" 
+                         class="w-full h-full object-cover object-center opacity-15 group-hover:opacity-25 transition-opacity duration-300 select-none" />
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Mission</h3>
-                <ul class="space-y-3 text-slate-600 text-sm sm:text-base">
-                    <li class="flex items-start gap-3">
-                        <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
-                        <span>Accelerate adoption of emerging technologies</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
-                        <span>Build sustainable and scalable ecosystems</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
-                        <span>Empower communities through entrepreneurship and skill development</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
-                        <span>Deliver measurable business value through innovation, expertise, and operational excellence</span>
-                    </li>
-                </ul>
+                <div class="relative z-10">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                        <i class="ri-compass-3-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Mission</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm sm:text-base">
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
+                            <span>Accelerate adoption of emerging technologies</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
+                            <span>Build sustainable and scalable ecosystems</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
+                            <span>Empower communities through entrepreneurship and skill development</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
+                            <span>Deliver measurable business value through innovation, expertise, and operational excellence</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
