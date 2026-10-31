@@ -131,6 +131,15 @@ if (!defined('SITE_NAME')) {
     </div>
 </footer>
 
+<!-- Move to Top Button -->
+<button id="mcMoveToTop" 
+        type="button" 
+        aria-label="Move to top" 
+        title="Move to top"
+        class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-slate-900/90 text-amber-400 hover:bg-amber-500 hover:text-slate-950 border border-slate-700/60 hover:border-amber-400 shadow-2xl backdrop-blur-md transition-all duration-300 transform translate-y-6 opacity-0 pointer-events-none hover:scale-110 active:scale-95 group focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2">
+    <i class="ri-arrow-up-line text-lg sm:text-xl font-bold transition-transform duration-300 group-hover:-translate-y-0.5"></i>
+</button>
+
 <!-- Include Partner Modal -->
 <?php require_once __DIR__ . '/partner-modal.php'; ?>
 
