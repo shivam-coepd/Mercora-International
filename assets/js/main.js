@@ -291,4 +291,28 @@ document.addEventListener("DOMContentLoaded", function () {
             loop: true
         });
     }
+
+    // 6. Move to Top Button Functionality
+    const moveToTopBtn = document.getElementById("mcMoveToTop");
+    if (moveToTopBtn) {
+        const toggleMoveToTop = () => {
+            if (window.scrollY > 280) {
+                moveToTopBtn.classList.remove("opacity-0", "pointer-events-none", "translate-y-6");
+                moveToTopBtn.classList.add("opacity-100", "pointer-events-auto", "translate-y-0");
+            } else {
+                moveToTopBtn.classList.remove("opacity-100", "pointer-events-auto", "translate-y-0");
+                moveToTopBtn.classList.add("opacity-0", "pointer-events-none", "translate-y-6");
+            }
+        };
+
+        window.addEventListener("scroll", toggleMoveToTop, { passive: true });
+        toggleMoveToTop();
+
+        moveToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
 });
