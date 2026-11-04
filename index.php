@@ -57,8 +57,8 @@ require_once __DIR__ . '/includes/header.php';
 
                     <h1
                         class="font-oxygen text-2xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
-                        Empowering the Global Vision <span class="text-amber-600">through Innovation and
-                            Inclusion</span>
+                        Multidisciplinary Consulting, <span class="text-amber-600">Technology & Business
+                            Transformation</span>
                     </h1>
 
                     <p
@@ -145,8 +145,8 @@ require_once __DIR__ . '/includes/header.php';
 
                     <h1
                         class="font-oxygen text-2xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
-                        Empowering the Global Vision <span class="text-amber-600">through Innovation and
-                            Inclusion</span>
+                        Multidisciplinary Consulting, <span class="text-amber-600">Technology & Business
+                            Transformation</span>
                     </h1>
 
                     <p
@@ -231,8 +231,8 @@ require_once __DIR__ . '/includes/header.php';
 
                     <h1
                         class="font-oxygen text-2xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold tracking-tight text-[#0c2340] leading-snug sm:leading-tight lg:leading-[1.14]">
-                        Empowering the Global Vision <span class="text-amber-600">through Innovation and
-                            Inclusion</span>
+                        Multidisciplinary Consulting, <span class="text-amber-600">Technology & Business
+                            Transformation</span>
                     </h1>
 
                     <p

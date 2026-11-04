@@ -10,34 +10,53 @@ require_once __DIR__ . '/includes/header.php';
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             <div class="lg:col-span-7 space-y-5">
                 <div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-amber-600">About Mercora International</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-600">About Mercora
+                        International</span>
                 </div>
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
                     Multidisciplinary Consulting, Technology & Business Transformation
                 </h1>
                 <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-                    Mercora International is a registered partnership firm (Firm Reg. <strong><?= e(FIRM_REG_NO) ?></strong>), incorporated <strong><?= e(FIRM_INC_DATE) ?></strong>, based in Kondapur, Hyderabad. We partner with enterprises, government bodies, startups, and institutions to engineer scalable, innovation-led solutions that deliver measurable impact across industries and geographies.
+                    Mercora International is a registered partnership firm (Firm Reg.
+                    <strong><?= e(FIRM_REG_NO) ?></strong>), incorporated <strong><?= e(FIRM_INC_DATE) ?></strong>,
+                    based in Kondapur, Hyderabad. We partner with enterprises, government bodies, startups, and
+                    institutions to engineer scalable, innovation-led solutions that deliver measurable impact across
+                    industries and geographies.
                 </p>
                 <div class="flex flex-wrap gap-2 pt-1 text-xs">
-                    <span class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">DPIIT: <?= e(DPIIT_NO) ?></span>
-                    <span class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">MSME Udyam: <?= e(UDYAM_REG_NO) ?></span>
-                    <span class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">DGFT IEC: <?= e(IEC_CODE) ?></span>
-                    <span class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">GSTIN: <?= e(GSTIN_NO) ?></span>
+                    <span
+                        class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">DPIIT:
+                        <?= e(DPIIT_NO) ?></span>
+                    <span
+                        class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">MSME
+                        Udyam: <?= e(UDYAM_REG_NO) ?></span>
+                    <span
+                        class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">DGFT
+                        IEC: <?= e(IEC_CODE) ?></span>
+                    <span
+                        class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">GSTIN:
+                        <?= e(GSTIN_NO) ?></span>
                 </div>
             </div>
             <div class="lg:col-span-5 flex justify-center lg:justify-end">
-                <div class="relative w-full max-w-sm sm:max-w-md lg:max-w-none rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-50 p-2 group hover:border-amber-500/40 transition duration-300">
+                <div
+                    class="relative w-full max-w-sm sm:max-w-md lg:max-w-none rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-50 p-2 group hover:border-amber-500/40 transition duration-300">
                     <div class="relative overflow-hidden rounded-xl bg-slate-100">
-                        <img src="<?= url('assets/images/mercora/live/hero_about_us.jpeg') ?>" 
-                             alt="Mercora Leadership at National Workshop for Future Farming" 
-                             class="w-full h-80 sm:h-96 lg:h-[460px] object-cover object-top rounded-xl transition duration-500 group-hover:scale-[1.02]" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none rounded-xl"></div>
+                        <img src="<?= url('assets/images/mercora/hero_about_us.jpeg') ?>"
+                            alt="Mercora Leadership at National Workshop for Future Farming"
+                            class="w-full h-80 sm:h-96 lg:h-[460px] object-cover object-top rounded-xl transition duration-500 group-hover:scale-[1.02]" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none rounded-xl">
+                        </div>
                         <div class="absolute bottom-3 left-3 right-3 text-white text-xs">
-                            <div class="bg-slate-900/85 backdrop-blur-md border border-white/10 px-3.5 py-2.5 rounded-lg shadow-lg">
+                            <div
+                                class="bg-slate-900/85 backdrop-blur-md border border-white/10 px-3.5 py-2.5 rounded-lg shadow-lg">
                                 <p class="font-semibold text-white text-[13px] leading-tight flex items-center gap-1.5">
-                                    <i class="ri-government-line text-amber-400"></i> National Workshop for Future Farming
+                                    <i class="ri-government-line text-amber-400"></i> National Workshop for Future
+                                    Farming
                                 </p>
-                                <p class="text-slate-300 text-[11px] mt-0.5">Leveraging Carbon Markets for Climate Resilience · New Delhi</p>
+                                <p class="text-slate-300 text-[11px] mt-0.5">Leveraging Carbon Markets for Climate
+                                    Resilience · New Delhi</p>
                             </div>
                         </div>
                     </div>
@@ -57,16 +76,23 @@ require_once __DIR__ . '/includes/header.php';
                     Catalyst for Sustainable Development & Economic Growth
                 </h2>
                 <p class="text-slate-600 text-base leading-relaxed">
-                    Our integrated service ecosystem spans <strong>AgriTech, Digital Transformation, Global Trade, Healthcare, Education, Financial Advisory, Textile & Apparel, NextGen Innovation, Women Empowerment, Arts & Culture, and CSR</strong> — positioning Mercora as a trusted catalyst for sustainable growth.
+                    Our integrated service ecosystem spans <strong>AgriTech, Digital Transformation, Global Trade,
+                        Healthcare, Education, Financial Advisory, Textile & Apparel, NextGen Innovation, Women
+                        Empowerment, Arts & Culture, and CSR</strong> — positioning Mercora as a trusted catalyst for
+                    sustainable growth.
                 </p>
                 <p class="text-slate-600 text-base leading-relaxed">
-                    Whether establishing precision drone agricultural services, architecting cloud SaaS platforms under Mercosys, structuring global import-export transactions, or establishing 100 Women-Driven Coffee Shops with SERP AP, Mercora delivers accountability at every stage of execution.
+                    Whether establishing precision drone agricultural services, architecting cloud SaaS platforms under
+                    Mercosys, structuring global import-export transactions, or establishing 100 Women-Driven Coffee
+                    Shops with SERP AP, Mercora delivers accountability at every stage of execution.
                 </p>
                 <div class="flex flex-wrap gap-4 pt-2">
-                    <a href="<?= url('/partnerships') ?>" class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition">
+                    <a href="<?= url('/partnerships') ?>"
+                        class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition">
                         Explore 7 Signed MOUs <i class="ri-arrow-right-line ml-2"></i>
                     </a>
-                    <a href="<?= url('/it-services') ?>" class="inline-flex items-center px-5 py-3 text-sm font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 rounded-lg transition">
+                    <a href="<?= url('/it-services') ?>"
+                        class="inline-flex items-center px-5 py-3 text-sm font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 rounded-lg transition">
                         View IT Services
                     </a>
                 </div>
@@ -74,7 +100,8 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="lg:col-span-5">
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm space-y-4">
-                    <h3 class="text-lg font-bold text-slate-900 pb-3 border-b border-slate-100">Official Firm Credentials</h3>
+                    <h3 class="text-lg font-bold text-slate-900 pb-3 border-b border-slate-100">Official Firm
+                        Credentials</h3>
                     <div class="divide-y divide-slate-100 text-sm space-y-3 pt-1">
                         <div class="flex justify-between items-center py-2">
                             <span class="text-slate-500">Firm Registration</span>
@@ -119,34 +146,35 @@ require_once __DIR__ . '/includes/header.php';
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Vision Card -->
-            <div class="relative overflow-hidden bg-slate-50 border border-slate-200 rounded-2xl p-8 group hover:border-amber-500/40 transition duration-300 shadow-sm">
+            <div
+                class="relative overflow-hidden bg-slate-50 border border-slate-200 rounded-2xl p-8 group hover:border-amber-500/40 transition duration-300 shadow-sm">
                 <div class="absolute inset-0 pointer-events-none overflow-hidden rounded-2xl">
-                    <img src="<?= url('assets/images/mercora/about_vision.png') ?>" 
-                         alt="" 
-                         aria-hidden="true" 
-                         class="w-full h-full object-cover object-center opacity-15 group-hover:opacity-25 transition-opacity duration-300 select-none" />
+                    <img src="<?= url('assets/images/mercora/about_vision.png') ?>" alt="" aria-hidden="true"
+                        class="w-full h-full object-cover object-center opacity-15 group-hover:opacity-25 transition-opacity duration-300 select-none" />
                 </div>
                 <div class="relative z-10">
-                    <div class="w-12 h-12 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-6 shadow-sm">
                         <i class="ri-eye-line"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Vision</h3>
                     <p class="text-slate-600 text-base leading-relaxed">
-                        To be a globally trusted innovation and consulting partner — empowering entities through technology, sustainability, and strategic growth.
+                        To be a globally trusted innovation and consulting partner — empowering entities through
+                        technology, sustainability, and strategic growth.
                     </p>
                 </div>
             </div>
 
             <!-- Mission Card -->
-            <div class="relative overflow-hidden bg-slate-50 border border-slate-200 rounded-2xl p-8 group hover:border-emerald-500/40 transition duration-300 shadow-sm">
+            <div
+                class="relative overflow-hidden bg-slate-50 border border-slate-200 rounded-2xl p-8 group hover:border-emerald-500/40 transition duration-300 shadow-sm">
                 <div class="absolute inset-0 pointer-events-none overflow-hidden rounded-2xl">
-                    <img src="<?= url('assets/images/mercora/about_mission.png') ?>" 
-                         alt="" 
-                         aria-hidden="true" 
-                         class="w-full h-full object-cover object-center opacity-15 group-hover:opacity-25 transition-opacity duration-300 select-none" />
+                    <img src="<?= url('assets/images/mercora/about_mission.png') ?>" alt="" aria-hidden="true"
+                        class="w-full h-full object-cover object-center opacity-15 group-hover:opacity-25 transition-opacity duration-300 select-none" />
                 </div>
                 <div class="relative z-10">
-                    <div class="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-6 shadow-sm">
                         <i class="ri-compass-3-line"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Mission</h3>
@@ -165,7 +193,8 @@ require_once __DIR__ . '/includes/header.php';
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
-                            <span>Deliver measurable business value through innovation, expertise, and operational excellence</span>
+                            <span>Deliver measurable business value through innovation, expertise, and operational
+                                excellence</span>
                         </li>
                     </ul>
                 </div>
@@ -182,48 +211,57 @@ require_once __DIR__ . '/includes/header.php';
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
                 Our Company Journey
             </h2>
-            <p class="text-slate-600 text-base mt-2">The legal, commercial, and operational milestones shaping Mercora International.</p>
+            <p class="text-slate-600 text-base mt-2">The legal, commercial, and operational milestones shaping Mercora
+                International.</p>
         </div>
 
         <!-- Enhanced Timeline Structure -->
         <div class="relative max-w-4xl">
             <!-- Continuous Vertical Connecting Line (Starts at first dot center, ends at last dot center) -->
-            <div class="absolute left-4 sm:left-6 -translate-x-1/2 top-7 bottom-7 w-0.5 bg-gradient-to-b from-amber-500 via-slate-300 to-slate-200 pointer-events-none"></div>
+            <div
+                class="absolute left-4 sm:left-6 -translate-x-1/2 top-7 bottom-7 w-0.5 bg-gradient-to-b from-amber-500 via-slate-300 to-slate-200 pointer-events-none">
+            </div>
 
             <div class="space-y-6 sm:space-y-7">
                 <?php foreach ($COMPANY_JOURNEY as $idx => $item): ?>
-                <div class="relative flex items-start gap-4 sm:gap-6 group">
-                    <!-- Timeline Node (Mathematically centered on vertical line) -->
-                    <div class="relative z-10 flex-shrink-0 w-8 sm:w-12 flex justify-center pt-6">
-                        <div class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white ring-4 ring-amber-100 group-hover:ring-amber-200/80 border-2 border-amber-500 group-hover:border-amber-600 shadow-sm transition-all duration-300 flex items-center justify-center">
-                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 group-hover:scale-125 transition-transform duration-300"></span>
-                        </div>
-                    </div>
-
-                    <!-- Milestone Card -->
-                    <div class="flex-1 bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-lg hover:border-amber-400/50 transition-all duration-300 relative overflow-hidden">
-                        <!-- Top Metadata Row -->
-                        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 bg-amber-50 border border-amber-200/80 px-3 py-1 rounded-full shadow-xs">
-                                <i class="ri-calendar-event-line text-amber-500"></i>
-                                <?= e($item['date']) ?>
-                            </span>
-                            <span class="inline-flex items-center text-[11px] font-bold tracking-wider uppercase text-slate-500 bg-slate-100/80 px-2.5 py-0.5 rounded-md border border-slate-200/60">
-                                <?= e($item['badge']) ?>
-                            </span>
+                    <div class="relative flex items-start gap-4 sm:gap-6 group">
+                        <!-- Timeline Node (Mathematically centered on vertical line) -->
+                        <div class="relative z-10 flex-shrink-0 w-8 sm:w-12 flex justify-center pt-6">
+                            <div
+                                class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white ring-4 ring-amber-100 group-hover:ring-amber-200/80 border-2 border-amber-500 group-hover:border-amber-600 shadow-sm transition-all duration-300 flex items-center justify-center">
+                                <span
+                                    class="w-1.5 h-1.5 rounded-full bg-amber-500 group-hover:scale-125 transition-transform duration-300"></span>
+                            </div>
                         </div>
 
-                        <!-- Milestone Title -->
-                        <h4 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors mt-2.5">
-                            <?= e($item['title']) ?>
-                        </h4>
+                        <!-- Milestone Card -->
+                        <div
+                            class="flex-1 bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-lg hover:border-amber-400/50 transition-all duration-300 relative overflow-hidden">
+                            <!-- Top Metadata Row -->
+                            <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                                <span
+                                    class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 bg-amber-50 border border-amber-200/80 px-3 py-1 rounded-full shadow-xs">
+                                    <i class="ri-calendar-event-line text-amber-500"></i>
+                                    <?= e($item['date']) ?>
+                                </span>
+                                <span
+                                    class="inline-flex items-center text-[11px] font-bold tracking-wider uppercase text-slate-500 bg-slate-100/80 px-2.5 py-0.5 rounded-md border border-slate-200/60">
+                                    <?= e($item['badge']) ?>
+                                </span>
+                            </div>
 
-                        <!-- Milestone Description -->
-                        <p class="text-sm text-slate-600 leading-relaxed mt-1.5">
-                            <?= e($item['desc']) ?>
-                        </p>
+                            <!-- Milestone Title -->
+                            <h4
+                                class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors mt-2.5">
+                                <?= e($item['title']) ?>
+                            </h4>
+
+                            <!-- Milestone Description -->
+                            <p class="text-sm text-slate-600 leading-relaxed mt-1.5">
+                                <?= e($item['desc']) ?>
+                            </p>
+                        </div>
                     </div>
-                </div>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -238,22 +276,26 @@ require_once __DIR__ . '/includes/header.php';
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
                 Leadership Team
             </h2>
-            <p class="text-slate-600 text-base mt-2">Senior entrepreneurs, IT consultants, and community leaders steering our verticals.</p>
+            <p class="text-slate-600 text-base mt-2">Senior entrepreneurs, IT consultants, and community leaders
+                steering our verticals.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <?php foreach ($LEADERSHIP_TEAM as $member): ?>
-            <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start">
-                <img src="<?= url($member['photo']) ?>" alt="<?= e($member['name']) ?>" class="w-24 h-24 rounded-xl object-cover border border-slate-200 flex-shrink-0" />
-                <div class="space-y-2">
-                    <h3 class="text-lg font-bold text-slate-900"><?= e($member['name']) ?></h3>
-                    <div class="text-xs font-bold text-amber-700"><?= e($member['role']) ?></div>
-                    <div class="text-xs font-medium text-slate-500 bg-white px-2 py-1 rounded inline-block border border-slate-200">
-                        <?= e($member['qualification']) ?>
+                <div
+                    class="bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start">
+                    <img src="<?= url($member['photo']) ?>" alt="<?= e($member['name']) ?>"
+                        class="w-24 h-24 rounded-xl object-cover border border-slate-200 flex-shrink-0" />
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900"><?= e($member['name']) ?></h3>
+                        <div class="text-xs font-bold text-amber-700"><?= e($member['role']) ?></div>
+                        <div
+                            class="text-xs font-medium text-slate-500 bg-white px-2 py-1 rounded inline-block border border-slate-200">
+                            <?= e($member['qualification']) ?>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1"><?= e($member['bio']) ?></p>
                     </div>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1"><?= e($member['bio']) ?></p>
                 </div>
-            </div>
             <?php endforeach; ?>
         </div>
     </div>
