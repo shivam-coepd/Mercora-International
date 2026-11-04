@@ -89,45 +89,12 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="flex flex-wrap gap-4 pt-2">
                     <a href="<?= url('/partnerships') ?>"
                         class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition">
-                        Explore 7 Signed MOUs <i class="ri-arrow-right-line ml-2"></i>
+                        Explore 11 Signed MOUs <i class="ri-arrow-right-line ml-2"></i>
                     </a>
                     <a href="<?= url('/it-services') ?>"
                         class="inline-flex items-center px-5 py-3 text-sm font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 rounded-lg transition">
                         View IT Services
                     </a>
-                </div>
-            </div>
-
-            <div class="lg:col-span-5">
-                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm space-y-4">
-                    <h3 class="text-lg font-bold text-slate-900 pb-3 border-b border-slate-100">Official Firm
-                        Credentials</h3>
-                    <div class="divide-y divide-slate-100 text-sm space-y-3 pt-1">
-                        <div class="flex justify-between items-center py-2">
-                            <span class="text-slate-500">Firm Registration</span>
-                            <span class="font-semibold text-slate-900"><?= e(FIRM_REG_NO) ?></span>
-                        </div>
-                        <div class="flex justify-between items-center py-2">
-                            <span class="text-slate-500">Date of Incorporation</span>
-                            <span class="font-semibold text-slate-900"><?= e(FIRM_INC_DATE) ?></span>
-                        </div>
-                        <div class="flex justify-between items-center py-2">
-                            <span class="text-slate-500">DPIIT Recognition</span>
-                            <span class="font-semibold text-slate-900">DIPP258473 (Valid to 2035)</span>
-                        </div>
-                        <div class="flex justify-between items-center py-2">
-                            <span class="text-slate-500">MSME Udyam</span>
-                            <span class="font-semibold text-slate-900">UDYAM-TS-02-0265208</span>
-                        </div>
-                        <div class="flex justify-between items-center py-2">
-                            <span class="text-slate-500">DGFT IEC Code</span>
-                            <span class="font-semibold text-slate-900">ACEFM7191A (Global Trade)</span>
-                        </div>
-                        <div class="flex justify-between items-center py-2">
-                            <span class="text-slate-500">Headquarters</span>
-                            <span class="font-semibold text-slate-900">Kondapur, Hyderabad</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

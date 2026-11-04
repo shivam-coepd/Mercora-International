@@ -238,10 +238,12 @@ $PARTNERS = [
 $LEADERSHIP_TEAM = [
     [
         'name' => 'Mrs. D. Jaya Geetha Kiran',
-        'role' => 'Founder & Managing Partner',
-        'qualification' => 'M.Sc Computer Science',
+        'role' => 'Founder & Managing Partner | Independent Director (IICA)',
+        'qualification' => 'Strategic Visionary | Entrepreneurial Leader | Champion of Inclusive & Sustainable Growth',
         'photo' => 'assets/images/team/jaya-geetha-kiran.jpeg',
-        'bio' => 'An entrepreneur with over 15 years of cross-industry leadership spanning HR, Operations, Pharmaceutical Manufacturing, Compliance, and Strategic Management. She steers Mercora\'s strategic vision, business ecosystem development, and its commitment to innovation, inclusive growth, and women entrepreneurship across global markets. She promotes farmers to agri-entrepreneurs, drives grassroot-to-global initiatives, and champions renewable energy and waste-to-energy innovations — converting household waste into biofuels and sustainable energy resources.'
+        'bio' => "An accomplished entrepreneur and strategic business leader with over 15 years of cross-industry experience, holding an M.Sc. in Computer Science. Her professional expertise spans Human Resources, Operations, Pharmaceutical Manufacturing, Regulatory Compliance and Strategic Management.As the Founder & Managing Partner of Mercora International, she provides visionary leadership, drives strategic partnerships and business ecosystem development, and leads Mercora's initiatives focused on innovation, sustainable growth and women-led entrepreneurship across domestic and international markets.
+        Associated with the Indian Institute of Corporate Affairs (IICA) through its Independent Directors initiative, she brings a strong focus on corporate governance, ethical leadership, strategic oversight and responsible business practices.
+        A driving force behind Mercora's initiatives for inclusive and sustainable development, she champions the transformation of farmers into agri-entrepreneurs, connects grassroots enterprises with global markets, and drives initiatives in renewable energy and waste-to-energy innovation, including converting household waste into biofuels and sustainable energy resources."
     ],
     [
         'name' => 'Ms. A. Manasa Raj',
@@ -252,10 +254,10 @@ $LEADERSHIP_TEAM = [
     ],
     [
         'name' => 'Mr. Subbarao Kalluri',
-        'role' => 'Technology Consultant',
-        'qualification' => 'PMP®, PRINCE2®, CEH, ISO Certified (20+ Years Exp)',
+        'role' => 'Technology & Digital Transformation Consultant',
+        'qualification' => '20+ Years of Experience | CMMI Expert | PMP® | PRINCE2® Practitioner | Certified Ethical Hacker (CEH) | ISO Certified',
         'photo' => 'assets/images/team/subbarao-kalluri.jpeg',
-        'bio' => 'A Digital Transformation and IT leader with 20+ years of experience in enterprise applications, programme management, quality engineering, and global technology delivery. A PMP®, PRINCE2®, CEH, and ISO-certified professional, he anchors Mercora\'s technology consulting practice and leads digital modernisation mandates for enterprise clients.'
+        'bio' => 'A technology and digital transformation leader with over 20 years of experience in enterprise applications, programme management, quality engineering and global technology delivery. He leads Mercora International’s technology consulting practice, driving enterprise digital transformation, technology modernisation and strategic IT initiatives.'
     ],
     [
         'name' => 'Dr. Tayjaswni Jatiieen Bhilare',
@@ -279,7 +281,7 @@ $LEADERSHIP_TEAM = [
         'bio' => 'A Digital Media specialist (BE, Information Technology) who joined Mercora in October 2025. He manages digital media operations, online presence, and content delivery across platforms, supporting all verticals with digital outreach and media strategy.'
     ],
     [
-        'name' => 'D. Veda Anjali',
+        'name' => 'D. VedAnjali',
         'role' => 'Youth Ambassador, White Brand Initiative',
         'qualification' => 'Grade 10 Student & Social Impact Champion',
         'photo' => 'assets/images/team/veda-anjali.jpeg',

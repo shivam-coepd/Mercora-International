@@ -63,59 +63,13 @@ require_once __DIR__ . '/includes/header.php';
 
                     <p
                         class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
-                        Mercora International partners with enterprises, governments, startups, and institutions to
-                        engineer agile strategies, high-yield trade corridors, and sustainable competitive advantages
-                        across 11 business verticals.
-                    </p>
+                        Mercora International is a Hyderabad-based multidisciplinary consulting and business solutions
+                        firm, established as a registered partnership in Hyderabad, Telangana on 29 July 2025.
+                        We partner with enterprises, government organisations, startups, MSMEs and institutions to
+                        deliver strategic consulting, technology-enabled solutions, business transformation and
+                        growth-oriented initiatives across diverse industries and geographies.
 
-                    <!-- Creative Capability Feature Strip -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 pt-0.5 sm:pt-1 max-w-2xl">
-                        <div
-                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
-                                <i class="ri-compass-3-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
-                                    Strategy Advisory</h4>
-                                <p
-                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
-                                    Enterprise
-                                    Execution</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-blue-500/40 transition">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-blue-500/10 text-blue-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
-                                <i class="ri-global-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
-                                    DGFT Trade</h4>
-                                <p
-                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
-                                    IEC ACEFM7191A
-                                </p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-slate-400 transition">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-slate-900/10 text-slate-800 flex items-center justify-center shrink-0 text-base sm:text-xl">
-                                <i class="ri-shake-hands-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
-                                    7+ Signed MOUs</h4>
-                                <p
-                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
-                                    Institutional
-                                    Alliances</p>
-                            </div>
-                        </div>
-                    </div>
+                    </p>
 
                     <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
                         <a href="<?= url('/it-services') ?>"
@@ -151,58 +105,15 @@ require_once __DIR__ . '/includes/header.php';
 
                     <p
                         class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
-                        Empowering farming communities with real-time multispectral disease diagnostics, precision drone
-                        spraying, and fair-trade coffee value chains including Native Araku Coffee.
+                        Our multidisciplinary business ecosystem spans IT and Digital Transformation, Artificial
+                        Intelligence, Robotics and Automation, Drone Technology, Precision Agriculture, Defence and
+                        Emerging Technologies, Healthcare and Insurance, Education and Wellbeing, Global Trade,
+                        Franchise Development, Testing and Certification, Renewable Energy and Sustainable Development.
+                        Through strategic partnerships and collaborative engagements with specialised organisations,
+                        technology providers, industry experts and institutional stakeholders, we facilitate business
+                        development, market access, technology adoption, strategic alliances, investment opportunities
+                        and enterprise expansion.
                     </p>
-
-                    <!-- Creative Capability Feature Strip -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 pt-0.5 sm:pt-1 max-w-2xl">
-                        <div
-                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-emerald-500/40 transition">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-emerald-500/10 text-emerald-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
-                                <i class="ri-flight-takeoff-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
-                                    Precision Drones</h4>
-                                <p
-                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
-                                    10x Spraying
-                                    Efficiency</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
-                                <i class="ri-scan-2-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
-                                    Crop Doctor AI</h4>
-                                <p
-                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
-                                    Early Pest
-                                    Diagnostics</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-orange-500/40 transition">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-orange-500/10 text-orange-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
-                                <i class="ri-cup-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
-                                    Araku Coffee</h4>
-                                <p
-                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
-                                    100 Women-Led
-                                    Cafes</p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
                         <a href="<?= url('/industries') ?>#agritech"
@@ -237,58 +148,14 @@ require_once __DIR__ . '/includes/header.php';
 
                     <p
                         class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
-                        Delivering cloud enterprise modernization, proprietary SaaS solutions, and iDEX defense
-                        acceleration backed by verified statutory governance and global standards.
-                    </p>
+                        We focus on transforming ideas into actionable business opportunities, connecting innovation
+                        with industry requirements, empowering entrepreneurs and communities, and enabling organisations
+                        to build scalable and sustainable business models.
+                        At Mercora International, our vision is to create meaningful connections between business,
+                        technology, innovation and opportunity, delivering long-term value through collaboration,
+                        strategic execution and responsible growth.
 
-                    <!-- Creative Capability Feature Strip -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 pt-0.5 sm:pt-1 max-w-2xl">
-                        <div
-                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-sky-500/40 transition">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-sky-500/10 text-sky-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
-                                <i class="ri-terminal-box-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
-                                    Cloud &amp; SaaS</h4>
-                                <p
-                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
-                                    Scalable
-                                    Microservices</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
-                                <i class="ri-shield-flash-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
-                                    Deep-Tech &amp; iDEX</h4>
-                                <p
-                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
-                                    Defense &amp;
-                                    SISFS Grants</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-xl bg-white/85 backdrop-blur-sm border border-slate-200/90 shadow-xs hover:border-indigo-500/40 transition">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-indigo-500/10 text-indigo-700 flex items-center justify-center shrink-0 text-base sm:text-xl">
-                                <i class="ri-line-chart-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-display text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight">
-                                    18 Engagements</h4>
-                                <p
-                                    class="font-sans text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight">
-                                    Active
-                                    Projects</p>
-                            </div>
-                        </div>
-                    </div>
+                    </p>
 
                     <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
                         <a href="<?= url('/it-services') ?>"
@@ -601,8 +468,12 @@ require_once __DIR__ . '/includes/header.php';
                             class="max-h-12 max-w-full object-contain" />
                     </div>
                     <div>
-                        <h4 class="text-sm font-bold text-slate-900"><?= e($partner['name']) ?></h4>
-                        <p class="text-xs text-slate-500 mt-0.5 line-clamp-1"><?= e($partner['role']) ?></p>
+                        <h4 class="text-sm font-bold text-slate-900">
+                            <?= e($partner['name']) ?>
+                        </h4>
+                        <p class="text-xs text-slate-500 mt-0.5 line-clamp-1">
+                            <?= e($partner['role']) ?>
+                        </p>
                     </div>
                     <div class="mt-3 text-xs font-bold text-amber-600 flex items-center gap-1">
                         <span>View Dossier</span> <i class="ri-arrow-right-line"></i>

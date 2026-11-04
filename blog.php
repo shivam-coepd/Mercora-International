@@ -29,7 +29,7 @@ $ARTICLES = [
         'date' => 'June 2026',
         'img' => 'assets/images/mercora/current/carousel-2.jpg',
         'read_time' => '4 min read',
-        'summary' => 'Championed by Youth Ambassador D. Veda Anjali, WHITE WORLD is a curated e-commerce ecosystem bringing premium white lifestyle apparel to market while creating dignified employment for persons with disabilities and women artisans.'
+        'summary' => 'Championed by Youth Ambassador D. VedAnjali, WHITE WORLD is a curated e-commerce ecosystem bringing premium white lifestyle apparel to market while creating dignified employment for persons with disabilities and women artisans.'
     ],
     [
         'slug' => 'digital-modernization-mercosys-kavachapp-saas',
@@ -66,7 +66,8 @@ $ARTICLES = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl space-y-5">
             <div>
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
+                <span
+                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
                     <i class="ri-newspaper-line text-amber-400"></i> Editorial & Field Dispatches
                 </span>
             </div>
@@ -74,7 +75,8 @@ $ARTICLES = [
                 Insights, Case Studies & Market Analysis
             </h1>
             <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-                Thought leadership and analytical perspectives from Mercora International across precision agriculture, specialty coffee, enterprise technology, and inclusive economic growth.
+                Thought leadership and analytical perspectives from Mercora International across precision agriculture,
+                specialty coffee, enterprise technology, and inclusive economic growth.
             </p>
         </div>
     </div>
@@ -85,35 +87,40 @@ $ARTICLES = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <?php foreach ($ARTICLES as $art): ?>
-            <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 hover:shadow-md transition flex flex-col">
-                <div class="relative h-56 overflow-hidden bg-slate-100 group">
-                    <img src="<?= url($art['img']) ?>" alt="<?= e($art['title']) ?>" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-                    <span class="absolute top-3.5 left-3.5 bg-slate-900/80 backdrop-blur-md text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
-                        <?= e($art['category']) ?>
-                    </span>
-                </div>
-                <div class="p-6 flex flex-col flex-1 justify-between">
-                    <div>
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-3 font-medium">
-                            <span><i class="ri-calendar-line"></i> <?= e($art['date']) ?></span>
-                            <span><i class="ri-time-line"></i> <?= e($art['read_time']) ?></span>
+                <article
+                    class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 hover:shadow-md transition flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-slate-100 group">
+                        <img src="<?= url($art['img']) ?>" alt="<?= e($art['title']) ?>"
+                            class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+                        <span
+                            class="absolute top-3.5 left-3.5 bg-slate-900/80 backdrop-blur-md text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                            <?= e($art['category']) ?>
+                        </span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1 justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-3 font-medium">
+                                <span><i class="ri-calendar-line"></i> <?= e($art['date']) ?></span>
+                                <span><i class="ri-time-line"></i> <?= e($art['read_time']) ?></span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug">
+                                <a href="<?= url('/blog-detail') ?>?post=<?= e($art['slug']) ?>"
+                                    class="hover:text-amber-600 transition">
+                                    <?= e($art['title']) ?>
+                                </a>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
+                                <?= e($art['summary']) ?>
+                            </p>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug">
-                            <a href="<?= url('/blog-detail') ?>?post=<?= e($art['slug']) ?>" class="hover:text-amber-600 transition">
-                                <?= e($art['title']) ?>
+                        <div>
+                            <a href="<?= url('/blog-detail') ?>?post=<?= e($art['slug']) ?>"
+                                class="inline-flex items-center text-xs sm:text-sm font-bold text-amber-600 hover:text-amber-700">
+                                Read Full Article <i class="ri-arrow-right-line ml-1.5"></i>
                             </a>
-                        </h3>
-                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
-                            <?= e($art['summary']) ?>
-                        </p>
+                        </div>
                     </div>
-                    <div>
-                        <a href="<?= url('/blog-detail') ?>?post=<?= e($art['slug']) ?>" class="inline-flex items-center text-xs sm:text-sm font-bold text-amber-600 hover:text-amber-700">
-                            Read Full Article <i class="ri-arrow-right-line ml-1.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
+                </article>
             <?php endforeach; ?>
         </div>
     </div>
