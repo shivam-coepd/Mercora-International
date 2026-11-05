@@ -27,6 +27,12 @@ DirectoryIndex index.php
     RewriteRule ^faq/?$ customer-support.php [L,QSA]
     RewriteRule ^coffee/?$ coffee-products.php [L,QSA]
     RewriteRule ^partners/?$ partnerships.php [L,QSA]
+    RewriteRule ^smart-crop-doctor/?$ smart-crop-doctor.php [L,QSA]
+    RewriteRule ^crop-doctor/?$ smart-crop-doctor.php [L,QSA]
+    RewriteRule ^white-world/?$ white-world.php [L,QSA]
+    RewriteRule ^the-white-world/?$ white-world.php [L,QSA]
+    RewriteRule ^vetigo-mobicare/?$ vetigo-mobicare.php [L,QSA]
+    RewriteRule ^vetigo/?$ vetigo-mobicare.php [L,QSA]
 
     # 5. Fallback router for front controller / 404
     RewriteCond %{REQUEST_FILENAME} !-f

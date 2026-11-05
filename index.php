@@ -77,9 +77,9 @@ require_once __DIR__ . '/includes/header.php';
                             <span>Explore Our Services</span>
                             <i class="ri-arrow-right-line ml-2 sm:ml-2.5 text-sm sm:text-base"></i>
                         </a>
-                        <a href="<?= url('/about') ?>"
+                        <a href="<?= url('/partnerships') ?>"
                             class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
-                            <span>Corporate Credentials</span>
+                            <span>Explore 11 Signed MOUs</span>
                         </a>
                     </div>
                 </div>
@@ -116,14 +116,14 @@ require_once __DIR__ . '/includes/header.php';
                     </p>
 
                     <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
-                        <a href="<?= url('/industries') ?>#agritech"
+                        <a href="<?= url('/smart-crop-doctor') ?>"
                             class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl transition-all duration-200 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 tracking-wide">
-                            <span>Explore AgriTech</span>
+                            <span>Explore Smart Crop Doctor</span>
                             <i class="ri-arrow-right-line ml-2 sm:ml-2.5 text-sm sm:text-base"></i>
                         </a>
-                        <a href="<?= url('/coffee-products') ?>"
+                        <a href="<?= url('/partnerships') ?>"
                             class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
-                            <span>Discover Araku Coffee</span>
+                            <span>Explore 11 Signed MOUs</span>
                         </a>
                     </div>
                 </div>
@@ -163,9 +163,9 @@ require_once __DIR__ . '/includes/header.php';
                             <span>Explore Digital Services</span>
                             <i class="ri-arrow-right-line ml-2 sm:ml-2.5 text-sm sm:text-base"></i>
                         </a>
-                        <a href="<?= url('/contact') ?>"
+                        <a href="<?= url('/partnerships') ?>"
                             class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
-                            <span>Partner With Us</span>
+                            <span>Explore 11 Signed MOUs</span>
                         </a>
                     </div>
                 </div>
@@ -236,6 +236,7 @@ require_once __DIR__ . '/includes/header.php';
             </p>
         </div>
 
+        <!-- Our 11 Business Verticals cards -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <?php foreach ($BUSINESS_VERTICALS as $vertical):
                 $imgUrl = url($vertical['image']);
@@ -245,37 +246,66 @@ require_once __DIR__ . '/includes/header.php';
                 }
                 ?>
                 <div
-                    class="group relative rounded-2xl overflow-hidden border border-slate-800/20 bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-6 min-h-[300px]">
+                    class="group relative rounded-2xl overflow-hidden bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-6 min-h-[300px]">
                     <!-- Background Photographic Image (from Industries We Serve) -->
                     <img src="<?= $imgUrl ?>" alt="<?= e($vertical['title']) ?>"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
 
-                    <!-- Dark Vignette Gradient Overlay for high text readability -->
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-slate-800/85 via-slate-800/70 to-slate-950/65 transition-opacity duration-300">
-                    </div>
+                    <!-- Dark Vignette Gradient Overlay for high text readability in resting state -->
+                    <!-- <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/55 to-slate-950/25 transition-opacity duration-300">
+                    </div> -->
 
-                    <!-- Card Content -->
+                    <!-- Main Card Content (Resting State: Title, Icon, Tag, Explore link) -->
                     <div class="relative z-10 flex flex-col justify-between h-full">
                         <div>
                             <div class="flex items-center justify-between mb-4">
                                 <div
-                                    class="w-10 h-10 rounded-lg bg-gray-600 text-white flex items-center justify-center text-xl">
+                                    class="w-10 h-10 rounded-lg bg-white/20 backdrop-blur-md text-white border border-white/25 flex items-center justify-center text-xl shadow-sm">
                                     <i class="<?= e($vertical['icon']) ?>"></i>
                                 </div>
                                 <span
-                                    class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-gray-600 text-white">
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-white/20 backdrop-blur-md text-white border border-white/25">
                                     <?= e($vertical['tag']) ?>
                                 </span>
                             </div>
-                            <h3 class="text-base font-bold text-white mb-2 leading-snug"><?= e($vertical['title']) ?></h3>
-                            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-6"><?= e($vertical['short']) ?>
-                            </p>
+                            <h3 class="text-base sm:text-lg font-bold text-[#0c2340] mb-2 leading-snug">
+                                <?= e($vertical['title']) ?>
+                            </h3>
                         </div>
                         <div>
-                            <a href="<?= url('/industries') ?>#<?= e($vertical['id']) ?>"
-                                class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition">
+                            <span class="inline-flex items-center text-xs font-bold text-white">
                                 Explore Vertical <i class="ri-arrow-right-line ml-1"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- White Overlay: Appears from bottom-up on hover, showing $vertical['short'] -->
+                    <div
+                        class="absolute inset-0 z-20 bg-white rounded-2xl p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out shadow-2xl">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center text-xl shadow-sm">
+                                    <i class="<?= e($vertical['icon']) ?>"></i>
+                                </div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-slate-100 text-slate-700 border border-slate-200">
+                                    <?= e($vertical['tag']) ?>
+                                </span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 mb-2 leading-snug">
+                                <?= e($vertical['title']) ?>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                                <?= e($vertical['short']) ?>
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100">
+                            <a href="<?= url('/industries') ?>#<?= e($vertical['id']) ?>"
+                                class="inline-flex items-center text-xs font-bold text-slate-900 hover:text-amber-600 transition group/btn">
+                                Explore Vertical <i
+                                    class="ri-arrow-right-line ml-1.5 transition-transform group-hover/btn:translate-x-1"></i>
                             </a>
                         </div>
                     </div>
@@ -308,7 +338,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
                         <i class="ri-government-line text-2xl text-slate-700"></i>
                         <h4 class="text-sm font-bold text-slate-900 mt-2">Statutory Reg</h4>
-                        <p class="text-xs text-slate-500 mt-0.5">Firm Reg. 2978/2025 · Ranga Reddy</p>
+                        <p class="text-xs text-slate-500 mt-0.5">Firm Reg. 2978/2025 · Hyderabad</p>
                     </div>
                     <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
                         <i class="ri-medal-line text-2xl text-amber-600"></i>
@@ -355,131 +385,122 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- 1.4 Featured Highlights (Smart Crop Doctor, White World, Native Araku Coffee) -->
+<!-- 1.4 Featured Highlights (Smart Crop Doctor, White World, VetiGo MobiCare) -->
 <section class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-12">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Flagship Initiatives</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Core Initiatives</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
-                Featured Highlights
+                Flagship & Featured Initiatives
             </h2>
             <p class="text-base sm:text-lg text-slate-600 mt-3">
-                Transformative platforms engineered to make tangible commercial and community impact.
+                Transformative platforms engineered to make tangible commercial, technology, and community impact.
             </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Smart Crop Doctor -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm flex flex-col justify-between">
+            <!-- 1. Smart Crop Doctor -->
+            <div
+                class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                    <span
-                        class="inline-block px-2.5 py-1 rounded text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200 mb-4">
-                        DPIIT Recognised · DIPP258473
-                    </span>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Smart Crop Doctor</h3>
+                    <div class="flex items-center justify-between gap-2 mb-4">
+                        <span
+                            class="inline-block px-2.5 py-1 rounded text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                            DPIIT Seed-Funded · ₹10.00 Lakh
+                        </span>
+                        <span class="text-xs font-semibold text-emerald-700 flex items-center gap-1">
+                            <i class="ri-checkbox-circle-fill"></i> Core Initiative
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Smart Crop Doctor</h3>
+                    <p class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-4">AI-Powered Precision
+                        Agriculture Initiative</p>
                     <p class="text-sm text-slate-600 leading-relaxed mb-6">
-                        AI + drone + multispectral imaging platform for crop monitoring, disease diagnostics, and yield
-                        optimisation. Enables precision agriculture and transforms conventional farmers into empowered
-                        agri-entrepreneurs. Supported by ALEAP funding.
+                        An AI-integrated diagnostic platform designed to help farmers identify crop health issues,
+                        detect plant diseases, assess nutrient deficiencies, monitor crop growth and receive timely
+                        preventive and corrective advisories. Shortlisted through ALEAP Incubation and supported under
+                        the DPIIT Startup India Seed Fund Scheme (SISFS) with ₹10.00 lakh sanctioned funding.
                     </p>
                 </div>
                 <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
-                    <span class="text-xs font-semibold text-emerald-700"><i class="ri-checkbox-circle-fill"></i> Active
-                        Deployment</span>
-                    <a href="<?= url('/it-services') ?>#agritech"
-                        class="text-sm font-bold text-slate-900 hover:text-amber-600">
-                        Explore Platform <i class="ri-arrow-right-line ml-1"></i>
+                    <span class="text-xs font-semibold text-slate-500"><i class="ri-plant-line text-emerald-600"></i>
+                        Precision Agri</span>
+                    <a href="<?= url('/smart-crop-doctor') ?>"
+                        class="inline-flex items-center text-sm font-bold text-emerald-700 hover:text-emerald-900">
+                        Explore Initiative <i class="ri-arrow-right-line ml-1"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- WHITE WORLD -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm flex flex-col justify-between">
+            <!-- 2. THE WHITE WORLD™ -->
+            <div
+                class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                    <span
-                        class="inline-block px-2.5 py-1 rounded text-xs font-bold bg-slate-100 text-slate-800 border border-slate-200 mb-4">
-                        Launching Soon · Q3 2026
-                    </span>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-3">WHITE WORLD</h3>
+                    <div class="flex items-center justify-between gap-2 mb-4">
+                        <span
+                            class="inline-block px-2.5 py-1 rounded text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                            Social Impact &amp; Lifestyle
+                        </span>
+                        <span class="text-xs font-semibold text-slate-600 flex items-center gap-1">
+                            <i class="ri-time-line"></i> Launching Soon
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">The White World™</h3>
+                    <p class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-4">Living Life with Elegance
+                    </p>
                     <p class="text-sm text-slate-600 leading-relaxed mb-6">
-                        Curated e-commerce platform for premium white apparel, accessories, and lifestyle products —
-                        powered by Mercora's Textile & Apparel vertical. Champions inclusive livelihoods for women
-                        tailors, tribal artisans, and persons with disabilities.
+                        A white-themed lifestyle marketplace concept bringing together clothing, jewellery, home and
+                        living, handlooms, wellness, accessories and lifestyle products under one unified brand.
+                        Conceptualised with creativity by youth entrepreneur D. VedAnjali to create sustainable
+                        livelihoods for women tailors, tribal artisans, rural SHGs and persons with disabilities.
                     </p>
                 </div>
                 <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
-                    <span class="text-xs font-semibold text-slate-600"><i class="ri-time-line"></i> Brand
-                        Ecosystem</span>
-                    <a href="<?= url('/industries') ?>#textile"
-                        class="text-sm font-bold text-slate-900 hover:text-amber-600">
-                        Brand Details <i class="ri-arrow-right-line ml-1"></i>
+                    <span class="text-xs font-semibold text-slate-500"><i class="ri-t-shirt-2-line text-amber-600"></i>
+                        Curated Lifestyle</span>
+                    <a href="<?= url('/white-world') ?>"
+                        class="inline-flex items-center text-sm font-bold text-amber-700 hover:text-amber-900">
+                        Explore Initiative <i class="ri-arrow-right-line ml-1"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Native Araku Coffee -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm flex flex-col justify-between">
+            <!-- 3. VetiGo MobiCare -->
+            <div
+                class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                    <span
-                        class="inline-block px-2.5 py-1 rounded text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 mb-4">
-                        GI-Tagged Specialty Coffee
-                    </span>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Native Araku Coffee</h3>
+                    <div class="flex items-center justify-between gap-2 mb-4">
+                        <span
+                            class="inline-block px-2.5 py-1 rounded text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200">
+                            Mobile Veterinary Healthcare
+                        </span>
+                        <span class="text-xs font-semibold text-slate-600 flex items-center gap-1">
+                            <i class="ri-time-line"></i> Launching Soon
+                        </span>
+                    </div>
+                    <div class="h-14 mb-3 flex items-center">
+                        <img src="<?= url('assets/images/initiatives/vetigo-mobicare-logo.jpg') ?>"
+                            alt="VetiGo MobiCare" class="max-h-12 w-auto object-contain" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">VetiGo MobiCare</h3>
+                    <p class="text-xs font-bold text-teal-700 uppercase tracking-wider mb-4">Compassion in Motion.
+                        Diagnostics with Precision.</p>
                     <p class="text-sm text-slate-600 leading-relaxed mb-6">
-                        Authorised Franchise Development Partner for India's GI-tagged specialty coffee from Araku
-                        Valley. Organic, shade-grown Arabica and Robusta cultivated by 1,00,000 tribal farming families.
-                        MOU with SERP, AP for 100 Women-Driven Coffee Shops.
+                        An upcoming mobile veterinary healthcare initiative designed to bring veterinary consultations,
+                        diagnostics, treatment and animal healthcare services closer to pets, livestock and farming
+                        communities through fully equipped mobile veterinary clinics. “We don’t move the patient. We
+                        move the clinic.”
                     </p>
                 </div>
                 <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
-                    <span class="text-xs font-semibold text-amber-700"><i class="ri-store-2-line"></i> Franchise
-                        Open</span>
-                    <a href="<?= url('/coffee-products') ?>"
-                        class="text-sm font-bold text-slate-900 hover:text-amber-600">
-                        Browse Catalogue <i class="ri-arrow-right-line ml-1"></i>
+                    <span class="text-xs font-semibold text-slate-500"><i class="ri-truck-line text-teal-600"></i>
+                        Clinic on Wheels</span>
+                    <a href="<?= url('/vetigo-mobicare') ?>"
+                        class="inline-flex items-center text-sm font-bold text-teal-700 hover:text-teal-900">
+                        Explore Initiative <i class="ri-arrow-right-line ml-1"></i>
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- 1.5 & 1.6 Confirmed Signed-MOU Partner Logos Strip -->
-<section class="py-16 sm:py-24 bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mb-12">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Institutional Alliances</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
-                8 Confirmed Signed-MOU Partners
-            </h2>
-            <p class="text-base sm:text-lg text-slate-600 mt-3">
-                Click any partner logo below to review the verified scope of association and joint technology
-                capabilities.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <?php foreach ($PARTNERS as $key => $partner): ?>
-                <div data-partner-id="<?= e($key) ?>"
-                    class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center cursor-pointer hover:border-slate-400 hover:bg-white hover:shadow-md transition flex flex-col items-center justify-between min-h-[170px]"
-                    role="button" tabindex="0">
-                    <div class="h-14 flex items-center justify-center w-full mb-3">
-                        <img src="<?= url($partner['logo']) ?>" alt="<?= e($partner['name']) ?>"
-                            class="max-h-12 max-w-full object-contain" />
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-bold text-slate-900">
-                            <?= e($partner['name']) ?>
-                        </h4>
-                        <p class="text-xs text-slate-500 mt-0.5 line-clamp-1">
-                            <?= e($partner['role']) ?>
-                        </p>
-                    </div>
-                    <div class="mt-3 text-xs font-bold text-amber-600 flex items-center gap-1">
-                        <span>View Dossier</span> <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
-            <?php endforeach; ?>
         </div>
     </div>
 </section>

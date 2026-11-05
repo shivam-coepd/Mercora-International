@@ -23,20 +23,6 @@ require_once __DIR__ . '/includes/header.php';
                     institutions to engineer scalable, innovation-led solutions that deliver measurable impact across
                     industries and geographies.
                 </p>
-                <div class="flex flex-wrap gap-2 pt-1 text-xs">
-                    <span
-                        class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">DPIIT:
-                        <?= e(DPIIT_NO) ?></span>
-                    <span
-                        class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">MSME
-                        Udyam: <?= e(UDYAM_REG_NO) ?></span>
-                    <span
-                        class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">DGFT
-                        IEC: <?= e(IEC_CODE) ?></span>
-                    <span
-                        class="px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 font-medium border border-slate-200">GSTIN:
-                        <?= e(GSTIN_NO) ?></span>
-                </div>
             </div>
             <div class="lg:col-span-5 flex justify-center lg:justify-end">
                 <div

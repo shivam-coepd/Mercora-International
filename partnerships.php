@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Strategic Partnerships & Signed MOUs';
-$pageDesc = 'Explore Mercora International\'s 8 confirmed signed-MOU institutional alliances across drone technology, defense deep-tech, enterprise SaaS, health-tech, and global trade.';
+$pageTitle = 'Strategic Partnerships & Signed MOUs (11 Confirmed Alliances)';
+$pageDesc = 'Explore Mercora International\'s 11 confirmed signed-MOU institutional alliances across IT, drone technology, defence deep-tech, enterprise SaaS, testing & certification, healthcare access, robotics, and global trade.';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -15,48 +15,123 @@ require_once __DIR__ . '/includes/header.php';
                 </span>
             </div>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                Strategic Partnerships & Confirmed MOUs
+                Strategic Partnerships &amp; Confirmed MOUs
             </h1>
             <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
                 Mercora International operates through high-conviction collaborative models. We have formalized
-                <strong>7 signed MOUs across 18 partnership engagements</strong> with domain pioneers in drone aviation,
-                defense deep-tech, enterprise software, global spice trade, and international education.
+                <strong>11 strategic signed MOUs</strong> across multiple sectors with domain pioneers in IT and digital transformation, drone aviation, robotics and AI, defense deep-tech, healthcare access, testing and certification, enterprise software, and global trade.
             </p>
             <div class="flex flex-wrap items-center gap-4 pt-2">
-                <a href="#partner-dossiers"
+                <a href="#partner-mous"
                     class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg transition shadow-sm">
-                    Browse Partner Dossiers <i class="ri-arrow-down-line ml-2"></i>
+                    View 11 Signed MOUs <i class="ri-calendar-check-line ml-2"></i>
                 </a>
-                <a href="#partner-inquiry"
+                <a href="#partner-dossiers"
                     class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition">
-                    Explore Strategic Collaboration
+                    Browse Full Dossiers <i class="ri-arrow-down-line ml-2"></i>
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Partner Dossiers (8 Confirmed Alliances) -->
+<!-- Chronological MOU Signed List (Section 6 Table) -->
+<section id="partner-mous" class="py-12 sm:py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-8">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Official MOU Registry</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 mt-1">
+                11 Confirmed Strategic MOUs (Chronological Order)
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600 mt-2">
+                All 11 formalised bilateral and tripartite Memorandums of Understanding listed in execution date order.
+            </p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse text-sm">
+                    <thead>
+                        <tr class="bg-slate-900 text-white text-xs uppercase tracking-wider font-semibold">
+                            <th class="py-3.5 px-4 sm:px-6 w-16 text-center">#</th>
+                            <th class="py-3.5 px-4 sm:px-6">Strategic Partner</th>
+                            <th class="py-3.5 px-4 sm:px-6">Domain / Focus Area</th>
+                            <th class="py-3.5 px-4 sm:px-6 whitespace-nowrap">MOU Signed Date</th>
+                            <th class="py-3.5 px-4 sm:px-6 text-right">Dossier</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-700">
+                        <?php 
+                        $i = 1;
+                        foreach ($PARTNERS as $key => $p): 
+                        ?>
+                            <tr class="hover:bg-amber-50/40 transition">
+                                <td class="py-3.5 px-4 sm:px-6 font-bold text-slate-900 text-center font-mono text-xs"><?= $i++ ?></td>
+                                <td class="py-3.5 px-4 sm:px-6">
+                                    <div class="flex items-center gap-3">
+                                        <img src="<?= url($p['logo']) ?>" alt="<?= e($p['name']) ?>" class="h-7 w-12 object-contain bg-white rounded border border-slate-200 p-0.5 shrink-0" />
+                                        <span class="font-bold text-slate-900"><?= e($p['name']) ?></span>
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-4 sm:px-6 text-xs sm:text-sm text-slate-600"><?= e($p['role']) ?></td>
+                                <td class="py-3.5 px-4 sm:px-6 whitespace-nowrap">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                                        <i class="ri-calendar-event-line text-emerald-600"></i>
+                                        <?= e($p['mou_date']) ?>
+                                    </span>
+                                </td>
+                                <td class="py-3.5 px-4 sm:px-6 text-right whitespace-nowrap">
+                                    <a href="#<?= e($key) ?>" class="inline-flex items-center text-xs font-bold text-amber-700 hover:text-amber-900">
+                                        View <i class="ri-arrow-down-line ml-0.5"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Authoritative Partnership Dossiers (11 Confirmed Alliances) -->
 <section id="partner-dossiers" class="py-12 sm:py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Verified Collaborations</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
+                Authoritative Partnership Dossiers
+            </h2>
+            <p class="text-base sm:text-lg text-slate-600 mt-3">
+                Comprehensive scope of association, technical alignment, and strategic growth mandates for each of our 11 confirmed MOU partners.
+            </p>
+        </div>
+
         <div class="space-y-8">
             <?php foreach ($PARTNERS as $key => $p): ?>
                 <article id="<?= e($key) ?>"
-                    class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 hover:border-slate-300 hover:shadow-sm transition">
+                    class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 hover:border-slate-300 hover:shadow-sm transition scroll-mt-24">
                     <div
                         class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-6 mb-6 border-b border-slate-100">
                         <div class="flex items-center gap-5">
                             <div
-                                class="w-24 h-16 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 flex-shrink-0">
+                                class="w-28 h-16 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 flex-shrink-0">
                                 <img src="<?= url($p['logo']) ?>" alt="<?= e($p['name']) ?>"
-                                    class="max-h-12 max-w-[80px] object-contain" />
+                                    class="max-h-12 max-w-[96px] object-contain" />
                             </div>
                             <div>
-                                <span
-                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
-                                    <?= e($p['tag']) ?>
-                                </span>
-                                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1"><?= e($p['name']) ?></h3>
+                                <div class="flex flex-wrap items-center gap-2 mb-1">
+                                    <span
+                                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
+                                        <?= e($p['tag']) ?>
+                                    </span>
+                                    <span
+                                        class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                                        <i class="ri-calendar-check-fill text-emerald-600"></i>
+                                        MOU Signed: <?= e($p['mou_date']) ?>
+                                    </span>
+                                </div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-slate-900"><?= e($p['name']) ?></h3>
                                 <p class="text-xs sm:text-sm font-medium text-slate-500 mt-0.5"><?= e($p['role']) ?></p>
                             </div>
                         </div>
@@ -129,14 +204,15 @@ require_once __DIR__ . '/includes/header.php';
                                 required>
                                 <option value="">Select Vertical</option>
                                 <option value="AgriTech & Drones">AgriTech & Drone Systems</option>
-                                <option value="Defence Deep-Tech & iDEX">Defence Deep-Tech (iDEX / Surveillance)
-                                </option>
-                                <option value="Enterprise SaaS & Mercosys">Enterprise SaaS & Mercosys</option>
-                                <option value="Health-Tech & Wellbeing">Health-Tech & Mental Wellbeing</option>
-                                <option value="Global Trade & Agri-FMCG">Global Trade & Agri-FMCG</option>
-                                <option value="International Education">International Education & STEM Pathways</option>
-                                <option value="Textiles & Sustainable Apparel">Textiles & WHITE WORLD Initiative
-                                </option>
+                                <option value="Robotics, Drones & AI">Robotics, Drones & AI (X Dimension / Drone Anatomy)</option>
+                                <option value="Testing & Certification">Testing, Inspection & Certification (Delhi Test House)</option>
+                                <option value="Healthcare & Insurance">Healthcare Access & Wellbeing (CLiQiN Health / MindSmith)</option>
+                                <option value="Global Trade & Agarwood">Global Trade, FMCG & Agarwood (Agarwood Impex / RPGS)</option>
+                                <option value="Defence Deep-Tech & iDEX">Defence Deep-Tech (iDEX / Surveillance / Tridantor)</option>
+                                <option value="Enterprise SaaS & Mercosys">Enterprise SaaS & Mercosys (KavachApp / APT IT)</option>
+                                <option value="Specialty Coffee & Franchise">Specialty Coffee & Franchise (Native Araku Coffee)</option>
+                                <option value="The White World Lifestyle">The White World™ Lifestyle Marketplace</option>
+                                <option value="VetiGo MobiCare">VetiGo MobiCare Mobile Veterinary</option>
                                 <option value="Women Entrepreneurship & CSR">Women Entrepreneurship & CSR</option>
                             </select>
                         </div>

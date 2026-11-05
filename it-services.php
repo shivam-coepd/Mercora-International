@@ -293,7 +293,7 @@ $TECH_STACK = [
                         <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl hover:border-amber-500/30 transition">
                             <div>
                                 <a href="<?= url('assets/resources/' . rawurlencode('Corporate Profile V1 (2026) Brochure.pdf')) ?>" download="Corporate Profile V1 (2026) Brochure.pdf" class="block text-sm font-semibold text-slate-900 hover:text-amber-600 transition">Corporate Profile V1 (2026)</a>
-                                <span class="text-xs text-slate-500">11 Verticals & 7 Signed MOUs · PDF</span>
+                                <span class="text-xs text-slate-500">11 Focus Verticals &amp; 11 Signed MOUs · PDF</span>
                             </div>
                             <a href="<?= url('assets/resources/' . rawurlencode('Corporate Profile V1 (2026) Brochure.pdf')) ?>" download="Corporate Profile V1 (2026) Brochure.pdf" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-700 flex items-center justify-center transition" title="Download Corporate Profile">
                                 <i class="ri-download-2-line text-base"></i>

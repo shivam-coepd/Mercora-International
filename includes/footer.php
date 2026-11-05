@@ -76,26 +76,27 @@ if (!defined('SITE_NAME')) {
                             Solutions</a></li>
                     <li><a href="<?= url('/industries') ?>" class="hover:text-white transition">Industries We Serve</a>
                     </li>
-                    <li><a href="<?= url('/partnerships') ?>" class="hover:text-white transition">Strategic Alliances (7
+                    <li><a href="<?= url('/partnerships') ?>" class="hover:text-white transition">Strategic Alliances (11
                             MOUs)</a></li>
                 </ul>
             </div>
 
             <!-- Verticals & Initiatives -->
             <div class="space-y-3">
-                <h4 class="text-xs font-bold text-white uppercase tracking-wider">Key Verticals</h4>
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider">Key Verticals & Initiatives</h4>
                 <ul class="space-y-2 text-xs">
-                    <li><a href="<?= url('/industries') ?>#agritech" class="hover:text-white transition">AgriTech & Crop
+                    <li><a href="<?= url('/smart-crop-doctor') ?>" class="hover:text-white transition">Smart Crop
                             Doctor</a></li>
+                    <li><a href="<?= url('/white-world') ?>" class="hover:text-white transition">The White World™
+                            Lifestyle</a></li>
+                    <li><a href="<?= url('/vetigo-mobicare') ?>" class="hover:text-white transition">VetiGo
+                            MobiCare</a></li>
                     <li><a href="<?= url('/coffee-products') ?>" class="hover:text-white transition">Native Araku
                             Coffee</a></li>
-                    <li><a href="<?= url('/industries') ?>#textile" class="hover:text-white transition">WHITE WORLD
-                            Lifestyle</a></li>
                     <li><a href="<?= url('/business-solutions') ?>#trade" class="hover:text-white transition">Global
                             Trade Facilitation</a></li>
                     <li><a href="<?= url('/gallery') ?>" class="hover:text-white transition">Media & Certifications</a>
                     </li>
-                    <li><a href="<?= url('/blog') ?>" class="hover:text-white transition">Insights & Articles</a></li>
                 </ul>
             </div>
 

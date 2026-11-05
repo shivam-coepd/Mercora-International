@@ -154,10 +154,10 @@ $BUSINESS_SOLUTIONS = [
             </div>
 
             <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 border-t-4 border-t-amber-500">
-                <div class="text-3xl sm:text-4xl font-extrabold text-amber-700 mb-2">7 MOUs / 18 Engagements</div>
+                <div class="text-3xl sm:text-4xl font-extrabold text-amber-700 mb-2">11 Strategic MOUs</div>
                 <h4 class="text-base font-bold text-slate-900 mb-2">Strategic Institutional Network</h4>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    Formal agreements signed with technology innovators (Drone Anatomy, Tridantor, KavachApp, APT IT Solutions), education leaders (VFS Education, MindSmith), and trade institutions.
+                    Formal bilateral and tripartite agreements signed across technology innovators, testing & certification bodies, robotics, defense, healthcare access, and global commodities.
                 </p>
             </div>
 
