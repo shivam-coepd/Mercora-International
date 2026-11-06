@@ -5,63 +5,67 @@ require_once dirname(__DIR__) . '/includes/header.php';
 ?>
 
 <!-- ========================================== -->
-<!-- ========================================== -->
-<!-- 1. HERO SECTION: SMART CROP DOCTOR         -->
-<!-- Exact replica of client reference banner   -->
-<!-- ========================================== -->
-<section class="relative bg-[#eaf6ec] border-b border-[#d6e8da] overflow-hidden">
-    <!-- Desktop / Tablet Hero Banner (Exact match to uploaded design reference) -->
-    <div class="w-full">
-        <img src="<?= url('assets/images/mercora/smart-crop-doctor-hero-banner-full.jpg') ?>"
-            alt="Mercora International – Core Initiative in Precision Agriculture: SMART CROP DOCTOR (AI-integrated diagnostic platform)"
-            class="w-full h-auto object-cover object-center hidden sm:block shadow-sm" />
+<!-- ============================================================== -->
+<!-- 1. HERO SECTION: SMART CROP DOCTOR                             -->
+<!-- Light green gradient background with transparent image on right -->
+<!-- ============================================================== -->
+<section
+    class="relative bg-gradient-to-r from-[#edf8ee] via-[#f6fcf7] to-white border-b border-[#d6e8da] overflow-hidden min-h-[380px] sm:min-h-[420px] lg:min-h-[450px] flex flex-col sm:flex-row sm:items-center">
+
+    <!-- Hero Section Usable Image at Right Side: hero-smart-crop-doctor.png -->
+    <div
+        class="absolute inset-y-0 right-0 h-full w-full pointer-events-none select-none z-0 hidden sm:flex items-center justify-end overflow-hidden">
+        <img src="<?= url('assets/images/mercora/hero-smart-crop-doctor.png') ?>"
+            alt="Smart Crop Doctor - AI-Powered Precision Agriculture"
+            class="h-full w-auto max-w-none object-contain object-right" />
     </div>
 
-    <!-- Semantic markup for SEO and Accessibility -->
-    <div class="sr-only">
-        <h1>SMART CROP DOCTOR</h1>
-        <h2>MERCORA INTERNATIONAL – Core Initiative in Precision Agriculture</h2>
-        <p>AI-POWERED PRECISION AGRICULTURE INITIATIVE - A Mercora International Core Initiative</p>
-        <p>AI-integrated diagnostic platform</p>
-        <p>Mercora International is committed to transforming Indian agriculture through innovation, technology and
-            sustainable farming solutions.</p>
-    </div>
+    <!-- Info Section to the Left -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-8 sm:py-12 lg:py-14">
+        <div class="max-w-xl lg:max-w-lg xl:max-w-xl space-y-4">
 
-    <!-- Mobile View (optimized for viewports < 640px) -->
-    <div class="sm:hidden bg-gradient-to-b from-[#f2faf3] to-white px-4 py-8 space-y-5">
-        <div class="space-y-3">
-            <span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 border border-emerald-300">
-                <i class="ri-plant-fill text-emerald-600"></i> AI-POWERED PRECISION AGRICULTURE
-            </span>
-            <div class="text-[#0f2a4a] font-extrabold text-lg tracking-tight leading-snug">
-                MERCORA INTERNATIONAL –<br />Core Initiative in Precision Agriculture
+            <!-- Category / Eyebrow Header -->
+            <div class="text-[#0c2340] font-extrabold text-xl sm:text-2xl lg:text-[25px] tracking-tight leading-snug">
+                MERCORA INTERNATIONAL –<br class="hidden sm:inline" />
+                Core Initiative in Precision Agriculture
             </div>
-            <div class="flex items-center gap-2 pt-1">
-                <span class="text-[#1ea84f] text-3xl">
+
+            <!-- Main Initiative Title with Leaf Icon -->
+            <div class="flex items-center gap-2.5 sm:gap-3 pt-1">
+                <span
+                    class="inline-flex items-center justify-center text-[#1ea84f] text-3xl sm:text-4xl lg:text-5xl shrink-0">
                     <i class="ri-leaf-fill"></i>
                 </span>
-                <h1 class="text-2xl font-black tracking-tight text-[#1ea84f] uppercase leading-none">
+                <h1
+                    class="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-[#1ea84f] uppercase leading-none">
                     SMART CROP DOCTOR
                 </h1>
             </div>
+
+            <!-- Subtitle Pill Badge -->
             <div>
                 <span
-                    class="inline-block bg-[#137536] text-white text-xs font-semibold px-4 sm:px-5 py-1.5 rounded-full shadow-sm">
+                    class="inline-block bg-[#137536] text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-1.5 rounded-full shadow-sm tracking-wide">
                     AI-integrated diagnostic platform
                 </span>
             </div>
-            <div class="border-l-[3.5px] border-[#84cc16] pl-3 py-1 bg-white/70 rounded-r-lg">
-                <p class="text-slate-700 italic font-medium text-xs leading-relaxed">
+
+            <!-- Mission Statement with Vertical Lime Accent Border -->
+            <div class="border-l-[3.5px] border-[#84cc16] pl-3.5 sm:pl-4 py-1 mt-4">
+                <p class="text-slate-700 italic font-medium text-xs sm:text-sm leading-relaxed max-w-lg">
                     Mercora International is committed to transforming Indian agriculture through innovation, technology
                     and sustainable farming solutions.
                 </p>
             </div>
-        </div>
 
-        <div class="rounded-xl overflow-hidden shadow-sm border border-emerald-100">
-            <img src="<?= url('assets/images/initiatives/smart-crop-doctor-hero-artwork.jpg') ?>"
-                alt="Smart Crop Doctor Farmer Diagnostics" class="w-full h-auto object-cover" />
+        </div>
+    </div>
+
+    <!-- Mobile View Image (for small phone screens < 640px) -->
+    <div class="sm:hidden px-4 pb-6 pt-1 w-full relative z-10">
+        <div class="rounded-xl overflow-hidden shadow-sm border border-emerald-100 bg-white">
+            <img src="<?= url('assets/images/mercora/hero-smart-crop-doctor.png') ?>"
+                alt="Smart Crop Doctor Farmer Diagnostics" class="w-full h-auto object-cover object-right" />
         </div>
     </div>
 </section>
@@ -433,98 +437,44 @@ require_once dirname(__DIR__) . '/includes/header.php';
 </section>
 
 <!-- ============================================================== -->
-<!-- 5. CLOSING STATEMENT & ENGAGEMENT: BE PART OF THE INITIATIVE   -->
-<!-- From Annex A: Lines 283–287 of Document                        -->
+<!-- 6. BOTTOM BANNER / DYNAMIC CTA SECTION                         -->
+<!-- Clean background (cta-smart-crop-doctor.png) + Floating Card   -->
 <!-- ============================================================== -->
-<section class="py-12 sm:py-16 bg-white border-b border-[#e2ede4]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-            class="bg-gradient-to-br from-[#0c2340] via-[#0f2d59] to-[#0a1e36] text-white rounded-3xl p-8 sm:p-12 border border-slate-700/60 shadow-xl relative overflow-hidden">
-
-            <!-- Soft glowing green background accents -->
-            <div
-                class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none">
-            </div>
-            <div
-                class="absolute -left-16 -top-16 w-80 h-80 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none">
-            </div>
-
-            <div class="max-w-3xl space-y-6 relative z-10">
-                <span
-                    class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 uppercase tracking-wider">
-                    <i class="ri-sparkling-fill"></i> Sustainable Agriculture Vision
-                </span>
-
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-tight">
-                    Building a More Productive and Resilient Future
-                </h2>
-
-                <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
-                    Together with farmers and ecosystem partners, SMART CROP DOCTOR seeks to advance a more productive,
-                    sustainable and prosperous future for Indian agriculture through accessible, AI-enabled crop
-                    intelligence and timely decision support.
-                </p>
-
-                <!-- Be Part of the Initiative sub-box -->
-                <div class="pt-4 border-t border-slate-700/80 space-y-3">
-                    <h3 class="text-lg font-bold text-emerald-300 flex items-center gap-2">
-                        <i class="ri-user-add-line"></i> Be Part of the Initiative
-                    </h3>
-                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                        Interested in collaboration, institutional partnerships or pilot opportunities? Contact Mercora
-                        International to explore how you can be part of the SMART CROP DOCTOR initiative.
-                    </p>
-                    <div class="pt-2">
-                        <a href="<?= url('/contact') ?>?vertical=agritech"
-                            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#208a3c] hover:bg-[#186f30] text-white font-semibold text-sm shadow-lg shadow-emerald-950/40 transition">
-                            <i class="ri-mail-line text-lg"></i>
-                            <span>CONTACT MERCORA INTERNATIONAL</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+<section
+    class="relative overflow-hidden min-h-[220px] sm:min-h-[260px] lg:min-h-[280px] flex items-center py-10 sm:py-14 border-t border-[#d6e8da]">
+    <!-- Background Photographic Landscape: cta-smart-crop-doctor.png -->
+    <div class="absolute inset-0 z-0">
+        <img src="<?= url('assets/images/mercora/cta-smart-crop-doctor.png') ?>"
+            alt="Building a More Productive, Sustainable and Prosperous Future - Farmland Horizon"
+            class="w-full h-full object-cover object-center" />
     </div>
-</section>
 
-<!-- ========================================== -->
-<!-- 6. BOTTOM BANNER / CTA SECTION             -->
-<!-- Matching Reference UI Graphic + Hotspot    -->
-<!-- ========================================== -->
-<section class="py-8 sm:py-12 bg-[#f8faf9]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <!-- Desktop / Tablet UI Graphic Banner with Interactive Button Hotspot -->
+    <!-- Centered Floating Container (Matching Reference UI Design) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div
-            class="relative overflow-hidden rounded-2xl sm:rounded-3xl shadow-md border border-[#d6e8da] group hidden sm:block">
-            <img src="<?= url('assets/images/initiatives/smart-crop-doctor-bottom-banner.jpg') ?>"
-                alt="Building a More Productive, Sustainable and Prosperous Future - Contact Mercora International"
-                class="w-full h-auto object-cover" />
+            class="max-w-5xl mx-auto bg-white/95 backdrop-blur-md rounded-2xl md:rounded-full py-4 sm:py-5 px-6 sm:px-10 shadow-2xl border border-white/80 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
 
-            <!-- Accessible & Clickable Overlay Button targeting the exact position in the graphic -->
-            <a href="<?= url('/contact') ?>?vertical=agritech"
-                class="absolute right-[4.2%] top-[45%] -translate-y-1/2 w-[28%] lg:w-[24%] h-[46%] rounded-full cursor-pointer opacity-0 hover:opacity-100 hover:ring-2 hover:ring-white/80 bg-emerald-600/10 transition-all flex items-center justify-center"
-                title="Contact Mercora International" aria-label="Contact Mercora International">
-                <span class="sr-only">Contact Mercora International</span>
-            </a>
-        </div>
+            <!-- Left Headline Text -->
+            <div class="flex-1 text-center md:text-left">
+                <h3
+                    class="text-lg sm:text-xl lg:text-[22px] font-bold italic tracking-tight text-[#0c2340] leading-snug">
+                    Building a More Productive, Sustainable and Prosperous Future
+                </h3>
+            </div>
 
-        <!-- Mobile View Card Fallback (Ensures crisp readability on phone screens) -->
-        <div
-            class="sm:hidden bg-gradient-to-br from-emerald-800 to-slate-900 rounded-2xl p-6 text-white text-center shadow-lg border border-emerald-700/50 space-y-4">
-            <h3 class="text-lg font-bold italic text-emerald-100">
-                Building a More Productive, Sustainable and Prosperous Future
-            </h3>
-            <div class="pt-1">
+            <!-- Vertical Green Divider (Desktop) -->
+            <div class="hidden md:block w-px h-8 bg-[#84cc16]/50 shrink-0 mx-2"></div>
+
+            <!-- Right CTA Button -->
+            <div class="shrink-0">
                 <a href="<?= url('/contact') ?>?vertical=agritech"
-                    class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#208a3c] hover:bg-[#186f30] text-white font-semibold text-sm shadow-md transition w-full">
+                    class="inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3 rounded-full bg-[#208a3c] hover:bg-[#167331] text-white font-semibold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-200 whitespace-nowrap">
                     <i class="ri-mail-line text-lg"></i>
                     <span>Contact Mercora International</span>
                 </a>
             </div>
-        </div>
 
+        </div>
     </div>
 </section>
 
