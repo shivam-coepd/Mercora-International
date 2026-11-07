@@ -24,7 +24,7 @@ function navActive($route)
                 <i class="ri-shield-check-fill text-amber-500"></i> DPIIT Recognised (DIPP258473)
             </span>
             <span class="inline-flex items-center gap-1.5 font-medium text-slate-300">
-                <i class="ri-government-line text-slate-400"></i> Firm Reg. 2978/2025 (Telangana)
+                <i class="ri-government-line text-slate-400"></i> Firm Reg. 2978/2025 (Hyderabad)
             </span>
             <span class="inline-flex items-center gap-1.5 font-medium text-slate-300">
                 <i class="ri-global-line text-slate-400"></i> DGFT IEC: ACEFM7191A
@@ -111,6 +111,53 @@ function navActive($route)
                     </div>
                 </div>
 
+                <!-- Initiatives Dropdown -->
+                <div class="relative group">
+                    <button type="button"
+                        class="px-3.5 py-2 text-sm rounded-lg transition inline-flex items-center gap-1 <?= (navActive('/smart-crop-doctor') != 'text-slate-600 hover:text-slate-900 hover:bg-slate-50 font-medium' || navActive('/white-world') != 'text-slate-600 hover:text-slate-900 hover:bg-slate-50 font-medium' || navActive('/vetigo-mobicare') != 'text-slate-600 hover:text-slate-900 hover:bg-slate-50 font-medium') ? 'bg-slate-100 text-slate-900 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50 font-medium' ?>">
+                        <span>Our Initiatives</span>
+                        <i class="ri-arrow-down-s-line text-slate-400 group-hover:text-slate-700 transition"></i>
+                    </button>
+                    <div
+                        class="absolute left-0 top-full pt-2 w-80 opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition duration-150 ease-out z-50">
+                        <div class="bg-white rounded-xl shadow-xl border border-slate-200 p-2 space-y-1">
+                            <a href="<?= url('/smart-crop-doctor') ?>"
+                                class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="ri-plant-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-slate-900">Smart Crop Doctor</div>
+                                    <div class="text-xs text-slate-500 mt-0.5">AI-Powered Precision Agriculture</div>
+                                </div>
+                            </a>
+                            <a href="<?= url('/white-world') ?>"
+                                class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="ri-t-shirt-2-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-slate-900">The White World™</div>
+                                    <div class="text-xs text-slate-500 mt-0.5">Curated Lifestyle & Social Impact</div>
+                                </div>
+                            </a>
+                            <a href="<?= url('/vetigo-mobicare') ?>"
+                                class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="ri-truck-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-slate-900">VetiGo MobiCare</div>
+                                    <div class="text-xs text-slate-500 mt-0.5">Mobile Veterinary Healthcare Clinics</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <a href="<?= url('/partnerships') ?>"
                     class="px-3.5 py-2 text-sm rounded-lg transition <?= navActive('/partnerships') ?>">
                     Partnerships
@@ -163,8 +210,15 @@ function navActive($route)
             class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">Business Solutions</a>
         <a href="<?= url('/industries') ?>"
             class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">Industries We Serve</a>
+        <div class="pt-2 pb-1 px-3 text-xs font-bold text-slate-400 uppercase tracking-wider">Flagship Initiatives</div>
+        <a href="<?= url('/smart-crop-doctor') ?>"
+            class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">Smart Crop Doctor</a>
+        <a href="<?= url('/white-world') ?>"
+            class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">The White World™</a>
+        <a href="<?= url('/vetigo-mobicare') ?>"
+            class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">VetiGo MobiCare</a>
         <a href="<?= url('/partnerships') ?>"
-            class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-800 hover:bg-slate-50">Partnerships (7
+            class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-800 hover:bg-slate-50">Partnerships (11
             MOUs)</a>
         <a href="<?= url('/gallery') ?>"
             class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-800 hover:bg-slate-50">Media &

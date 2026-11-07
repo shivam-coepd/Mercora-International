@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const payload = {};
                 formData.forEach((value, key) => (payload[key] = value));
 
-                const response = await fetch("/api/enquiry", {
+                const response = await fetch("/api/enquiry.php", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

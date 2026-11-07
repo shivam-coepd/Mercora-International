@@ -76,26 +76,27 @@ if (!defined('SITE_NAME')) {
                             Solutions</a></li>
                     <li><a href="<?= url('/industries') ?>" class="hover:text-white transition">Industries We Serve</a>
                     </li>
-                    <li><a href="<?= url('/partnerships') ?>" class="hover:text-white transition">Strategic Alliances (7
+                    <li><a href="<?= url('/partnerships') ?>" class="hover:text-white transition">Strategic Alliances (11
                             MOUs)</a></li>
                 </ul>
             </div>
 
             <!-- Verticals & Initiatives -->
             <div class="space-y-3">
-                <h4 class="text-xs font-bold text-white uppercase tracking-wider">Key Verticals</h4>
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider">Key Verticals & Initiatives</h4>
                 <ul class="space-y-2 text-xs">
-                    <li><a href="<?= url('/industries') ?>#agritech" class="hover:text-white transition">AgriTech & Crop
+                    <li><a href="<?= url('/smart-crop-doctor') ?>" class="hover:text-white transition">Smart Crop
                             Doctor</a></li>
+                    <li><a href="<?= url('/white-world') ?>" class="hover:text-white transition">The White World™
+                            Lifestyle</a></li>
+                    <li><a href="<?= url('/vetigo-mobicare') ?>" class="hover:text-white transition">VetiGo
+                            MobiCare</a></li>
                     <li><a href="<?= url('/coffee-products') ?>" class="hover:text-white transition">Native Araku
                             Coffee</a></li>
-                    <li><a href="<?= url('/industries') ?>#textile" class="hover:text-white transition">WHITE WORLD
-                            Lifestyle</a></li>
                     <li><a href="<?= url('/business-solutions') ?>#trade" class="hover:text-white transition">Global
                             Trade Facilitation</a></li>
                     <li><a href="<?= url('/gallery') ?>" class="hover:text-white transition">Media & Certifications</a>
                     </li>
-                    <li><a href="<?= url('/blog') ?>" class="hover:text-white transition">Insights & Articles</a></li>
                 </ul>
             </div>
 
@@ -109,7 +110,7 @@ if (!defined('SITE_NAME')) {
                     </div>
                     <div class="p-2 rounded bg-slate-900/80 border border-slate-800">
                         <div class="font-semibold text-slate-200">Firm Registration</div>
-                        <div class="text-slate-400 text-[10px]">Reg. 2978/2025 (Telangana)</div>
+                        <div class="text-slate-400 text-[10px]">Reg. 2978/2025 (Hyderabad)</div>
                     </div>
                     <div class="p-2 rounded bg-slate-900/80 border border-slate-800">
                         <div class="font-semibold text-slate-200">MSME Udyam & IEC</div>
@@ -132,12 +133,10 @@ if (!defined('SITE_NAME')) {
 </footer>
 
 <!-- Move to Top Button -->
-<button id="mcMoveToTop" 
-        type="button" 
-        aria-label="Move to top" 
-        title="Move to top"
-        class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-slate-900/90 text-amber-400 hover:bg-amber-500 hover:text-slate-950 border border-slate-700/60 hover:border-amber-400 shadow-2xl backdrop-blur-md transition-all duration-300 transform translate-y-6 opacity-0 pointer-events-none hover:scale-110 active:scale-95 group focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2">
-    <i class="ri-arrow-up-line text-lg sm:text-xl font-bold transition-transform duration-300 group-hover:-translate-y-0.5"></i>
+<button id="mcMoveToTop" type="button" aria-label="Move to top" title="Move to top"
+    class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-slate-900/90 text-amber-400 hover:bg-amber-500 hover:text-slate-950 border border-slate-700/60 hover:border-amber-400 shadow-2xl backdrop-blur-md transition-all duration-300 transform translate-y-6 opacity-0 pointer-events-none hover:scale-110 active:scale-95 group focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2">
+    <i
+        class="ri-arrow-up-line text-lg sm:text-xl font-bold transition-transform duration-300 group-hover:-translate-y-0.5"></i>
 </button>
 
 <!-- Include Partner Modal -->

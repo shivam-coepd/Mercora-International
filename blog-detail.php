@@ -64,7 +64,7 @@ HTML
         'title' => 'WHITE WORLD: Redefining Sustainable Apparel with Inclusive Livelihoods for Rural Tailors & Artisans',
         'category' => 'Textiles & Apparel',
         'date' => 'June 2026',
-        'author' => 'D. Veda Anjali',
+        'author' => 'D. VedAnjali',
         'author_role' => 'Youth Ambassador, White Brand Initiative',
         'img' => 'assets/images/mercora/current/carousel-2.jpg',
         'read_time' => '4 min read',
@@ -75,7 +75,7 @@ HTML
 <p class="text-base text-slate-600 leading-relaxed mb-4">White symbolizes clarity, peace, and timeless elegance. Every garment in the WHITE WORLD collection is created using certified organic cotton, cruelty-free silks, and naturally breathable linen. By focusing on classic silhouettes rather than ephemeral trends, WHITE WORLD advocates conscious consumerism.</p>
 
 <h3 class="text-2xl font-bold text-slate-900 mt-8 mb-3">Empowering the Overlooked Hands of Fashion</h3>
-<p class="text-base text-slate-600 leading-relaxed mb-4">What sets WHITE WORLD apart is its production philosophy. As Youth Ambassador D. Veda Anjali articulates, the initiative is intentionally engineered to provide sustainable, dignified livelihood opportunities to:</p>
+<p class="text-base text-slate-600 leading-relaxed mb-4">What sets WHITE WORLD apart is its production philosophy. As Youth Ambassador D. VedAnjali articulates, the initiative is intentionally engineered to provide sustainable, dignified livelihood opportunities to:</p>
 <ul class="list-disc pl-6 space-y-2 text-base text-slate-600 mb-6">
     <li>Rural women tailors and self-help group artisans</li>
     <li>Persons with disabilities (PwDs) skilled in stitching, embroidery, and packaging</li>
@@ -99,11 +99,13 @@ require_once __DIR__ . '/includes/header.php';
 <section class="bg-slate-900 border-b border-slate-800 text-white py-16 sm:py-20">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
         <div>
-            <a href="<?= url('/blog') ?>" class="inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300 transition mb-3">
+            <a href="<?= url('/blog') ?>"
+                class="inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300 transition mb-3">
                 <i class="ri-arrow-left-line mr-1.5"></i> Back to All Articles
             </a>
             <div class="flex items-center gap-2">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
+                <span
+                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-800 text-amber-400 border border-slate-700">
                     <?= e($article['category']) ?>
                 </span>
                 <span class="text-xs text-slate-400">· <?= e($article['read_time']) ?></span>
@@ -126,7 +128,8 @@ require_once __DIR__ . '/includes/header.php';
 <article class="py-16 sm:py-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-10 rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-            <img src="<?= url($article['img']) ?>" alt="<?= e($article['title']) ?>" class="w-full max-h-[460px] object-cover" />
+            <img src="<?= url($article['img']) ?>" alt="<?= e($article['title']) ?>"
+                class="w-full max-h-[460px] object-cover" />
         </div>
 
         <div class="prose prose-slate max-w-none text-slate-700">
@@ -134,10 +137,12 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="mt-12 pt-8 border-t border-slate-200 flex items-center justify-between">
-            <a href="<?= url('/blog') ?>" class="inline-flex items-center text-sm font-semibold text-slate-900 hover:text-amber-600 transition">
+            <a href="<?= url('/blog') ?>"
+                class="inline-flex items-center text-sm font-semibold text-slate-900 hover:text-amber-600 transition">
                 <i class="ri-arrow-left-line mr-2"></i> Return to Insights Hub
             </a>
-            <a href="<?= url('/contact') ?>" class="inline-flex items-center text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 px-4 py-2.5 rounded-lg transition shadow-sm">
+            <a href="<?= url('/contact') ?>"
+                class="inline-flex items-center text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 px-4 py-2.5 rounded-lg transition shadow-sm">
                 Discuss With Our Team <i class="ri-arrow-right-line ml-2"></i>
             </a>
         </div>
