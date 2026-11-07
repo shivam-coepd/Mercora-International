@@ -388,4 +388,52 @@ Founder & Managing Partner, Mrs. D. Jaya Geetha Kiran, was honoured to be recogn
             'image86.jpg',
         ),
     ),
+    array(
+        'id' => 'central-cottage-industries-corporation-of-india-limited-2026',
+        'year' => '2026',
+        'date' => '27 October 2026',
+        'title' => 'Meeting with Shri Bimal Gopalachari - MD of CCIC',
+        'category' => 'International Alliances & Trade',
+        'badge' => 'Diplomatic Dialogue',
+        'desc' => 'Had a meeting with Shri Bimal Gopalachari is the Managing Director of the Central Cottage Industries Corporation of India Limited (CCIC), which runs the Central Cottage Industries Emporium in New Delhi on 27 October 2026.',
+        'images' => array(
+            'image92.jpg'
+        ),
+    ),
+    array(
+        'id' => 'central-cottage-industries-corporation-of-india-limited-2026',
+        'year' => '2026',
+        'date' => '27 October 2026',
+        'title' => 'Meeting with Shri Manobendra Ghoshal - MD (CMD) of MSTC Limited',
+        'category' => 'International Alliances & Trade',
+        'badge' => 'Diplomatic Dialogue',
+        'desc' => 'Shri Manobendra Ghoshal is the Chairman and Managing Director (CMD) of MSTC Limited. Ministry of Steel Govt of India',
+        'images' => array(
+            'image93.jpg'
+        ),
+    ),
+    array(
+        'id' => 'mstc-limited-2026',
+        'year' => '2026',
+        'date' => '27 October 2026',
+        'title' => 'Meeting with Smt. Shalini Naomi Bhatti and Shri Manoj Pandey - Marketing Manager of MSTC Limited',
+        'category' => 'International Alliances & Trade',
+        'badge' => 'Diplomatic Dialogue',
+        'desc' => 'Shalini Naomi Bhatti is a Regional Manager at MSTC Limited (Northern Regional Office / New Delhi), a public sector undertaking under the Ministry of Steel, Government of Ind.   Shri Manoj Pandey is a Manager of Marketing at MSTC Limited (Metal Scrap Trade Corporation Limited), a Mini-Ratna Category-I Public Sector Undertaking under the Ministry of Steel, Government of India',
+        'images' => array(
+            'image94.jpg'
+        ),
+    ),
+    array(
+        'id' => 'vbit-hyderabad-2026',
+        'year' => '2026',
+        'date' => '27 October 2026',
+        'title' => 'Invited as the Chief Guest at VBIT, Hyderabad',
+        'category' => 'Student Innovation & Incubation',
+        'badge' => 'Chief Guest Honour',
+        'desc' => 'Heartiest Congratulations, Geetha Madam! On being invited as the Chief Guest at VBIT, Hyderabad. This is a great honour and a remarkable achievement. We are incredibly proud of you!',
+        'images' => array(
+            'image95.jpg'
+        ),
+    ),
 );
