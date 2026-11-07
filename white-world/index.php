@@ -1,421 +1,449 @@
 <?php
-$pageTitle = 'The White World™ | Living Life with Elegance';
-$pageDesc = 'THE WHITE WORLD™ is a white-themed lifestyle marketplace concept by Mercora International, bringing together clothing, jewellery, home and living, handlooms, wellness and luxury with a focus on women empowerment and tribal artisans.';
+$pageTitle = "THE WHITE WORLD™ - Living Life with Elegance | Mercora International";
+$pageDescription = "A Mercora International Social Impact & Lifestyle Initiative. Discover a curated destination for white-themed clothing, jewellery, home and lifestyle products.";
 require_once dirname(__DIR__) . '/includes/header.php';
 ?>
 
-<!-- Hero Section (Premium White, Navy & Gold) -->
-<section class="relative bg-slate-950 border-b border-slate-800 text-white py-16 sm:py-24 overflow-hidden">
-    <!-- Subtle Golden Vignette Glow -->
-    <div class="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-amber-500/10 blur-3xl pointer-events-none"></div>
+<!-- ============================================================== -->
+<!-- 1. HERO SECTION: THE WHITE WORLD™                             -->
+<!-- Warm ivory-gold gradient background with transparent image on right -->
+<!-- Modeled exactly after smart-crop-doctor hero structure         -->
+<!-- ============================================================== -->
+<section
+  class="relative bg-gradient-to-r from-[#faf6ef] via-[#fcf9f2] to-[#fcfaf9] border-b border-[#ebdcc9] overflow-hidden min-h-[380px] sm:min-h-[420px] lg:min-h-[460px] flex flex-col sm:flex-row sm:items-center">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="max-w-3xl space-y-5">
-            <div class="flex flex-wrap items-center gap-2">
-                <span
-                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-400/10 text-amber-300 border border-amber-400/30">
-                    <i class="ri-sparkling-fill text-amber-400"></i> A Mercora International Social Impact &amp;
-                    Lifestyle Initiative
-                </span>
-                <span
-                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-slate-200 border border-white/20">
-                    <i class="ri-shield-star-line text-amber-300"></i> Living Life with Elegance
-                </span>
-            </div>
+  <!-- Hero Section Image at Right Side: hero-white-world.png -->
+  <div
+    class="absolute inset-y-0 right-0 h-full w-full pointer-events-none select-none z-0 hidden sm:flex items-center justify-end overflow-hidden">
+    <img src="<?= url('assets/images/mercora/hero-white-world.png') ?>" alt="THE WHITE WORLD™ Living Life with Elegance"
+      class="h-full w-auto max-w-none object-contain object-right" />
+  </div>
 
-            <h1
-                class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight font-display">
-                A World of White, <span class="text-amber-400">Curated with Elegance</span>
-            </h1>
+  <!-- Info Section to the Left -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-8 sm:py-12 lg:py-14">
+    <div class="max-w-xl lg:max-w-lg xl:max-w-xl space-y-4">
 
-            <p class="text-base sm:text-lg text-slate-300 leading-relaxed pt-1">
-                <strong>THE WHITE WORLD™</strong> is a white-themed lifestyle marketplace concept that brings together
-                clothing, jewellery, home and lifestyle products, and complementary accessories under one unified brand
-                identity. Guided by the tagline <em>“Living Life with Elegance”</em>, the initiative aims to offer
-                customers a curated destination for white-themed products across everyday, premium, occasion and gifting
-                needs.
-            </p>
+      <!-- Pill Badge -->
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ebdcc9]/70 border border-[#d6ba94] text-[#8c6729] text-xs font-semibold uppercase tracking-wider shadow-2xs">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#b38738]"></span>
+        A Mercora International Social Impact &amp; Lifestyle Initiative
+      </div>
 
-            <div class="flex flex-wrap items-center gap-4 pt-3">
-                <a href="#collections"
-                    class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-slate-950 bg-amber-400 hover:bg-amber-300 rounded-xl transition shadow-lg shadow-amber-400/20">
-                    Explore Collections <i class="ri-arrow-down-line ml-2"></i>
-                </a>
-                <a href="<?= url('/contact') ?>?vertical=textile"
-                    class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-white bg-slate-800/80 hover:bg-slate-800 border border-slate-700 rounded-xl transition">
-                    Partner With Us <i class="ri-arrow-right-line ml-2"></i>
-                </a>
-            </div>
-        </div>
+      <!-- Main Heading -->
+      <h1 class="text-3xl sm:text-4xl lg:text-[42px] leading-tight font-serif text-[#0c2340] font-bold tracking-tight">
+        A World of White,<br>
+        <span class="italic font-normal text-[#0c2340]">Curated with Elegance</span>
+      </h1>
+
+      <!-- Description -->
+      <p class="text-sm sm:text-base text-black leading-relaxed font-semibold">
+        Discover a curated destination for white-themed clothing, jewellery, home and lifestyle products, and
+        complementary accessories across everyday, premium, occasion and gifting needs.
+      </p>
+
+      <!-- CTA Button -->
+      <div class="pt-2">
+        <a href="#categories"
+          class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#b38738] via-[#c99e4b] to-[#a3792c] text-white font-medium text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+          <span>Explore Collections</span>
+          <i class="fas fa-chevron-right text-xs opacity-80"></i>
+        </a>
+      </div>
+
     </div>
+  </div>
+
+  <!-- Mobile View Image (for small phone screens < 640px) -->
+  <div class="sm:hidden px-4 pb-6 pt-1 w-full relative z-10">
+    <div class="rounded-xl overflow-hidden shadow-sm border border-[#ebdcc9] bg-white">
+      <img src="<?= url('assets/images/mercora/hero-white-world.png') ?>"
+        alt="THE WHITE WORLD™ Living Life with Elegance" class="w-full h-auto object-cover object-right" />
+    </div>
+  </div>
 </section>
 
-<!-- Vision Section -->
-<section class="py-14 sm:py-16 bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Main Body Container -->
+<main class="bg-[#faf7f2] py-8 lg:py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 lg:space-y-10">
+
+    <!-- Section 1: Explore the White Lifestyle + Our Vision Card -->
+    <section id="categories" class="scroll-mt-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+
+        <!-- Left: 8 Category Tiles (col-span-9) -->
+        <div class="lg:col-span-9 bg-[#fdfbf7] border border-[#ecdcc8] rounded-2xl p-5 shadow-xs">
+          <!-- Heading -->
+          <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-4 pb-2 border-b border-[#f1e5d7]">
+            <h2 class="text-xl sm:text-2xl font-serif font-bold text-[#2d2419]">Explore the White Lifestyle</h2>
+            <span class="text-xs text-[#82715e] font-light">— The proposed product universe spans a wide range of
+              lifestyle categories, including:</span>
+          </div>
+
+          <!-- 8 Product Categories Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5">
+
+            <!-- Category 1 -->
+            <div
+              class="group bg-white rounded-xl border border-[#ebdcc9] p-2 text-center hover:shadow-md transition-all flex flex-col justify-between">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-[#faf7f2] mb-2 flex items-center justify-center">
+                <img src="/assets/images/mercora/white-world/cat-clothing-fashion.png" alt="White Clothing & Fashion"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              </div>
+              <p class="text-[11px] font-semibold text-[#3d3224] leading-tight group-hover:text-[#b38738]">White
+                Clothing &amp; Fashion</p>
+            </div>
+
+            <!-- Category 2 -->
+            <div
+              class="group bg-white rounded-xl border border-[#ebdcc9] p-2 text-center hover:shadow-md transition-all flex flex-col justify-between">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-[#faf7f2] mb-2 flex items-center justify-center">
+                <img src="/assets/images/mercora/white-world/cat-jewellery-luxury.png" alt="Jewellery & Luxury"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              </div>
+              <p class="text-[11px] font-semibold text-[#3d3224] leading-tight group-hover:text-[#b38738]">Jewellery
+                &amp; Luxury</p>
+            </div>
+
+            <!-- Category 3 -->
+            <div
+              class="group bg-white rounded-xl border border-[#ebdcc9] p-2 text-center hover:shadow-md transition-all flex flex-col justify-between">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-[#faf7f2] mb-2 flex items-center justify-center">
+                <img src="/assets/images/mercora/white-world/cat-home-living.png" alt="Home & Living"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              </div>
+              <p class="text-[11px] font-semibold text-[#3d3224] leading-tight group-hover:text-[#b38738]">Home &amp;
+                Living</p>
+            </div>
+
+            <!-- Category 4 -->
+            <div
+              class="group bg-white rounded-xl border border-[#ebdcc9] p-2 text-center hover:shadow-md transition-all flex flex-col justify-between">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-[#faf7f2] mb-2 flex items-center justify-center">
+                <img src="/assets/images/mercora/white-world/cat-handlooms-textiles.png" alt="Handlooms & Textiles"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              </div>
+              <p class="text-[11px] font-semibold text-[#3d3224] leading-tight group-hover:text-[#b38738]">Handlooms
+                &amp; Textiles</p>
+            </div>
+
+            <!-- Category 5 -->
+            <div
+              class="group bg-white rounded-xl border border-[#ebdcc9] p-2 text-center hover:shadow-md transition-all flex flex-col justify-between">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-[#faf7f2] mb-2 flex items-center justify-center">
+                <img src="/assets/images/mercora/white-world/cat-wellness-lifestyle.png" alt="Wellness & Lifestyle"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              </div>
+              <p class="text-[11px] font-semibold text-[#3d3224] leading-tight group-hover:text-[#b38738]">Wellness
+                &amp; Lifestyle</p>
+            </div>
+
+            <!-- Category 6 -->
+            <div
+              class="group bg-white rounded-xl border border-[#ebdcc9] p-2 text-center hover:shadow-md transition-all flex flex-col justify-between">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-[#faf7f2] mb-2 flex items-center justify-center">
+                <img src="/assets/images/mercora/white-world/cat-accessories-footwear.png" alt="Accessories & Footwear"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              </div>
+              <p class="text-[11px] font-semibold text-[#3d3224] leading-tight group-hover:text-[#b38738]">Accessories
+                &amp; Footwear</p>
+            </div>
+
+            <!-- Category 7 -->
+            <div
+              class="group bg-white rounded-xl border border-[#ebdcc9] p-2 text-center hover:shadow-md transition-all flex flex-col justify-between">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-[#faf7f2] mb-2 flex items-center justify-center">
+                <img src="/assets/images/mercora/white-world/cat-electronics-appliances.png"
+                  alt="Electronics & Home Appliances"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              </div>
+              <p class="text-[11px] font-semibold text-[#3d3224] leading-tight group-hover:text-[#b38738]">Electronics
+                &amp; Home Appliances</p>
+            </div>
+
+            <!-- Category 8 -->
+            <div
+              class="group bg-white rounded-xl border border-[#ebdcc9] p-2 text-center hover:shadow-md transition-all flex flex-col justify-between">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-[#faf7f2] mb-2 flex items-center justify-center">
+                <img src="/assets/images/mercora/white-world/cat-spiritual-gifting.png"
+                  alt="Spiritual, Beauty & Gifting"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              </div>
+              <p class="text-[11px] font-semibold text-[#3d3224] leading-tight group-hover:text-[#b38738]">Spiritual,
+                Beauty &amp; Gifting</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Our Vision Card (col-span-3) -->
         <div
-            class="bg-slate-50 border border-slate-200 rounded-2xl p-8 sm:p-10 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <div class="max-w-3xl space-y-2">
-                <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Strategic Direction</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Our Vision</h2>
-                <p class="text-slate-600 text-base leading-relaxed">
-                    To build a recognised lifestyle brand dedicated to white-themed products, bringing together fashion,
-                    home, food, wellness, technology, luxury and social impact within an integrated ecosystem.
-                </p>
+          class="lg:col-span-3 bg-gradient-to-br from-[#fdfbf7] via-white to-[#f9f3ea] border border-[#ecdcc8] rounded-2xl p-6 shadow-xs flex flex-col justify-center">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-full bg-[#f3e7d5] flex items-center justify-center text-[#b38738] shrink-0">
+              <i class="fas fa-bullseye text-lg"></i>
             </div>
-            <div class="flex-shrink-0">
-                <span
-                    class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider border border-amber-200">
-                    <i class="ri-compass-3-line text-lg text-amber-600"></i> Pure · Curated · Inclusive
-                </span>
-            </div>
+            <h3 class="text-xl font-serif font-bold text-[#2d2419]">Our Vision</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-[#615140] leading-relaxed font-light">
+            To build a recognised lifestyle brand dedicated to white-themed products, bringing together fashion, home,
+            food, wellness, technology, luxury and social impact within an integrated ecosystem.
+          </p>
         </div>
-    </div>
-</section>
 
-<!-- Explore the White Lifestyle: 8 Category Tiles -->
-<section class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mb-12">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Product Universe</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
-                Explore the White Lifestyle
+      </div>
+    </section>
+
+    <!-- Section 2: Signature Collections + The Story Behind The White World Card -->
+    <section id="signature-collections">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+
+        <!-- Left: Signature Collections (col-span-8) -->
+        <div
+          class="lg:col-span-8 bg-[#fdfbf7] border border-[#ecdcc8] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <h2 class="text-xl sm:text-2xl font-serif font-bold text-[#2d2419] mb-4 pb-2 border-b border-[#f1e5d7]">
+              Our Signature Collections
             </h2>
-            <p class="text-base text-slate-600 mt-2">
-                The proposed product universe spans a wide range of lifestyle categories curated in pure, elegant white
-                palettes.
+
+            <!-- 4 Signature Collections Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+              <!-- Collection 1: White Artisan -->
+              <div
+                class="flex items-center gap-3.5 p-3 rounded-xl bg-white border border-[#ebdcc9] hover:border-[#b38738]/60 transition">
+                <img src="/assets/images/mercora/white-world/sig-artisan-collection.png" alt="White Artisan Collection"
+                  class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover shrink-0">
+                <div class="min-w-0">
+                  <h4 class="text-sm font-serif font-bold text-[#2d2419] mb-1">White Artisan Collection</h4>
+                  <p class="text-xs text-[#6e5d4a] leading-tight font-light">Products and crafts from women
+                    entrepreneurs, tribal communities and SHG artisans.</p>
+                </div>
+              </div>
+
+              <!-- Collection 2: White Sustainable -->
+              <div
+                class="flex items-center gap-3.5 p-3 rounded-xl bg-white border border-[#ebdcc9] hover:border-[#b38738]/60 transition">
+                <img src="/assets/images/mercora/white-world/sig-sustainable-collection.png"
+                  alt="White Sustainable Collection" class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover shrink-0">
+                <div class="min-w-0">
+                  <h4 class="text-sm font-serif font-bold text-[#2d2419] mb-1">White Sustainable Collection</h4>
+                  <p class="text-xs text-[#6e5d4a] leading-tight font-light">Organic cotton, eco-friendly and recycled
+                    white products.</p>
+                </div>
+              </div>
+
+              <!-- Collection 3: White Luxury -->
+              <div
+                class="flex items-center gap-3.5 p-3 rounded-xl bg-white border border-[#ebdcc9] hover:border-[#b38738]/60 transition">
+                <img src="/assets/images/mercora/white-world/sig-luxury-collection.png" alt="White Luxury Collection"
+                  class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover shrink-0">
+                <div class="min-w-0">
+                  <h4 class="text-sm font-serif font-bold text-[#2d2419] mb-1">White Luxury Collection</h4>
+                  <p class="text-xs text-[#6e5d4a] leading-tight font-light">Premium fashion, designer wear and luxury
+                    home d&eacute;cor.</p>
+                </div>
+              </div>
+
+              <!-- Collection 4: White Wedding -->
+              <div
+                class="flex items-center gap-3.5 p-3 rounded-xl bg-white border border-[#ebdcc9] hover:border-[#b38738]/60 transition">
+                <img src="/assets/images/mercora/white-world/sig-wedding-collection.png" alt="White Wedding Collection"
+                  class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover shrink-0">
+                <div class="min-w-0">
+                  <h4 class="text-sm font-serif font-bold text-[#2d2419] mb-1">White Wedding Collection</h4>
+                  <p class="text-xs text-[#6e5d4a] leading-tight font-light">Bridal and groom wear, d&eacute;cor, return
+                    gifts and floral products.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: The Story Behind The White World (col-span-4) -->
+        <div id="story"
+          class="lg:col-span-4 bg-[#fdfbf7] border border-[#ecdcc8] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
+          <div class="flex items-start gap-4">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-[#b38738] text-lg"><i class="fas fa-feather-alt"></i></span>
+                <h3 class="text-lg font-serif font-bold text-[#2d2419]">The Story Behind<br>THE WHITE WORLD&trade;</h3>
+              </div>
+              <p class="text-xs text-[#615140] leading-relaxed font-light mb-2">
+                A distinctive lifestyle concept that presents "white" as a lifestyle identity, not only a colour. Guided
+                by the promise "Living Life with Elegance", it brings together curated products across fashion, home,
+                wellness, gifting and social impact.
+              </p>
+            </div>
+
+            <!-- Arched Flower Vase Image -->
+            <div class="w-24 sm:w-28 shrink-0">
+              <div class="rounded-t-full rounded-b-lg overflow-hidden border border-[#ebdcc9] shadow-xs">
+                <img src="/assets/images/mercora/white-world/story-white-blossoms-vase.png"
+                  alt="Living Life with Elegance" class="w-full h-36 object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Social Impact, Youth Ambassador & Partner Cards (3 Columns) -->
+    <section id="social-impact">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch">
+
+        <!-- Card 1: Social Impact - Empowering Communities -->
+        <div class="bg-[#fdfbf7] border border-[#ecdcc8] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-3 pb-2 border-b border-[#f1e5d7]">
+              <div
+                class="w-8 h-8 rounded-full bg-[#f3e7d5] flex items-center justify-center text-[#b38738] shrink-0 text-xs">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h3 class="text-base font-serif font-bold text-[#2d2419] leading-tight">
+                Social Impact &ndash; Empowering Communities
+              </h3>
+            </div>
+
+            <div class="space-y-3">
+              <div class="rounded-xl overflow-hidden border border-[#ebdcc9]">
+                <img src="/assets/images/mercora/white-world/impact-empowering-communities.png"
+                  alt="Empowering Communities" class="w-full h-32 object-cover">
+              </div>
+              <p class="text-xs text-[#615140] leading-relaxed font-light">
+                Social impact is central to THE WHITE WORLD&trade;. The initiative aims to create livelihood and market
+                opportunities for women entrepreneurs, tribal artisans, rural Self-Help-Groups (SHGs) and persons with
+                disabilities through skill development, production support and wider market access.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Youth-Led Creativity and Entrepreneurship -->
+        <div class="bg-[#fdfbf7] border border-[#ecdcc8] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-3 pb-2 border-b border-[#f1e5d7]">
+              <div
+                class="w-8 h-8 rounded-full bg-[#f3e7d5] flex items-center justify-center text-[#b38738] shrink-0 text-xs">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3 class="text-base font-serif font-bold text-[#2d2419] leading-tight">
+                Youth-Led Creativity and Entrepreneurship
+              </h3>
+            </div>
+
+            <div class="flex items-start gap-3 mb-2">
+              <div class="w-20 h-24 rounded-xl overflow-hidden border border-[#ebdcc9] shrink-0 shadow-xs">
+                <img src="/assets/images/team/veda-anjali.jpg" alt="D. R. Vedanjali" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-[#2d2419]">D. R. Vedanjali</h4>
+                <p class="text-[11px] text-[#b38738] font-semibold mb-1">Young Entrepreneur &amp; Youth Ambassador</p>
+                <p class="text-xs text-[#615140] leading-relaxed font-light">
+                  Conceptualised with creativity and craftsmanship by D. R. Vedanjali, a Grade 10 student and Youth
+                  Ambassador for THE WHITE WORLD&trade;.
+                </p>
+              </div>
+            </div>
+            <p class="text-xs text-[#615140] leading-relaxed font-light mt-1">
+              She champions initiatives that support women tailors, tribal artisans, persons with disabilities and
+              underprivileged youth through skill development and livelihood opportunities.
             </p>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- 1. White Clothing & Fashion -->
-            <div
-                class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-4 border border-amber-100">
-                        <i class="ri-t-shirt-line"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">White Clothing &amp; Fashion</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Sarees, ethnic and formal wear, casual clothing and occasion wear crafted in pure white
-                        textures.
-                    </p>
-                </div>
-                <div
-                    class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-amber-700 uppercase tracking-wider">
-                    Everyday &amp; Occasion
-                </div>
+        <!-- Card 3: Partner With THE WHITE WORLD™ -->
+        <div id="partner"
+          class="bg-[#fdfbf7] border border-[#ecdcc8] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-3 pb-2 border-b border-[#f1e5d7]">
+              <div
+                class="w-8 h-8 rounded-full bg-[#f3e7d5] flex items-center justify-center text-[#b38738] shrink-0 text-xs">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h3 class="text-base font-serif font-bold text-[#2d2419] leading-tight">
+                Partner With THE WHITE WORLD&trade;
+              </h3>
             </div>
 
-            <!-- 2. Accessories & Footwear -->
-            <div
-                class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-4 border border-amber-100">
-                        <i class="ri-handbag-line"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Accessories &amp; Footwear</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Handbags, wallets, belts, scarves, watches, footwear and travel accessories.
-                    </p>
-                </div>
-                <div
-                    class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-amber-700 uppercase tracking-wider">
-                    Complementary Accents
-                </div>
-            </div>
-
-            <!-- 3. Home & Living -->
-            <div
-                class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-4 border border-amber-100">
-                        <i class="ri-home-4-line"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Home &amp; Living</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Bed and bath linen, kitchen and dining products, ceramics, furniture and minimalist white décor.
-                    </p>
-                </div>
-                <div
-                    class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-amber-700 uppercase tracking-wider">
-                    Serene Living Spaces
-                </div>
-            </div>
-
-            <!-- 4. Handlooms & Textiles -->
-            <div
-                class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-4 border border-amber-100">
-                        <i class="ri-scissors-2-line"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Handlooms &amp; Textiles</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Cotton, linen, silk, khadi, authentic handloom products and artisanal craft textiles.
-                    </p>
-                </div>
-                <div
-                    class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-amber-700 uppercase tracking-wider">
-                    Indigenous Heritage
-                </div>
-            </div>
-
-            <!-- 5. Wellness & Lifestyle -->
-            <div
-                class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-4 border border-amber-100">
-                        <i class="ri-heart-line"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Wellness &amp; Lifestyle</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Aromatherapy, bath and body collections, yoga, meditation, and mindfulness products.
-                    </p>
-                </div>
-                <div
-                    class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-amber-700 uppercase tracking-wider">
-                    Holistic Wellbeing
-                </div>
-            </div>
-
-            <!-- 6. Jewellery & Luxury -->
-            <div
-                class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-4 border border-amber-100">
-                        <i class="ri-vip-diamond-line"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Jewellery &amp; Luxury</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Fine jewellery, pearls, silver and platinum accents, fashion jewellery, and premium accessories.
-                    </p>
-                </div>
-                <div
-                    class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-amber-700 uppercase tracking-wider">
-                    Understated Luxury
-                </div>
-            </div>
-
-            <!-- 7. Electronics & Home Appliances -->
-            <div
-                class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-4 border border-amber-100">
-                        <i class="ri-macbook-line"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Electronics &amp; Appliances</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Consumer electronics, peripherals, and selected home and kitchen appliances in white aesthetics.
-                    </p>
-                </div>
-                <div
-                    class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-amber-700 uppercase tracking-wider">
-                    Aesthetic Modernity
-                </div>
-            </div>
-
-            <!-- 8. Spiritual, Beauty & Gifting -->
-            <div
-                class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-4 border border-amber-100">
-                        <i class="ri-gift-line"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Spiritual, Beauty &amp; Gifting</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Pooja products, personal care essentials, bespoke gift hampers, and curated corporate gifting.
-                    </p>
-                </div>
-                <div
-                    class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-amber-700 uppercase tracking-wider">
-                    Sacred &amp; Thoughtful
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Signature Collections Section -->
-<section id="collections" class="py-16 sm:py-24 bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mb-12">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Curated Lines</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
-                Our Signature Collections
-            </h2>
-            <p class="text-base text-slate-600 mt-2">
-                Four distinct collections engineered for artisan upliftment, sustainable living, bespoke luxury, and
-                life milestones.
+            <p class="text-xs text-[#615140] leading-relaxed font-light mb-4">
+              We welcome conversations with artisans, women-led enterprises, SHGs, suppliers, designers, manufacturers
+              and institutional partners interested in contributing to this integrated lifestyle and social impact
+              initiative.
             </p>
+          </div>
+
+          <div class="pt-2">
+            <a href="/contact"
+              class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#b38738] via-[#c99e4b] to-[#a3792c] text-white text-xs font-semibold uppercase tracking-wider text-center block shadow-md hover:shadow-lg transition">
+              Partner With Us
+            </a>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Collection 1: White Artisan -->
-            <div
-                class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-amber-500/50 hover:bg-white hover:shadow-md transition">
-                <span
-                    class="inline-block px-2.5 py-1 rounded bg-amber-100 text-amber-900 text-[10px] font-bold uppercase tracking-wider mb-3">
-                    Artisanal Heritage
-                </span>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">White Artisan Collection</h3>
-                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Products and crafts from women entrepreneurs, tribal communities and Self-Help Group (SHG) artisans
-                    celebrating authentic indigenous craftsmanship.
-                </p>
-            </div>
+      </div>
+    </section>
 
-            <!-- Collection 2: White Sustainable -->
-            <div
-                class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-amber-500/50 hover:bg-white hover:shadow-md transition">
-                <span
-                    class="inline-block px-2.5 py-1 rounded bg-emerald-100 text-emerald-900 text-[10px] font-bold uppercase tracking-wider mb-3">
-                    Eco-Conscious
-                </span>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">White Sustainable Collection</h3>
-                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Organic cotton, chemical-free dyes, eco-friendly textiles, zero-waste packaging, and recycled white
-                    lifestyle products.
-                </p>
-            </div>
+  </div>
+</main>
 
-            <!-- Collection 3: White Luxury -->
-            <div
-                class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-amber-500/50 hover:bg-white hover:shadow-md transition">
-                <span
-                    class="inline-block px-2.5 py-1 rounded bg-slate-900 text-white text-[10px] font-bold uppercase tracking-wider mb-3">
-                    Premium Couture
-                </span>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">White Luxury Collection</h3>
-                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Premium fashion, designer occasion wear, fine jewellery, handcrafted silk textiles, and luxury home
-                    décor.
-                </p>
-            </div>
+<!-- ============================================================== -->
+<!-- BOTTOM BANNER / DYNAMIC CTA SECTION                            -->
+<!-- Clean background (cta-white-world.png) + Floating Pill Card    -->
+<!-- Matching the exact structure of smart-crop-doctor CTA          -->
+<!-- ============================================================== -->
+<section
+  class="relative overflow-hidden min-h-[220px] sm:min-h-[260px] lg:min-h-[280px] flex items-center py-10 sm:py-14 border-t border-[#ebdcc9]">
+  <!-- Background Image: cta-white-world.png -->
+  <div class="absolute inset-0 z-0">
+    <img src="<?= url('assets/images/mercora/cta-white-world.png') ?>" alt="Be Part of the Vision - THE WHITE WORLD™"
+      class="w-full h-full object-cover object-center" />
+  </div>
 
-            <!-- Collection 4: White Wedding -->
-            <div
-                class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-amber-500/50 hover:bg-white hover:shadow-md transition">
-                <span
-                    class="inline-block px-2.5 py-1 rounded bg-rose-100 text-rose-900 text-[10px] font-bold uppercase tracking-wider mb-3">
-                    Ceremonial
-                </span>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">White Wedding Collection</h3>
-                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Bridal and groom wear, wedding trousseau, ceremonial white décor, bespoke return gifts, and luxury
-                    floral arrangements.
-                </p>
-            </div>
+  <!-- Centered Floating Container (Matching Reference UI Design) -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+    <div
+      class="max-w-6xl mx-auto bg-white/95 backdrop-blur-md rounded-2xl md:rounded-full py-4 sm:py-5 px-6 sm:px-8 lg:px-10 shadow-2xl border border-white/80 flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6">
+
+      <!-- Left Group: Icon + Title + Divider + Description -->
+      <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-center sm:text-left flex-1 min-w-0">
+        <div
+          class="w-11 h-11 rounded-full bg-[#f3e7d5] flex items-center justify-center text-[#b38738] shrink-0 text-xl shadow-2xs">
+          <i class="fas fa-seedling"></i>
         </div>
+        <div class="shrink-0">
+          <h3 class="text-lg sm:text-xl font-serif font-bold text-[#2d2419] tracking-tight whitespace-nowrap">
+            Be Part of the Vision
+          </h3>
+        </div>
+        <div class="hidden lg:block w-px h-8 bg-[#b38738]/40 shrink-0 mx-1"></div>
+        <p class="text-xs sm:text-sm text-[#6e5d4a] font-light leading-relaxed">
+          Together, we can build an inclusive, sustainable and elegant white lifestyle ecosystem that creates value for
+          people and communities.
+        </p>
+      </div>
+
+      <!-- Right CTA Button -->
+      <div class="shrink-0">
+        <a href="<?= url('/contact') ?>?vertical=the-white-world"
+          class="inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-[#b38738] via-[#c99e4b] to-[#a3792c] hover:from-[#a3792c] hover:to-[#8c6729] text-white font-semibold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all duration-200 whitespace-nowrap uppercase tracking-wider">
+          <i class="far fa-envelope text-base"></i>
+          <span>Contact Mercora International</span>
+        </a>
+      </div>
+
     </div>
-</section>
-
-<!-- Special Focus on Social Impact -->
-<section class="py-16 sm:py-20 bg-amber-50/50 border-b border-amber-200/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl space-y-4">
-            <span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-200/60 text-amber-900 border border-amber-300">
-                <i class="ri-heart-pulse-fill text-amber-700"></i> Empowering Inclusive Livelihoods
-            </span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
-                A Special Focus on Social Impact
-            </h2>
-            <p class="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Social impact is central to <strong>THE WHITE WORLD™</strong> concept. The initiative aims to create
-                livelihood and market opportunities for women entrepreneurs, tribal artisans, rural Self-Help Groups
-                (SHGs), and persons with disabilities. Its proposed <strong>Women Empowerment Collection</strong> will
-                feature handcrafted apparel, tribal handloom and handicrafts, SHG-made products, sustainable items and
-                products crafted by persons with disabilities.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Youth-Led Creativity and Entrepreneurship (Featuring D. VedAnjali) -->
-<section class="py-16 sm:py-24 bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 sm:p-12 shadow-sm">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-                <div class="lg:col-span-4 flex justify-center">
-                    <div class="relative w-64 h-80 rounded-2xl overflow-hidden border-2 border-amber-300/60 shadow-lg">
-                        <img src="<?= url('assets/images/team/veda-anjali.jpg') ?>"
-                            alt="D. VedAnjali - Youth Ambassador, White World Brand"
-                            class="w-full h-full object-cover object-top" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent">
-                        </div>
-                        <div class="absolute bottom-3 left-3 right-3 text-white">
-                            <div class="text-sm font-bold">D. VedAnjali</div>
-                            <div class="text-[11px] text-amber-300">Grade 10 Student &amp; Youth Ambassador</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-8 space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-wider text-amber-700">NextGen Leadership</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
-                        Youth-Led Creativity and Entrepreneurship
-                    </h2>
-                    <p class="text-base text-slate-700 leading-relaxed">
-                        <strong>THE WHITE WORLD™</strong> was conceptualised with creativity and craftsmanship by
-                        <strong>D. VedAnjali</strong> (D. R. Vedanjali), a Grade 10 student, young entrepreneur and
-                        Youth Ambassador for the White World Brand. Her involvement reflects the initiative’s
-                        encouragement of youth leadership, creativity and community-led entrepreneurship.
-                    </p>
-                    <p class="text-base text-slate-700 leading-relaxed">
-                        As described in the initiative document, her focus includes supporting women tailors, tribal
-                        artisans, persons with disabilities and underprivileged youth through skill development and
-                        livelihood opportunities.
-                    </p>
-                    <div class="pt-2">
-                        <span
-                            class="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white px-3.5 py-2 rounded-lg border border-slate-200">
-                            <i class="ri-check-line text-amber-600"></i> Skill Development · Livelihood Opportunities ·
-                            Community Inclusion
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Building an Inclusive and Sustainable Ecosystem & Partner With Us CTA -->
-<section class="py-16 sm:py-24 bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto text-center space-y-6">
-            <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Institutional &amp; Artisan
-                Synergy</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
-                Building an Inclusive and Sustainable Ecosystem
-            </h2>
-            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-                Through collaboration with women entrepreneurs, artisans, SHGs, suppliers, institutions and other
-                ecosystem partners, <strong>THE WHITE WORLD™</strong> aims to connect distinctive white-themed products
-                with customers while supporting inclusive livelihoods, responsible practices and sustainable growth.
-            </p>
-            <div class="pt-4 border-t border-slate-800">
-                <h3 class="text-xl font-bold text-white mb-2">Partner with THE WHITE WORLD™</h3>
-                <p class="text-xs sm:text-sm text-slate-400 mb-6">
-                    We welcome conversations with artisans, women-led enterprises, SHGs, suppliers, designers,
-                    manufacturers, institutions and potential business partners interested in contributing to this
-                    integrated lifestyle and social impact initiative.
-                </p>
-                <a href="<?= url('/contact') ?>?vertical=textile"
-                    class="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-slate-950 bg-amber-400 hover:bg-amber-300 rounded-xl transition shadow-lg shadow-amber-400/20">
-                    Contact Mercora International <i class="ri-arrow-right-line ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+  </div>
 </section>
 
 <?php require_once dirname(__DIR__) . '/includes/footer.php'; ?>
