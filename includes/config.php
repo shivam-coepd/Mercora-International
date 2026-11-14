@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Mercora International - Central Configuration & Master Data
  * Sourced directly from Mercora_Website_Content_Master10726.docx
@@ -62,42 +63,26 @@ function e($str)
 $BUSINESS_VERTICALS = [
     [
         'id' => 'agritech',
-        'title' => 'AgriTech & Precision Agri',
+        'title' => 'Agriculture & AgriTech',
         'icon' => 'ri-plant-line',
         'image' => 'assets/images/industries/agriculture.jpg',
-        'short' => 'AI, drones, and multispectral imaging for smart farming and yield optimization.',
+        'short' => 'Smart Crop Doctor AI platform combining multispectral drone imaging for early disease diagnostics, soil analytics, and solar water pumping systems.',
         'tag' => 'Flagship Vertical'
     ],
     [
-        'id' => 'digital-trans',
-        'title' => 'Digital Transformation',
-        'icon' => 'ri-cpu-line',
-        'image' => 'assets/images/industries/technology.jpg',
-        'short' => 'End-to-end enterprise IT modernization, SaaS platforms, and intelligent automation.',
-        'tag' => 'Core Capability'
-    ],
-    [
-        'id' => 'global-trade',
-        'title' => 'Global Trade',
-        'icon' => 'ri-global-line',
-        'image' => 'assets/images/industries/trade.jpg',
-        'short' => 'Import-export facilitation, Incoterms advisory, and global buyer-seller matchmaking (IEC ACEFM7191A).',
-        'tag' => 'DGFT Registered'
-    ],
-    [
-        'id' => 'healthcare',
-        'title' => 'Healthcare & Wellness',
-        'icon' => 'ri-heart-pulse-line',
-        'image' => 'assets/images/industries/healthcare.jpg',
-        'short' => 'Corporate wellbeing, preventive mental health, and digital health QA via MindSmith partnership.',
-        'tag' => 'Wellbeing Tech'
+        'id' => 'csr-sustainability',
+        'title' => 'CSR & Sustainability',
+        'icon' => 'ri-recycle-line',
+        'image' => 'assets/images/industries/sustainability.jpg',
+        'short' => 'CSR programme architecture, ESG audits, rural AgriTech deployment, tribal farmer linkage via Native Araku Coffee, and household waste-to-energy.',
+        'tag' => 'Circular Economy'
     ],
     [
         'id' => 'education',
-        'title' => 'Education & Skilling',
+        'title' => 'Education, Skill & Entrepreneurship',
         'icon' => 'ri-book-read-line',
         'image' => 'assets/images/industries/education.jpg',
-        'short' => 'Competency training, international student mobility, and STEM pathways with VFS Education.',
+        'short' => 'Competency-based training, startup incubation, innovation curriculum design, and global STEM study abroad pathways via VFS Education Services.',
         'tag' => 'Human Capital'
     ],
     [
@@ -105,52 +90,68 @@ $BUSINESS_VERTICALS = [
         'title' => 'Financial Advisory',
         'icon' => 'ri-funds-line',
         'image' => 'assets/images/industries/finance.jpg',
-        'short' => 'Audit, GRC advisory, ESG compliance, financial due diligence, and capital structuring.',
+        'short' => 'Internal audits, Governance, Risk & Compliance (GRC) advisory, ESG alignment, BFSI software QA, and financial due diligence for investments.',
         'tag' => 'Strategic Advisory'
+    ],
+    [
+        'id' => 'global-trade',
+        'title' => 'Global Trade',
+        'icon' => 'ri-global-line',
+        'image' => 'assets/images/industries/trade.jpg',
+        'short' => 'Import/export facilitation under official DGFT IEC ACEFM7191A, FOB/CIF contracts, international buyer-seller matchmaking, and agro-commodity corridors.',
+        'tag' => 'DGFT Registered'
+    ],
+    [
+        'id' => 'healthcare',
+        'title' => 'Healthcare & Wellness',
+        'icon' => 'ri-heart-pulse-line',
+        'image' => 'assets/images/industries/healthcare.jpg',
+        'short' => 'Corporate wellness solutions, preventive mental healthcare programs, Brain Health Profile (BHP), and digital health software quality assurance.',
+        'tag' => 'Wellbeing Tech'
+    ],
+    [
+        'id' => 'manufacturing',
+        'title' => 'Manufacturing & Supply Chain',
+        'icon' => 'ri-settings-4-line',
+        'image' => 'assets/images/industries/manufacturing.jpg',
+        'tag' => 'Process Optimization',
+        'short' => 'ERP selection and implementation QA, workflow automation, supply chain resilience consulting, export documentation, and customs clearance.',
+    ],
+    [
+        'id' => 'digital-trans',
+        'title' => 'Innovation & Technology',
+        'icon' => 'ri-cpu-line',
+        'image' => 'assets/images/industries/technology.jpg',
+        'short' => 'Innovation labs, venture acceleration, and government funding access including Startup India Seed Fund (SISFS) and iDEX defense grants with Tridantor.',
+        'tag' => 'Core Capability'
+    ],
+    [
+        'id' => 'fmcg-coffee',
+        'title' => 'Retail, FMCG & Food & Beverage',
+        'icon' => 'ri-shopping-bag-3-line',
+        'image' => 'assets/images/industries/retail.jpg',
+        'tag' => 'Native Araku Coffee',
+        'short' => 'Native Araku Coffee franchise development, wholesale distribution, FMCG supply chain optimization, and retail Standard Operating Procedures.',
     ],
     [
         'id' => 'textile-apparel',
         'title' => 'Textile & Apparel',
         'icon' => 'ri-t-shirt-2-line',
         'image' => 'assets/images/industries/textile.jpg',
-        'short' => 'Sustainable fabric innovation and WHITE WORLD premium lifestyle e-commerce platform.',
+        'short' => 'Sustainable organic fabric innovation, conscious lifestyle fashion, and the upcoming WHITE WORLD e-commerce ecosystem empowering rural tailors.',
         'tag' => 'WHITE WORLD'
-    ],
-    [
-        'id' => 'nextgen-innovation',
-        'title' => 'NextGen Innovation',
-        'icon' => 'ri-lightbulb-flash-line',
-        'image' => 'assets/images/industries/manufacturing.jpg',
-        'short' => 'Venture acceleration, deep-tech defense (iDEX), and government grant facilitation (SISFS).',
-        'tag' => 'Deep Tech & iDEX'
     ],
     [
         'id' => 'women-empowerment',
         'title' => 'Women Empowerment',
         'icon' => 'ri-women-line',
         'image' => 'assets/images/industries/women.jpg',
-        'short' => 'Incubation, financial inclusion, and 100 Women-Driven Coffee Shops with SERP, AP Government.',
+        'short' => 'Entrepreneurial incubation, financial inclusion, and the milestone initiative establishing 100 Women-Driven Coffee Shops across AP in partnership with SERP.',
         'tag' => 'SERP AP Initiative'
-    ],
-    [
-        'id' => 'arts-culture',
-        'title' => 'Arts & Culture',
-        'icon' => 'ri-palette-line',
-        'image' => 'assets/images/industries/culture.jpg',
-        'short' => 'Heritage conservation, tribal artisan upliftment, and indigenous craft promotion.',
-        'tag' => 'Cultural Heritage'
-    ],
-    [
-        'id' => 'csr-sustainability',
-        'title' => 'CSR & Sustainability',
-        'icon' => 'ri-recycle-line',
-        'image' => 'assets/images/industries/sustainability.jpg',
-        'short' => 'ESG reporting, household waste-to-energy biofuels, and rural solar pumping systems.',
-        'tag' => 'Circular Economy'
     ],
 ];
 
-// The 11 Confirmed Signed-MOU Partners (in chronological date order per Client Observations)
+// The 12 Confirmed Signed-MOU Partners (in chronological date order per Client Observations)
 $PARTNERS = [
     'mindsmith' => [
         'name' => 'MindSmith',
@@ -160,8 +161,6 @@ $PARTNERS = [
         'tag' => 'Health-Tech Innovation',
         'summary' => 'MindSmith delivers Brain Health Profile (BHP), Life Lanes™, SKYE AI, corporate EAP wellness programs, and preventive mental healthcare.',
         'full_text' => 'Mercora International is associated with MindSmith Private Limited, an innovative health-tech and wellbeing company specializing in mental health assessments, employee wellbeing programs, behavioral analytics, AI-powered wellness solutions, digital counselling platforms, educational wellbeing programs, and preventive mental healthcare services. Through this strategic partnership, Mercora International and MindSmith collaborate to promote and deliver transformative solutions including Brain Health Profile (BHP), Life Lanes™, SKYE AI, mental wellness assessments, employee assistance programs (EAP), organizational wellbeing initiatives, student wellness programs, and AI-driven behavioural insights for government organizations, public sector enterprises, corporates, and community ecosystems.',
-        'cta' => 'Explore Wellbeing Programs',
-        'link' => '/business-solutions'
     ],
     'apt-it-solutions' => [
         'name' => 'APT IT Solutions',
@@ -171,8 +170,6 @@ $PARTNERS = [
         'tag' => 'ISO 9001:2015 Tech Partner',
         'summary' => 'ISO 9001:2015 certified company specializing in custom software development, web & mobile applications, LMS, and enterprise IT consulting.',
         'full_text' => 'Mercora International is associated with APT IT Solutions, a leading information technology and digital solutions company specializing in custom software development, web and mobile application development, e-commerce solutions, UI/UX design, digital marketing, SEO services, enterprise software development, learning management systems (LMS), and IT consulting services. Through this strategic partnership, Mercora International and APT IT Solutions collaborate to deliver innovative digital transformation solutions, business automation platforms, enterprise applications, cloud-enabled systems, e-governance solutions, website development, mobile applications, and technology consulting services for startups, SMEs, enterprises, educational institutions, and government organizations.',
-        'cta' => 'Discuss IT Mandates',
-        'link' => '/it-services'
     ],
     'rishipal-gupta-sons' => [
         'name' => 'M/s RishiPal Gupta & Sons',
@@ -182,8 +179,6 @@ $PARTNERS = [
         'tag' => '7+ Decades Industry Heritage',
         'summary' => 'Seven decades of spice manufacturing, export processing, sustainable food supply chains, and global trade operations.',
         'full_text' => 'Mercora International is associated with RishiPal Gupta & Sons (RPGS), a leading spice manufacturing, spice processing, and spice trading company with over seven decades of industry expertise. Through this strategic partnership, Mercora International and RPGS collaborate to drive spice exports, agri-food trade, international market expansion, import-export facilitation, business development, investment advisory, supply chain growth, and global buyer-seller networking across domestic and international markets. The collaboration focuses on market research, export promotion, regulatory compliance, trade consultancy, portfolio development, international partnerships, and women entrepreneurship initiatives within the agri-food sector.',
-        'cta' => 'Explore Agri-Trade Advisory',
-        'link' => '/business-solutions'
     ],
     'native-araku-coffee' => [
         'name' => 'Native Araku Coffee Pvt Ltd',
@@ -204,8 +199,6 @@ $PARTNERS = [
         'tag' => 'DGCA Type-Certified Tech Partner',
         'summary' => 'Dastrionics Technologies Private Limited delivers DGCA-approved drone spraying, precision agriculture, mining surveys, volumetric analysis, and digital mapping.',
         'full_text' => 'Mercora International is proud to be associated with Drone Anatomy (Dastrionics Technologies Private Limited), a leading Indian drone technology company and manufacturer of DGCA-approved, type-certified drone solutions. Through this strategic partnership, Mercora International and Drone Anatomy deliver advanced drone spraying services, precision agriculture solutions, drone surveying and mapping, mining surveys, aerial scanning, GIS mapping, orthomosaic generation, volumetric analysis, mine planning support, stockpile measurement, drone-based inspections, and digital monitoring services across agriculture, mining, infrastructure, construction, environmental monitoring, and industrial sectors. The collaboration also supports the establishment of Drone Service Centres, technical training, maintenance support, and drone-enabled project execution for government, enterprise, mining companies, infrastructure developers, and private-sector clients. While Mercora International provides consulting, business development, project management, mining advisory, and client engagement services, Drone Anatomy contributes cutting-edge drone technology, aerial survey expertise, geospatial analytics, and operational capabilities.',
-        'cta' => 'Explore Drone Solutions',
-        'link' => '/it-services'
     ],
     'tridantor' => [
         'name' => 'Tridantor',
@@ -215,8 +208,6 @@ $PARTNERS = [
         'tag' => 'iDEX & Deep-Tech Partner',
         'summary' => 'Tridantor Ideaus Private Limited specializes in defence modernization, AI-powered surveillance, edge computing, and critical asset protection.',
         'full_text' => 'Mercora International is associated with Tridantor Ideaus Private Limited, a deep-technology company specializing in defence technology, disaster response solutions, critical infrastructure monitoring, AI-powered surveillance, advanced sensing systems, edge computing, intelligent decision support systems, and secure communication technologies. Through this strategic partnership, Mercora International and Tridantor collaborate to deliver innovative solutions for defence modernization, homeland security, disaster management, smart infrastructure monitoring, public safety systems, government technology programs, and critical asset protection. The collaboration includes government advisory, strategic consulting, grant and funding support (including iDEX), institutional partnerships, business development, technology commercialization, and investment facilitation.',
-        'cta' => 'Explore Deep-Tech Solutions',
-        'link' => '/business-solutions'
     ],
     'kavachapp' => [
         'name' => 'KavachApp',
@@ -226,30 +217,24 @@ $PARTNERS = [
         'tag' => 'Mercosys Ecosystem Partner',
         'summary' => 'Arisetty Technologies Private Limited provides white-labelled SaaS platforms, business automation software, and enterprise digital solutions.',
         'full_text' => 'Mercora International is proud to be associated with KavachApp (Arisetty Technologies Private Limited), a leading SaaS technology provider delivering secure, scalable, and business-ready digital solutions. Through this strategic partnership, Mercora International and KavachApp collaborate to provide white-labelled SaaS platforms, digital transformation solutions, business automation software, workflow management systems, enterprise applications, subscription-based software services, client onboarding solutions, and cloud-based business platforms under the Mercosys ecosystem. The partnership enables organizations, startups, SMEs, educational institutions, and enterprises to accelerate digital adoption through innovative technology solutions, seamless implementation, user training, technical support, and ongoing platform enhancement.',
-        'cta' => 'Inquire About SaaS & Mercosys',
-        'link' => '/it-services'
     ],
     'agarwood-impex' => [
-        'name' => 'Agarwood Impex Pvt Ltd (tripartite with Syaam Real Estate Consultant)',
+        'name' => 'Agarwood Impex Pvt Ltd',
         'role' => 'Strategic Agarwood & Premium Oud Trade Partner',
         'mou_date' => '22 Oct 2026',
         'logo' => 'assets/images/mercora/partners/agarwood-impex.jpg',
         'tag' => 'Strategic Agarwood & Oud Partner',
         'summary' => 'Specialising in the sourcing, processing, trading and export of premium naturally formed agarwood and oud-based products.',
         'full_text' => 'Mercora International is associated with Agarwood Impex Private Limited, a Hyderabad-based company specialising in the sourcing, processing, trading and export of premium, naturally formed agarwood and oud-based products. Through this strategic collaboration, also involving Syaam Real Estate Consultant, Mercora International and Agarwood Impex collaborate to strengthen domestic and international market opportunities, facilitate investment and funding arrangements, support trade finance, and explore value-added manufacturing and business expansion. The collaboration brings together business networks, financial facilitation and strategic consulting capabilities to support Agarwood Impex’s growth across the agarwood and premium oud product ecosystem.',
-        'cta' => 'Explore Agarwood & Oud Trade',
-        'link' => '/business-solutions'
     ],
     'delhi-test-house' => [
-        'name' => 'Delhi Test House (a unit of Delhi Test House Global LLP)',
+        'name' => 'Delhi Test House',
         'role' => 'Strategic Testing, Inspection & Certification Partner',
         'mou_date' => '22 Oct 2026',
         'logo' => 'assets/images/mercora/partners/delhi-test-house.jpg',
         'tag' => 'Strategic Testing & Certification Partner',
         'summary' => 'Established testing, inspection, calibration and certification organisation with expertise in laboratory testing, quality assurance and regulatory compliance.',
         'full_text' => 'Mercora International is associated with Delhi Test House (a unit of Delhi Test House Global LLP), an established testing, inspection, calibration and certification organisation with expertise in laboratory testing, quality assurance and regulatory compliance. Through this strategic collaboration, Mercora International and Delhi Test House work together on business development, market access, client introductions, industry partnerships and expansion opportunities across domestic and international markets. The collaboration focuses on connecting manufacturers, exporters, enterprises and institutions with reliable testing and certification services, including product testing, BIS compliance, quality assurance, technical consultancy and certification support.',
-        'cta' => 'Inquire About Testing & Certification',
-        'link' => '/contact'
     ],
     'cliqin-health' => [
         'name' => 'CLiQiN Health',
@@ -259,8 +244,6 @@ $PARTNERS = [
         'tag' => 'Strategic Healthcare Access Partner',
         'summary' => 'Healthcare-focused organisation working towards expanding access to integrated healthcare solutions across hospitals, diagnostic centres, and institutional buyers.',
         'full_text' => 'Mercora International is associated with CLiQiN Health, a healthcare-focused organisation working towards expanding access to integrated healthcare solutions. Through this strategic collaboration, Mercora International and CLiQiN Health work together on business development, market access, strategic partnerships, customer acquisition and expansion across India and international markets. The collaboration focuses on facilitating connections with hospitals, diagnostic centres, corporates, government bodies, insurance providers, institutional buyers and other healthcare stakeholders. By combining Mercora’s business network and strategic consulting capabilities with CLiQiN Health’s healthcare solutions, it aims to create new growth opportunities and strengthen the healthcare ecosystem through meaningful partnerships and technology-enabled initiatives.',
-        'cta' => 'Explore Healthcare Solutions',
-        'link' => '/business-solutions'
     ],
     'x-dimension-robotics' => [
         'name' => 'X Dimension Robotics Private Limited',
@@ -270,8 +253,15 @@ $PARTNERS = [
         'tag' => 'Strategic Drone & Robotics Partner',
         'summary' => 'Specialising in drone systems, robotics, Artificial Intelligence, automation, DaaS, and IoT solutions for precision agriculture, mining, and defence.',
         'full_text' => 'Mercora International is associated with X Dimension Robotics Private Limited, a technology company specialising in drone systems, robotics, Artificial Intelligence, automation and IoT solutions. Through this strategic collaboration, Mercora International and X Dimension Robotics work together to facilitate technology deployment and business opportunities across precision agriculture, drone-as-a-service (DaaS), mining surveys, infrastructure monitoring, defence, industrial automation and smart city applications. The collaboration also focuses on drone pilot training and certification, skill development, research and innovation, government and PSU projects, grant and subsidy opportunities, investment facilitation and enterprise solutions, combining Mercora’s market-access capabilities with X Dimension Robotics’ technical expertise to accelerate technology adoption and business growth across India.',
-        'cta' => 'Explore Drone & Robotics Solutions',
-        'link' => '/it-services'
+    ],
+    'venkatesh-m-associates' => [
+        'name' => 'Venkatesh M. Associates',
+        'role' => 'Chartered Accountancy, Statutory & Tax Audits, GST, ROC Compliance, Company Incorporation, TDS and Virtual CFO Services',
+        'mou_date' => '20 October 2025',
+        'logo' => 'assets/images/mercora/partners/venkatesh-m-associates.png',
+        'tag' => 'Legal & Advisory Partner',
+        'summary' => 'Specialising in drone systems, robotics, Artificial Intelligence, automation, DaaS, and IoT solutions for precision agriculture, mining, and defence.',
+        'full_text' => "Mercora International is associated with Venkatesh M & Associates, a Hyderabad-based Chartered Accountancy firm established in 2022, specialising in statutory audits, income tax, Goods and Services Tax (GST), corporate compliance and financial advisory services. Through this professional collaboration, Mercora International and Venkatesh M & Associates aim to support enterprises, startups and SMEs in strengthening their financial management, regulatory compliance and business operations. The areas of collaboration include statutory and tax audits, GST and TDS compliance, ROC filings, company incorporation, financial planning and Virtual CFO services. Combining Mercora's strategic consulting and business development capabilities with the firm's professional expertise in accounting, taxation and financial advisory, the association seeks to facilitate business growth, improve financial governance and support sustainable enterprise development.",
     ],
 ];
 
@@ -289,7 +279,7 @@ $LEADERSHIP_TEAM = [
         'role' => 'Co-Founder & Partner',
         'qualification' => 'Strategic Innovation & Community Ecosystems',
         'photo' => 'assets/images/team/manasa-raj.jpeg',
-        'bio' => 'A strategic leader focused on innovation ecosystems, entrepreneurship development, arts, culture, heritage promotion, and scalable business platforms for rural communities and AgriTech initiatives. She drives Mercora\'s community impact programmes and fosters inclusive, partnership-led growth models across industry and social sectors.'
+        'bio' => ' A dynamic and forward-thinking strategic leader with a strong commitment to building innovation-driven ecosystems, advancing entrepreneurship, and promoting sustainable and inclusive development. Her areas of focus encompass entrepreneurship development, arts, culture, heritage preservation and promotion, rural community empowerment, and the development of scalable business platforms, with particular emphasis on AgriTech and technology-enabled rural transformation. At Mercora International, she plays an instrumental role in driving community impact initiatives, fostering strategic partnerships, and facilitating meaningful collaborations across industry, academia, startups, government institutions, and social sectors. She is passionate about connecting grassroots potential with emerging opportunities, encouraging innovation-led enterprises, and creating sustainable livelihood models for rural communities. Her approach centres on inclusive growth, collaborative leadership, and impactful partnerships that integrate business, technology, culture, and social development. Through her initiatives, she strives to nurture entrepreneurial talent, strengthen rural economies, preserve cultural heritage, and build scalable ecosystems that generate lasting social and economic value.'
     ],
     [
         'name' => 'Mr. Subbarao Kalluri',
@@ -328,7 +318,7 @@ $LEADERSHIP_TEAM = [
     ],
 ];
 
-// Company Journey Milestones from Section 11 of Observations Document
+// Company Journey Milestones from Section 12 of Observations Document
 $COMPANY_JOURNEY = [
     [
         'date' => '29 Jul 2025',
@@ -353,6 +343,12 @@ $COMPANY_JOURNEY = [
         'badge' => 'DIGITAL TRANSFORMATION',
         'title' => 'APT IT Solutions Partnership',
         'desc' => 'Strategic MOU signed with APT IT Solutions to explore opportunities in IT services, technology solutions and digital transformation.'
+    ],
+    [
+        'date' => '20 Oct 2025',
+        'badge' => 'LEGAL & ADVISORY PARTNER',
+        'title' => 'Venkatesh M & Associates',
+        'desc' => 'Strategic MOU signed with Venkatesh M & Associates to explore opportunities in Chartered Accountancy, Statutory & Tax Audits, GST, ROC Compliance, Company Incorporation, TDS and Virtual CFO Services.'
     ],
     [
         'date' => '02 Dec 2025',
@@ -403,12 +399,6 @@ $COMPANY_JOURNEY = [
         'desc' => 'Importer Exporter Code issued by the Directorate General of Foreign Trade (DGFT), Hyderabad, enabling Mercora International to pursue eligible import and export business opportunities.'
     ],
     [
-        'date' => 'Jul 2026',
-        'badge' => 'ECOSYSTEM EXPANSION',
-        'title' => '7 Strategic MOUs & 18 Business Engagements',
-        'desc' => "Mercora's business ecosystem expanded across 11 focus verticals, with 7 strategic MOUs signed and 18 business engagements recorded at this milestone. GST registration confirmed."
-    ],
-    [
         'date' => '22 Oct 2026',
         'badge' => 'TRADE & BUSINESS DEVELOPMENT',
         'title' => 'Agarwood Impex Pvt. Ltd. Partnership',
@@ -431,12 +421,6 @@ $COMPANY_JOURNEY = [
         'badge' => 'ROBOTICS & DEEP TECHNOLOGY',
         'title' => 'X Dimension Robotics Private Limited Partnership',
         'desc' => 'Strategic collaboration to explore opportunities in drones, robotics, AI, automation, smart agriculture, skill development and technology-led solutions.'
-    ],
-    [
-        'date' => 'Dec 2026',
-        'badge' => 'STRATEGIC NETWORK EXPANSION',
-        'title' => '11 Strategic MOUs Across Multiple Sectors',
-        'desc' => "Mercora International's strategic partnership network comprises 11 MOU partnerships across IT, digital transformation, agriculture, trade, franchise development, drone technology, defence, healthcare, testing and certification, robotics and automation."
     ],
     [
         'date' => 'Dec 2026 – Jan 2027',

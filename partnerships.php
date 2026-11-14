@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Strategic Partnerships & Signed MOUs (11 Confirmed Alliances)';
-$pageDesc = 'Explore Mercora International\'s 11 confirmed signed-MOU institutional alliances across IT, drone technology, defence deep-tech, enterprise SaaS, testing & certification, healthcare access, robotics, and global trade.';
+$pageTitle = 'Strategic Partnerships & Signed MOUs (12 Confirmed Alliances)';
+$pageDesc = 'Explore Mercora International\'s 12 confirmed signed-MOU institutional alliances across IT, drone technology, defence deep-tech, enterprise SaaS, testing & certification, healthcare access, robotics, and global trade.';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -19,12 +19,12 @@ require_once __DIR__ . '/includes/header.php';
             </h1>
             <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
                 Mercora International operates through high-conviction collaborative models. We have formalized
-                <strong>11 strategic signed MOUs</strong> across multiple sectors with domain pioneers in IT and digital transformation, drone aviation, robotics and AI, defense deep-tech, healthcare access, testing and certification, enterprise software, and global trade.
+                <strong>12 strategic signed MOUs</strong> across multiple sectors with domain pioneers in IT and digital transformation, drone aviation, robotics and AI, defense deep-tech, healthcare access, testing and certification, enterprise software, and global trade.
             </p>
             <div class="flex flex-wrap items-center gap-4 pt-2">
                 <a href="#partner-mous"
                     class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg transition shadow-sm">
-                    View 11 Signed MOUs <i class="ri-calendar-check-line ml-2"></i>
+                    View 12 Signed MOUs <i class="ri-calendar-check-line ml-2"></i>
                 </a>
                 <a href="#partner-dossiers"
                     class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition">
@@ -39,12 +39,11 @@ require_once __DIR__ . '/includes/header.php';
 <section id="partner-mous" class="py-12 sm:py-16 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-8">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Official MOU Registry</span>
             <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 mt-1">
-                11 Confirmed Strategic MOUs (Chronological Order)
+                12 Confirmed Strategic MOUs (Chronological Order)
             </h2>
             <p class="text-sm sm:text-base text-slate-600 mt-2">
-                All 11 formalised bilateral and tripartite Memorandums of Understanding listed in execution date order.
+                All 12 formalised bilateral and tripartite Memorandums of Understanding listed in execution date order.
             </p>
         </div>
 
@@ -61,9 +60,9 @@ require_once __DIR__ . '/includes/header.php';
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100 text-slate-700">
-                        <?php 
+                        <?php
                         $i = 1;
-                        foreach ($PARTNERS as $key => $p): 
+                        foreach ($PARTNERS as $key => $p):
                         ?>
                             <tr class="hover:bg-amber-50/40 transition">
                                 <td class="py-3.5 px-4 sm:px-6 font-bold text-slate-900 text-center font-mono text-xs"><?= $i++ ?></td>
@@ -94,19 +93,9 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- Authoritative Partnership Dossiers (11 Confirmed Alliances) -->
+<!-- Authoritative Partnership Dossiers (12 Confirmed Alliances) -->
 <section id="partner-dossiers" class="py-12 sm:py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mb-12">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Verified Collaborations</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
-                Authoritative Partnership Dossiers
-            </h2>
-            <p class="text-base sm:text-lg text-slate-600 mt-3">
-                Comprehensive scope of association, technical alignment, and strategic growth mandates for each of our 11 confirmed MOU partners.
-            </p>
-        </div>
-
         <div class="space-y-8">
             <?php foreach ($PARTNERS as $key => $p): ?>
                 <article id="<?= e($key) ?>"
@@ -135,12 +124,14 @@ require_once __DIR__ . '/includes/header.php';
                                 <p class="text-xs sm:text-sm font-medium text-slate-500 mt-0.5"><?= e($p['role']) ?></p>
                             </div>
                         </div>
-                        <div>
-                            <a href="<?= url($p['link']) ?>"
-                                class="inline-flex items-center justify-center px-4 py-2.5 text-xs sm:text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition shadow-sm whitespace-nowrap">
-                                <?= e($p['cta']) ?> <i class="ri-arrow-right-line ml-1.5"></i>
-                            </a>
-                        </div>
+                        <?php if ($key === 'native-araku-coffee' && !empty($p['cta']) && !empty($p['link'])): ?>
+                            <div>
+                                <a href="<?= url($p['link']) ?>"
+                                    class="inline-flex items-center justify-center px-4 py-2.5 text-xs sm:text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition shadow-sm whitespace-nowrap">
+                                    <?= e($p['cta']) ?> <i class="ri-arrow-right-line ml-1.5"></i>
+                                </a>
+                            </div>
+                        <?php endif; ?>
                     </div>
 
                     <div class="text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -272,20 +263,6 @@ require_once __DIR__ . '/includes/header.php';
                         <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600"></i>
                             Co-branded solution packages</li>
                     </ul>
-                </div>
-
-                <div class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800">
-                    <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Defence Alliances</span>
-                    <h4 class="text-lg font-bold text-white mt-1 mb-2">Tridantor & iDEX Programs</h4>
-                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
-                        Deep-tech defence innovation, AI-powered surveillance, and critical asset monitoring in
-                        partnership with Tridantor Ideaus Private Limited.
-                    </p>
-                    <button type="button"
-                        class="inline-flex items-center justify-center px-4 py-2.5 text-xs font-semibold text-slate-950 bg-amber-400 hover:bg-amber-300 rounded-lg transition"
-                        data-partner-id="tridantor">
-                        View Tridantor Profile <i class="ri-arrow-right-line ml-1.5"></i>
-                    </button>
                 </div>
             </div>
         </div>

@@ -15,14 +15,14 @@ $INDUSTRIES = [
         'highlights' => ['Smart Crop Doctor AI Platform', 'Solar Water Pumping SITC + O&M', 'Farmer-to-Agri-Entrepreneur Programs']
     ],
     [
-        'id' => 'healthcare',
-        'title' => 'Healthcare & Wellness',
-        'short_name' => 'Healthcare',
-        'icon' => 'ri-heart-pulse-line',
-        'image' => 'assets/images/industries/healthcare.jpg',
-        'tag' => 'MindSmith Partnership',
-        'desc' => 'Corporate wellness solutions, preventive mental healthcare programs, Brain Health Profile (BHP), and digital health software quality assurance.',
-        'highlights' => ['Corporate Employee Assistance (EAP)', 'Brain Health Profile (BHP) & SKYE AI', 'Digital Health Software QA']
+        'id' => 'csr',
+        'title' => 'CSR & Sustainability',
+        'short_name' => 'CSR & Sustainability',
+        'icon' => 'ri-recycle-line',
+        'image' => 'assets/images/industries/sustainability.jpg',
+        'tag' => 'ESG Impact',
+        'desc' => 'CSR programme architecture, ESG audits, rural AgriTech deployment, tribal farmer linkage via Native Araku Coffee, and household waste-to-energy.',
+        'highlights' => ['Measurable ESG Impact Metrics', 'Household Waste to Biofuel Conversion', 'Tribal Farmer Livelihood Upliftment']
     ],
     [
         'id' => 'education',
@@ -36,33 +36,13 @@ $INDUSTRIES = [
     ],
     [
         'id' => 'bfsi',
-        'title' => 'Finance & BFSI',
+        'title' => 'Financial Advisory',
         'short_name' => 'Finance',
         'icon' => 'ri-bank-card-line',
         'image' => 'assets/images/industries/finance.jpg',
         'tag' => 'GRC & FinTech',
         'desc' => 'Internal audits, Governance, Risk & Compliance (GRC) advisory, ESG alignment, BFSI software QA, and financial due diligence for investments.',
         'highlights' => ['Internal Audits & GRC Frameworks', 'BFSI Software QA & Security', 'Financial Due Diligence & Valuation']
-    ],
-    [
-        'id' => 'fmcg-coffee',
-        'title' => 'Retail, FMCG & Food & Beverage',
-        'short_name' => 'Retail & E-commerce',
-        'icon' => 'ri-shopping-bag-3-line',
-        'image' => 'assets/images/industries/retail.jpg',
-        'tag' => 'Native Araku Coffee',
-        'desc' => 'Native Araku Coffee franchise development, wholesale distribution, FMCG supply chain optimization, and retail Standard Operating Procedures.',
-        'highlights' => ['Native Araku Coffee Distribution', 'Retail SOP & Franchise Scaling', 'HoReCa & Corporate Gifting']
-    ],
-    [
-        'id' => 'manufacturing',
-        'title' => 'Manufacturing & Supply Chain',
-        'short_name' => 'Manufacturing',
-        'icon' => 'ri-settings-4-line',
-        'image' => 'assets/images/industries/manufacturing.jpg',
-        'tag' => 'Process Optimization',
-        'desc' => 'ERP selection and implementation QA, workflow automation, supply chain resilience consulting, export documentation, and customs clearance.',
-        'highlights' => ['ERP Selection & Implementation QA', 'Supply Chain Bottleneck Elimination', 'International Export Packaging']
     ],
     [
         'id' => 'trade',
@@ -75,6 +55,46 @@ $INDUSTRIES = [
         'highlights' => ['DGFT Registered Import/Export Facilitation', 'Global Buyer-Seller Matchmaking', 'Spice Trade Expansion (RPGS Partnership)']
     ],
     [
+        'id' => 'healthcare',
+        'title' => 'Healthcare & Wellness',
+        'short_name' => 'Healthcare',
+        'icon' => 'ri-heart-pulse-line',
+        'image' => 'assets/images/industries/healthcare.jpg',
+        'tag' => 'MindSmith Partnership',
+        'desc' => 'Corporate wellness solutions, preventive mental healthcare programs, Brain Health Profile (BHP), and digital health software quality assurance.',
+        'highlights' => ['Corporate Employee Assistance (EAP)', 'Brain Health Profile (BHP) & SKYE AI', 'Digital Health Software QA']
+    ],
+    [
+        'id' => 'manufacturing',
+        'title' => 'Manufacturing & Supply Chain',
+        'short_name' => 'Manufacturing',
+        'icon' => 'ri-settings-4-line',
+        'image' => 'assets/images/industries/manufacturing.jpg',
+        'tag' => 'Process Optimization',
+        'desc' => 'ERP selection and implementation QA, workflow automation, supply chain resilience consulting, export documentation, and customs clearance.',
+        'highlights' => ['ERP Selection & Implementation QA', 'Supply Chain Bottleneck Elimination', 'International Export Packaging']
+    ],
+    [
+        'id' => 'nextgen',
+        'title' => 'Innovation & Technology',
+        'short_name' => 'Innovation & Technology',
+        'icon' => 'ri-lightbulb-flash-line',
+        'image' => 'assets/images/industries/technology.jpg',
+        'tag' => 'iDEX & Deep-Tech',
+        'desc' => 'Innovation labs, venture acceleration, and government funding access including Startup India Seed Fund (SISFS) and iDEX defense grants with Tridantor.',
+        'highlights' => ['iDEX Defense Innovation Advisory', 'Startup India SISFS Grant Facilitation', 'Venture Acceleration & GTM']
+    ],
+    [
+        'id' => 'fmcg-coffee',
+        'title' => 'Retail, FMCG & Food & Beverage',
+        'short_name' => 'Retail, FMCG & Food & Beverage',
+        'icon' => 'ri-shopping-bag-3-line',
+        'image' => 'assets/images/industries/retail.jpg',
+        'tag' => 'Native Araku Coffee',
+        'desc' => 'Native Araku Coffee franchise development, wholesale distribution, FMCG supply chain optimization, and retail Standard Operating Procedures.',
+        'highlights' => ['Native Araku Coffee Distribution', 'Retail SOP & Franchise Scaling', 'HoReCa & Corporate Gifting']
+    ],
+    [
         'id' => 'textile',
         'title' => 'Textile & Apparel',
         'short_name' => 'Textile & Apparel',
@@ -83,26 +103,6 @@ $INDUSTRIES = [
         'tag' => 'WHITE WORLD Brand',
         'desc' => 'Sustainable organic fabric innovation, conscious lifestyle fashion, and the upcoming WHITE WORLD e-commerce ecosystem empowering rural tailors.',
         'highlights' => ['WHITE WORLD E-Commerce Ecosystem', 'Sustainable Organic Fabric Sourcing', 'Livelihoods for Underprivileged Tailors']
-    ],
-    [
-        'id' => 'csr',
-        'title' => 'CSR & Sustainability',
-        'short_name' => 'CSR & Sustainability',
-        'icon' => 'ri-recycle-line',
-        'image' => 'assets/images/industries/sustainability.jpg',
-        'tag' => 'ESG Impact',
-        'desc' => 'CSR programme architecture, ESG audits, rural AgriTech deployment, tribal farmer linkage via Native Araku Coffee, and household waste-to-energy.',
-        'highlights' => ['Measurable ESG Impact Metrics', 'Household Waste to Biofuel Conversion', 'Tribal Farmer Livelihood Upliftment']
-    ],
-    [
-        'id' => 'nextgen',
-        'title' => 'NextGen Startup & Innovation',
-        'short_name' => 'Innovation & Technology',
-        'icon' => 'ri-lightbulb-flash-line',
-        'image' => 'assets/images/industries/technology.jpg',
-        'tag' => 'iDEX & Deep-Tech',
-        'desc' => 'Innovation labs, venture acceleration, and government funding access including Startup India Seed Fund (SISFS) and iDEX defense grants with Tridantor.',
-        'highlights' => ['iDEX Defense Innovation Advisory', 'Startup India SISFS Grant Facilitation', 'Venture Acceleration & GTM']
     ],
     [
         'id' => 'women',
@@ -179,7 +179,7 @@ $INDUSTRIES = [
                 if (file_exists($absPath)) {
                     $imgUrl .= '?v=' . filemtime($absPath);
                 }
-                ?>
+            ?>
                 <div id="<?= e($ind['id']) ?>"
                     class="group relative rounded-2xl overflow-hidden h-[410px] sm:h-[430px] shadow-sm hover:shadow-xl bg-slate-950 cursor-pointer transition-all duration-300">
                     <!-- Background Photographic Image -->
@@ -207,14 +207,14 @@ $INDUSTRIES = [
                         <!-- Industry Name at Bottom -->
                         <div class="text-center w-full pb-2">
                             <h3 class="text-lg sm:text-xl font-bold text-white tracking-wide drop-shadow-md">
-                                <?= e($ind['short_name']) ?>
+                                <?= e($ind['title']) ?>
                             </h3>
                         </div>
                     </div>
 
                     <!-- Hover State: Content-Up Slide Animation Overlay -->
                     <div
-                        class="absolute inset-0 bg-slate-950/95 backdrop-blur-md p-5 sm:p-6 flex flex-col justify-between text-left text-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-10 overflow-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                        class="absolute inset-0 bg-white backdrop-blur-md p-5 sm:p-6 flex flex-col justify-between text-left translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-10 overflow-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                         <div>
                             <!-- Tag & Icon Header -->
                             <div class="flex items-center justify-between mb-2.5">
@@ -229,12 +229,12 @@ $INDUSTRIES = [
                             </div>
 
                             <!-- Full Title -->
-                            <h4 class="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
+                            <h4 class="text-base sm:text-lg font-bold mb-2 leading-snug">
                                 <?= e($ind['title']) ?>
                             </h4>
 
                             <!-- Description -->
-                            <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                            <p class="text-xs text-slate-700 leading-relaxed mb-3">
                                 <?= e($ind['desc']) ?>
                             </p>
 
@@ -247,8 +247,8 @@ $INDUSTRIES = [
                                     <?php foreach ($ind['highlights'] as $hl): ?>
                                         <li class="flex items-start gap-1.5">
                                             <i
-                                                class="ri-checkbox-circle-fill text-emerald-400 text-xs flex-shrink-0 mt-0.5"></i>
-                                            <span class="leading-tight"><?= e($hl) ?></span>
+                                                class="ri-checkbox-circle-fill text-emerald-600 text-xs flex-shrink-0 mt-0.5"></i>
+                                            <span class="text-black"><?= e($hl) ?></span>
                                         </li>
                                     <?php endforeach; ?>
                                 </ul>

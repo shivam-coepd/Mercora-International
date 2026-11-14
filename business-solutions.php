@@ -110,22 +110,22 @@ $BUSINESS_SOLUTIONS = [
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <?php foreach ($BUSINESS_SOLUTIONS as $sol): ?>
-            <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-7 hover:border-slate-300 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-5">
-                        <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-2xl">
-                            <i class="<?= e($sol['icon']) ?>"></i>
+                <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-7 hover:border-slate-300 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-2xl">
+                                <i class="<?= e($sol['icon']) ?>"></i>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                                <?= e($sol['badge']) ?>
+                            </span>
                         </div>
-                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
-                            <?= e($sol['badge']) ?>
-                        </span>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2"><?= e($sol['title']) ?></h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            <?= e($sol['desc']) ?>
+                        </p>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2"><?= e($sol['title']) ?></h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        <?= e($sol['desc']) ?>
-                    </p>
                 </div>
-            </div>
             <?php endforeach; ?>
         </div>
     </div>
@@ -154,7 +154,7 @@ $BUSINESS_SOLUTIONS = [
             </div>
 
             <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 border-t-4 border-t-amber-500">
-                <div class="text-3xl sm:text-4xl font-extrabold text-amber-700 mb-2">11 Strategic MOUs</div>
+                <div class="text-3xl sm:text-4xl font-extrabold text-amber-700 mb-2">12 Strategic MOUs</div>
                 <h4 class="text-base font-bold text-slate-900 mb-2">Strategic Institutional Network</h4>
                 <p class="text-sm text-slate-600 leading-relaxed">
                     Formal bilateral and tripartite agreements signed across technology innovators, testing & certification bodies, robotics, defense, healthcare access, and global commodities.

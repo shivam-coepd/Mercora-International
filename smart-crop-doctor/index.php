@@ -25,13 +25,13 @@ require_once dirname(__DIR__) . '/includes/header.php';
         <div class="max-w-xl lg:max-w-lg xl:max-w-xl space-y-4">
 
             <!-- Category / Eyebrow Header -->
-            <div class="text-[#0c2340] font-extrabold text-xl sm:text-2xl lg:text-[25px] tracking-tight leading-snug">
+            <!-- <div class="text-[#0c2340] font-extrabold text-xl sm:text-2xl lg:text-[25px] tracking-tight leading-snug">
                 MERCORA INTERNATIONAL –<br class="hidden sm:inline" />
                 Core Initiative in Precision Agriculture
-            </div>
+            </div> -->
 
             <!-- Main Initiative Title with Leaf Icon -->
-            <div class="flex items-center gap-2.5 sm:gap-3 pt-1">
+            <!-- <div class="flex items-center gap-2.5 sm:gap-3 pt-1">
                 <span
                     class="inline-flex items-center justify-center text-[#1ea84f] text-3xl sm:text-4xl lg:text-5xl shrink-0">
                     <i class="ri-leaf-fill"></i>
@@ -40,13 +40,19 @@ require_once dirname(__DIR__) . '/includes/header.php';
                     class="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-[#1ea84f] uppercase leading-none">
                     SMART CROP DOCTOR
                 </h1>
+            </div> -->
+            <div class="flex items-center justify-start w-full">
+                <img
+                    src="/assets/images/initiatives/smart-crop-logo.png"
+                    alt="Smart Crop Logo"
+                    class="w-full max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[300px] h-auto object-contain">
             </div>
 
             <!-- Subtitle Pill Badge -->
             <div>
                 <span
                     class="inline-block bg-[#137536] text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-1.5 rounded-full shadow-sm tracking-wide">
-                    AI-integrated diagnostic platform
+                    AI-POWERED PRECISION CORE INITIATIVE
                 </span>
             </div>
 
