@@ -205,25 +205,25 @@ $SUSTAINABLE_PRODUCTS = [
                 </thead>
                 <tbody class="divide-y divide-slate-200 bg-white">
                     <?php foreach ($PREMIUM_PRODUCTS as $p): ?>
-                    <tr class="hover:bg-slate-50 transition">
-                        <td class="px-6 py-4 font-semibold text-slate-900 whitespace-nowrap">
-                            <?= e($p['name']) ?>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
-                                <?= e($p['roast']) ?>
-                            </span>
-                        </td>
-                        <td class="px-6 py-4">
-                            <div class="font-medium text-slate-800"><?= e($p['notes']) ?></div>
-                            <div class="text-xs text-slate-500 mt-1 flex items-center gap-1">
-                                <i class="ri-cup-line text-amber-600"></i> <?= e($p['brew']) ?>
-                            </div>
-                        </td>
-                        <td class="px-6 py-4 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-md">
-                            <?= e($p['desc']) ?>
-                        </td>
-                    </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="px-6 py-4 font-semibold text-slate-900 whitespace-nowrap">
+                                <?= e($p['name']) ?>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
+                                    <?= e($p['roast']) ?>
+                                </span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="font-medium text-slate-800"><?= e($p['notes']) ?></div>
+                                <div class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                                    <i class="ri-cup-line text-amber-600"></i> <?= e($p['brew']) ?>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-md">
+                                <?= e($p['desc']) ?>
+                            </td>
+                        </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
@@ -251,15 +251,15 @@ $SUSTAINABLE_PRODUCTS = [
 
                 <div class="space-y-4">
                     <?php foreach ($SIGNATURE_PRODUCTS as $sig): ?>
-                    <div class="bg-white border border-slate-200 rounded-xl p-5">
-                        <div class="flex items-center justify-between mb-1.5">
-                            <h4 class="text-base font-bold text-slate-900"><?= e($sig['name']) ?></h4>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-100 text-amber-800">
-                                <?= e($sig['type']) ?>
-                            </span>
+                        <div class="bg-white border border-slate-200 rounded-xl p-5">
+                            <div class="flex items-center justify-between mb-1.5">
+                                <h4 class="text-base font-bold text-slate-900"><?= e($sig['name']) ?></h4>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-100 text-amber-800">
+                                    <?= e($sig['type']) ?>
+                                </span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed"><?= e($sig['desc']) ?></p>
                         </div>
-                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed"><?= e($sig['desc']) ?></p>
-                    </div>
                     <?php endforeach; ?>
                 </div>
             </div>
@@ -284,13 +284,13 @@ $SUSTAINABLE_PRODUCTS = [
 
                 <div class="space-y-4">
                     <?php foreach ($SUSTAINABLE_PRODUCTS as $sus): ?>
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
-                        <h4 class="text-base font-bold text-slate-900 mb-1"><?= e($sus['name']) ?></h4>
-                        <span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 mb-2">
-                            <i class="ri-recycle-line"></i> <?= e($sus['material']) ?>
-                        </span>
-                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed"><?= e($sus['desc']) ?></p>
-                    </div>
+                        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                            <h4 class="text-base font-bold text-slate-900 mb-1"><?= e($sus['name']) ?></h4>
+                            <span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 mb-2">
+                                <i class="ri-recycle-line"></i> <?= e($sus['material']) ?>
+                            </span>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed"><?= e($sus['desc']) ?></p>
+                        </div>
                     <?php endforeach; ?>
                 </div>
 
@@ -408,9 +408,9 @@ $SUSTAINABLE_PRODUCTS = [
 
                 <div class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800">
                     <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Government Alliances</span>
-                    <h4 class="text-lg font-bold text-white mt-1 mb-2">SERP AP Women-Driven Shops</h4>
+                    <h4 class="text-lg font-bold text-white mt-1 mb-2">100 Women-Driven Coffee Shops</h4>
                     <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
-                        Under our state MOU with the Society for Elimination of Rural Poverty (SERP), Andhra Pradesh, we are establishing 100 Women-Driven Coffee Shops to create sustainable livelihoods for rural women entrepreneurs.
+                        Through our strategic partnership with the Society for Elimination of Rural Poverty (SERP), Mercora International is supporting the establishment of 100 Women-Driven Coffee Shops, creating sustainable livelihood opportunities, encouraging women entrepreneurship, and empowering rural women to build independent and thriving businesses.
                     </p>
                     <a href="<?= url('/partnerships') ?>#native-araku-coffee" class="inline-flex items-center justify-center px-4 py-2.5 text-xs font-semibold text-slate-950 bg-amber-400 hover:bg-amber-300 rounded-lg transition">
                         Read Partnership Agreement <i class="ri-arrow-right-line ml-1.5"></i>

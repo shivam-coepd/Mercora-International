@@ -249,10 +249,15 @@ require_once __DIR__ . '/includes/header.php';
                 }
             ?>
                 <div
-                    class="group relative rounded-2xl overflow-hidden bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-6 min-h-[300px]">
+                    class="group relative rounded-2xl overflow-hidden bg-[#0c2340] shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between p-6 min-h-[300px]">
                     <!-- Background Photographic Image (from Industries We Serve) -->
                     <img src="<?= $imgUrl ?>" alt="<?= e($vertical['title']) ?>"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+
+                    <!-- Dark Navy Vignette Gradient Overlay for high text readability in resting state -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#0c2340]/95 via-[#0c2340]/60 to-[#0c2340]/30 transition-opacity duration-300">
+                    </div>
 
                     <!-- Main Card Content (Resting State: Title, Icon, Tag, Explore link) -->
                     <div class="relative z-10 flex flex-col justify-between h-full">
@@ -267,50 +272,50 @@ require_once __DIR__ . '/includes/header.php';
                                     <?= e($vertical['tag']) ?>
                                 </span>
                             </div>
-                            <h3 class="text-base sm:text-lg font-bold text-[#0c2340] mb-2 leading-snug">
-                                <?= e($vertical['title']) ?>
-                            </h3>
+                                <h3 class="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
+                                    <?= e($vertical['title']) ?>
+                                </h3>
                         </div>
                         <div>
-                            <span class="inline-flex items-center text-xs font-bold text-white">
-                                Explore Vertical <i class="ri-arrow-right-line ml-1"></i>
-                            </span>
+                                <span class="inline-flex items-center text-xs font-bold text-amber-400 group-hover:text-amber-300 transition">
+                                    Explore Vertical <i class="ri-arrow-right-line ml-1"></i>
+                                </span>
                         </div>
                     </div>
 
-                    <!-- White Overlay: Appears from bottom-up on hover, showing $vertical['short'] -->
+                    <!-- Theme Navy Blue Overlay: Appears from bottom-up on hover, showing $vertical['short'] -->
                     <div
-                        class="absolute inset-0 z-20 bg-white rounded-2xl p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out shadow-2xl">
+                        class="absolute inset-0 z-20 bg-[#0c2340] border border-white/10 rounded-2xl p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out shadow-2xl">
                         <div>
                             <div class="flex items-center justify-between mb-3">
                                 <div
-                                    class="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center text-xl shadow-sm">
+                                    class="w-10 h-10 rounded-lg bg-white/10 text-amber-400 border border-white/15 flex items-center justify-center text-xl shadow-sm">
                                     <i class="<?= e($vertical['icon']) ?>"></i>
                                 </div>
                                 <span
-                                    class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-slate-100 text-slate-700 border border-slate-200">
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
                                     <?= e($vertical['tag']) ?>
                                 </span>
                             </div>
-                            <h3 class="text-base font-bold text-slate-900 mb-2 leading-snug">
-                                <?= e($vertical['title']) ?>
-                            </h3>
-                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                                <?= e($vertical['short']) ?>
-                            </p>
+                                <h3 class="text-base font-bold text-white mb-2 leading-snug">
+                                    <?= e($vertical['title']) ?>
+                                </h3>
+                                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+                                    <?= e($vertical['short']) ?>
+                                </p>
                         </div>
-                        <div class="pt-3 border-t border-slate-100">
-                            <a href="<?= url('/industries') ?>#<?= e($vertical['id']) ?>"
-                                class="inline-flex items-center text-xs font-bold text-slate-900 hover:text-amber-600 transition group/btn">
-                                Explore Vertical <i
-                                    class="ri-arrow-right-line ml-1.5 transition-transform group-hover/btn:translate-x-1"></i>
-                            </a>
+                            <div class="pt-3 border-t border-white/10">
+                                <a href="<?= url('/industries') ?>#<?= e($vertical['id']) ?>"
+                                    class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition group/btn">
+                                    Explore Vertical <i
+                                        class="ri-arrow-right-line ml-1.5 transition-transform group-hover/btn:translate-x-1"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                <?php endforeach; ?>
                 </div>
-            <?php endforeach; ?>
         </div>
-    </div>
 </section>
 
 <!-- 1.3 About Mercora Snapshot Section -->
