@@ -1,7 +1,5 @@
 <?php
-if (!defined('SITE_NAME')) {
-    require_once __DIR__ . '/config.php';
-}
+require_once __DIR__ . '/config.php';
 
 $pageTitle = isset($pageTitle) ? $pageTitle . ' | ' . SITE_NAME : SITE_NAME . ' | ' . SITE_TAGLINE;
 $pageDesc = isset($pageDesc) ? $pageDesc : 'Mercora International is a registered partnership firm engineering scalable, innovation-led solutions across 11 business verticals including AgriTech, Digital Transformation, Global Trade, and Native Araku Coffee.';

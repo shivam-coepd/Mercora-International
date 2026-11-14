@@ -121,21 +121,21 @@ $TECH_STACK = [
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <?php foreach ($IT_SERVICES as $svc): ?>
-            <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-7 hover:border-slate-300 hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-5">
-                        <i class="<?= e($svc['icon']) ?>"></i>
+                <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-7 hover:border-slate-300 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-5">
+                            <i class="<?= e($svc['icon']) ?>"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2"><?= e($svc['title']) ?></h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            <?= e($svc['desc']) ?>
+                        </p>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2"><?= e($svc['title']) ?></h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-6">
-                        <?= e($svc['desc']) ?>
-                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-medium text-slate-500">
+                        <i class="ri-checkbox-circle-fill text-emerald-600"></i>
+                        <span><?= e($svc['deliverables']) ?></span>
+                    </div>
                 </div>
-                <div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-medium text-slate-500">
-                    <i class="ri-checkbox-circle-fill text-emerald-600"></i>
-                    <span><?= e($svc['deliverables']) ?></span>
-                </div>
-            </div>
             <?php endforeach; ?>
         </div>
     </div>
@@ -156,18 +156,18 @@ $TECH_STACK = [
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <?php foreach ($TECH_STACK as $category => $items): ?>
-            <div class="bg-white border border-slate-200 rounded-xl p-6">
-                <h4 class="text-sm font-bold text-slate-900 mb-4 flex items-center gap-2">
-                    <i class="ri-stack-line text-amber-600"></i> <?= e($category) ?>
-                </h4>
-                <div class="flex flex-wrap gap-2">
-                    <?php foreach ($items as $tech): ?>
-                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                        <?= e($tech) ?>
-                    </span>
-                    <?php endforeach; ?>
+                <div class="bg-white border border-slate-200 rounded-xl p-6">
+                    <h4 class="text-sm font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="ri-stack-line text-amber-600"></i> <?= e($category) ?>
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <?php foreach ($items as $tech): ?>
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">
+                                <?= e($tech) ?>
+                            </span>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
-            </div>
             <?php endforeach; ?>
         </div>
     </div>
@@ -263,45 +263,6 @@ $TECH_STACK = [
 
             <!-- Right: 3.4 Downloadable Resources & Partner Ecosystem -->
             <div class="lg:col-span-5 space-y-6">
-                <!-- Resources Card -->
-                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
-                    <h4 class="text-base font-bold text-slate-900 mb-2 flex items-center gap-2">
-                        <i class="ri-file-download-line text-amber-600"></i> Downloadable Resources
-                    </h4>
-                    <p class="text-xs sm:text-sm text-slate-600 mb-6">
-                        Access comprehensive briefs, solution specifications, and technical whitepapers.
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl hover:border-amber-500/30 transition">
-                            <div>
-                                <a href="<?= url('assets/resources/' . rawurlencode('IT & Digital Services Brochure.pdf')) ?>" download="IT & Digital Services Brochure.pdf" class="block text-sm font-semibold text-slate-900 hover:text-amber-600 transition">IT & Digital Services Brochure</a>
-                                <span class="text-xs text-slate-500">PDF Document · Official Overview</span>
-                            </div>
-                            <a href="<?= url('assets/resources/' . rawurlencode('IT & Digital Services Brochure.pdf')) ?>" download="IT & Digital Services Brochure.pdf" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-700 flex items-center justify-center transition" title="Download IT & Digital Services Brochure">
-                                <i class="ri-download-2-line text-base"></i>
-                            </a>
-                        </li>
-                        <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl hover:border-amber-500/30 transition">
-                            <div>
-                                <a href="<?= url('assets/resources/' . rawurlencode('Smart Crop Doctor Product Sheet Brochure.pdf')) ?>" download="Smart Crop Doctor Product Sheet Brochure.pdf" class="block text-sm font-semibold text-slate-900 hover:text-amber-600 transition">Smart Crop Doctor Product Sheet</a>
-                                <span class="text-xs text-slate-500">DPIIT Recognized (DIPP258473) · PDF</span>
-                            </div>
-                            <a href="<?= url('assets/resources/' . rawurlencode('Smart Crop Doctor Product Sheet Brochure.pdf')) ?>" download="Smart Crop Doctor Product Sheet Brochure.pdf" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-700 flex items-center justify-center transition" title="Download Smart Crop Doctor Product Sheet">
-                                <i class="ri-download-2-line text-base"></i>
-                            </a>
-                        </li>
-                        <li class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-xl hover:border-amber-500/30 transition">
-                            <div>
-                                <a href="<?= url('assets/resources/' . rawurlencode('Corporate Profile V1 (2026) Brochure.pdf')) ?>" download="Corporate Profile V1 (2026) Brochure.pdf" class="block text-sm font-semibold text-slate-900 hover:text-amber-600 transition">Corporate Profile V1 (2026)</a>
-                                <span class="text-xs text-slate-500">11 Focus Verticals &amp; 11 Signed MOUs · PDF</span>
-                            </div>
-                            <a href="<?= url('assets/resources/' . rawurlencode('Corporate Profile V1 (2026) Brochure.pdf')) ?>" download="Corporate Profile V1 (2026) Brochure.pdf" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-700 flex items-center justify-center transition" title="Download Corporate Profile">
-                                <i class="ri-download-2-line text-base"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
                 <!-- KavachApp Card -->
                 <div class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800">
                     <span class="text-xs font-bold uppercase tracking-wider text-amber-400">SaaS Partnership</span>

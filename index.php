@@ -1,6 +1,7 @@
 <?php
 $pageTitle = 'Empowering Enterprises. Transforming Communities. Connecting the World.';
 $pageDesc = 'Mercora International is a registered multidisciplinary firm delivering innovation across 11 business verticals including AgriTech, Digital Transformation, Global Trade, and Native Araku Coffee.';
+require_once __DIR__ . '/includes/config.php';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -79,7 +80,7 @@ require_once __DIR__ . '/includes/header.php';
                         </a>
                         <a href="<?= url('/partnerships') ?>"
                             class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
-                            <span>Explore 11 Signed MOUs</span>
+                            <span>Explore 12 Signed MOUs</span>
                         </a>
                     </div>
                 </div>
@@ -123,7 +124,7 @@ require_once __DIR__ . '/includes/header.php';
                         </a>
                         <a href="<?= url('/partnerships') ?>"
                             class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
-                            <span>Explore 11 Signed MOUs</span>
+                            <span>Explore 12 Signed MOUs</span>
                         </a>
                     </div>
                 </div>
@@ -165,7 +166,7 @@ require_once __DIR__ . '/includes/header.php';
                         </a>
                         <a href="<?= url('/partnerships') ?>"
                             class="inline-flex items-center justify-center px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-[15px] font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-xs transition-all duration-200 hover:-translate-y-0.5 tracking-wide">
-                            <span>Explore 11 Signed MOUs</span>
+                            <span>Explore 12 Signed MOUs</span>
                         </a>
                     </div>
                 </div>
@@ -238,23 +239,20 @@ require_once __DIR__ . '/includes/header.php';
 
         <!-- Our 11 Business Verticals cards -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <?php foreach ($BUSINESS_VERTICALS as $vertical):
+            <?php
+            $verticals = $BUSINESS_VERTICALS ?? ($GLOBALS['BUSINESS_VERTICALS'] ?? []);
+            foreach ($verticals as $vertical):
                 $imgUrl = url($vertical['image']);
-                $absPath = dirname(__DIR__) . '/' . $vertical['image'];
+                $absPath = __DIR__ . '/' . $vertical['image'];
                 if (file_exists($absPath)) {
                     $imgUrl .= '?v=' . filemtime($absPath);
                 }
-                ?>
+            ?>
                 <div
                     class="group relative rounded-2xl overflow-hidden bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-6 min-h-[300px]">
                     <!-- Background Photographic Image (from Industries We Serve) -->
                     <img src="<?= $imgUrl ?>" alt="<?= e($vertical['title']) ?>"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
-
-                    <!-- Dark Vignette Gradient Overlay for high text readability in resting state -->
-                    <!-- <div
-                        class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/55 to-slate-950/25 transition-opacity duration-300">
-                    </div> -->
 
                     <!-- Main Card Content (Resting State: Title, Icon, Tag, Explore link) -->
                     <div class="relative z-10 flex flex-col justify-between h-full">
@@ -318,68 +316,65 @@ require_once __DIR__ . '/includes/header.php';
 <!-- 1.3 About Mercora Snapshot Section -->
 <section class="py-16 sm:py-24 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7 space-y-6">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Corporate Credentials</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
-                        Registered Partnership Firm Driving Scalable, Sustainable Innovation.
-                    </h2>
-                </div>
-                <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-                    Mercora International is a registered partnership firm (<strong>Firm Reg.
-                        <?= e(FIRM_REG_NO) ?></strong>), incorporated <strong><?= e(FIRM_INC_DATE) ?></strong>, based in
-                    Kondapur, Hyderabad. We bring together consulting acumen, deep engineering capability, and verified
-                    institutional alliances to unlock transformative value.
-                </p>
+        <div class="lg:col-span-7 space-y-6">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Corporate Credentials</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-2">
+                    Registered Partnership Firm Driving Scalable, Sustainable Innovation.
+                </h2>
+            </div>
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                Mercora International is a registered partnership firm, incorporated <strong><?= e(FIRM_INC_DATE) ?></strong>, based in
+                Kondapur, Hyderabad. We bring together consulting acumen, deep engineering capability, and verified
+                institutional alliances to unlock transformative value.
+            </p>
 
-                <!-- Credentials Badges -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                        <i class="ri-government-line text-2xl text-slate-700"></i>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2">Statutory Reg</h4>
-                        <p class="text-xs text-slate-500 mt-0.5">Firm Reg. 2978/2025 · Hyderabad</p>
+            <!-- Leadership / Founders Side-by-Side Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-xl sm:max-w-2xl pt-2 pb-1">
+                <!-- Mrs. D. Jaya Geetha Kiran -->
+                <div class="flex flex-col">
+                    <div class="w-full aspect-[4/4.5] max-w-[240px] rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 mb-3 group">
+                        <img src="<?= url('assets/images/team/jaya-geetha-kiran.jpeg') ?>"
+                            alt="Mrs. D. Jaya Geetha Kiran - Founder &amp; Managing Partner"
+                            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
                     </div>
-                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                        <i class="ri-medal-line text-2xl text-amber-600"></i>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2">DPIIT Recognized</h4>
-                        <p class="text-xs text-slate-500 mt-0.5">DIPP258473 · Valid to 2035</p>
-                    </div>
-                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                        <i class="ri-global-line text-2xl text-blue-600"></i>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2">DGFT IEC Code</h4>
-                        <p class="text-xs text-slate-500 mt-0.5">ACEFM7191A · Global Trade</p>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                            Mrs. D. Jaya Geetha Kiran
+                        </h3>
+                        <p class="text-sm font-semibold text-slate-600 mt-0.5">
+                            Founder &amp; Managing Partner
+                        </p>
                     </div>
                 </div>
 
-                <div class="flex flex-wrap items-center gap-4 pt-2">
-                    <a href="<?= url('/about') ?>"
-                        class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition">
-                        Read Our Full Journey <i class="ri-arrow-right-line ml-2"></i>
-                    </a>
-                    <a href="<?= url('/gallery') ?>"
-                        class="inline-flex items-center px-5 py-3 text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition">
-                        View Official Certifications
-                    </a>
+                <!-- Ms. A. Manasa Raj -->
+                <div class="flex flex-col">
+                    <div class="w-full aspect-[4/4.5] max-w-[240px] rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 mb-3 group">
+                        <img src="<?= url('assets/images/team/manasa-raj-2.jpg') ?>"
+                            alt="Ms. A. Manasa Raj - Co-Founder &amp; Partner"
+                            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                            Ms. A. Manasa Raj
+                        </h3>
+                        <p class="text-sm font-semibold text-slate-600 mt-0.5">
+                            Co-Founder &amp; Partner
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="lg:col-span-5">
-                <div class="relative bg-slate-100 p-3 rounded-2xl border border-slate-200 shadow-md">
-                    <img src="<?= url('assets/images/team/jaya-geetha-kiran.jpeg') ?>" alt="Mercora Leadership"
-                        class="w-full h-150 object-cover rounded-xl" />
-                    <div
-                        class="absolute -bottom-6 left-6 right-6 bg-white p-4 rounded-xl shadow-lg border border-slate-200 flex items-center gap-4">
-                        <div
-                            class="w-11 h-11 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-2xl flex-shrink-0">
-                            <i class="ri-handshake-line"></i>
-                        </div>
-                        <div>
-                            <div class="text-sm font-bold text-slate-900">Mrs. D. Jaya Geetha Kiran</div>
-                            <div class="text-xs text-slate-500">Founder & Managing Partner</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+                <a href="<?= url('/about') ?>"
+                    class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition">
+                    Read Our Full Journey <i class="ri-arrow-right-line ml-2"></i>
+                </a>
+                <a href="<?= url('/gallery') ?>"
+                    class="inline-flex items-center px-5 py-3 text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition">
+                    View Official Certifications
+                </a>
             </div>
         </div>
     </div>
@@ -403,14 +398,9 @@ require_once __DIR__ . '/includes/header.php';
             <div
                 class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                    <div class="flex items-center justify-between gap-2 mb-4">
-                        <span
-                            class="inline-block px-2.5 py-1 rounded text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
-                            DPIIT Seed-Funded · ₹10.00 Lakh
-                        </span>
-                        <span class="text-xs font-semibold text-emerald-700 flex items-center gap-1">
-                            <i class="ri-checkbox-circle-fill"></i> Core Initiative
-                        </span>
+                    <div class="h-14 mb-3 flex items-center">
+                        <img src="<?= url('assets/images/initiatives/smart-crop-logo.png') ?>"
+                            alt="Smart Crop Doctor" class="max-h-12 w-auto object-contain" />
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-2">Smart Crop Doctor</h3>
                     <p class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-4">AI-Powered Precision
@@ -436,14 +426,9 @@ require_once __DIR__ . '/includes/header.php';
             <div
                 class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                    <div class="flex items-center justify-between gap-2 mb-4">
-                        <span
-                            class="inline-block px-2.5 py-1 rounded text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200">
-                            Social Impact &amp; Lifestyle
-                        </span>
-                        <span class="text-xs font-semibold text-slate-600 flex items-center gap-1">
-                            <i class="ri-time-line"></i> Launching Soon
-                        </span>
+                    <div class="h-14 mb-3 flex items-center">
+                        <img src="<?= url('assets/images/initiatives/white-world-logo.png') ?>"
+                            alt="The White World" class="max-h-12 w-auto object-contain" />
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-2">The White World™</h3>
                     <p class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-4">Living Life with Elegance
@@ -469,15 +454,6 @@ require_once __DIR__ . '/includes/header.php';
             <div
                 class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                    <div class="flex items-center justify-between gap-2 mb-4">
-                        <span
-                            class="inline-block px-2.5 py-1 rounded text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200">
-                            Mobile Veterinary Healthcare
-                        </span>
-                        <span class="text-xs font-semibold text-slate-600 flex items-center gap-1">
-                            <i class="ri-time-line"></i> Launching Soon
-                        </span>
-                    </div>
                     <div class="h-14 mb-3 flex items-center">
                         <img src="<?= url('assets/images/initiatives/vetigo-mobicare-logo.jpg') ?>"
                             alt="VetiGo MobiCare" class="max-h-12 w-auto object-contain" />

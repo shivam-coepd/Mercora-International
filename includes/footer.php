@@ -3,35 +3,6 @@ if (!defined('SITE_NAME')) {
     require_once __DIR__ . '/config.php';
 }
 ?>
-<!-- Pre-Footer CTA Band -->
-<section class="bg-slate-900 border-t border-slate-800 text-white py-14 sm:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-            <div class="max-w-2xl">
-                <span class="text-xs font-bold tracking-widest text-amber-400 uppercase">Institutional
-                    Collaboration</span>
-                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mt-2">
-                    Ready to scale enterprise value, engineer innovation, or explore global trade?
-                </h2>
-                <p class="text-slate-400 text-sm sm:text-base mt-2">
-                    Partner with a DPIIT-recognised multidisciplinary firm operating across 11 high-impact business
-                    verticals.
-                </p>
-            </div>
-            <div class="flex flex-wrap items-center gap-4 flex-shrink-0">
-                <a href="<?= url('/contact') ?>"
-                    class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-900 bg-white rounded-lg hover:bg-slate-100 transition shadow-sm">
-                    Get in Touch <i class="ri-arrow-right-line ml-2"></i>
-                </a>
-                <a href="<?= url('/it-services') ?>"
-                    class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-slate-800 border border-slate-700 rounded-lg hover:bg-slate-700 transition">
-                    Explore IT Services
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Main Corporate Footer -->
 <footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t border-slate-900 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,7 +47,7 @@ if (!defined('SITE_NAME')) {
                             Solutions</a></li>
                     <li><a href="<?= url('/industries') ?>" class="hover:text-white transition">Industries We Serve</a>
                     </li>
-                    <li><a href="<?= url('/partnerships') ?>" class="hover:text-white transition">Strategic Alliances (11
+                    <li><a href="<?= url('/partnerships') ?>" class="hover:text-white transition">Strategic Alliances (12
                             MOUs)</a></li>
                 </ul>
             </div>

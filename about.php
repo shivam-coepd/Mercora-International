@@ -28,7 +28,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div
                     class="relative w-full max-w-sm sm:max-w-md lg:max-w-none rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-50 p-2 group hover:border-amber-500/40 transition duration-300">
                     <div class="relative overflow-hidden rounded-xl bg-slate-100">
-                        <img src="<?= url('assets/images/mercora/hero_about_us.jpeg') ?>"
+                        <img src="<?= url('assets/images/mercora/hero_about_us.jpg') ?>"
                             alt="Mercora Leadership at National Workshop for Future Farming"
                             class="w-full h-80 sm:h-96 lg:h-[460px] object-cover object-top rounded-xl transition duration-500 group-hover:scale-[1.02]" />
                         <div
@@ -72,16 +72,6 @@ require_once __DIR__ . '/includes/header.php';
                     Mercosys, structuring global import-export transactions, or establishing 100 Women-Driven Coffee
                     Shops with SERP AP, Mercora delivers accountability at every stage of execution.
                 </p>
-                <div class="flex flex-wrap gap-4 pt-2">
-                    <a href="<?= url('/partnerships') ?>"
-                        class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition">
-                        Explore 11 Signed MOUs <i class="ri-arrow-right-line ml-2"></i>
-                    </a>
-                    <a href="<?= url('/it-services') ?>"
-                        class="inline-flex items-center px-5 py-3 text-sm font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 rounded-lg transition">
-                        View IT Services
-                    </a>
-                </div>
             </div>
         </div>
     </div>
@@ -242,10 +232,10 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="space-y-2">
                         <h3 class="text-lg font-bold text-slate-900"><?= e($member['name']) ?></h3>
                         <div class="text-xs font-bold text-amber-700"><?= e($member['role']) ?></div>
-                        <div
+                        <!-- <div
                             class="text-xs font-medium text-slate-500 bg-white px-2 py-1 rounded inline-block border border-slate-200">
                             <?= e($member['qualification']) ?>
-                        </div>
+                        </div> -->
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1"><?= e($member['bio']) ?></p>
                     </div>
                 </div>

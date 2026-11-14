@@ -166,14 +166,6 @@ function navActive($route)
                     class="px-3.5 py-2 text-sm rounded-lg transition <?= navActive('/gallery') ?>">
                     Gallery
                 </a>
-                <a href="<?= url('/blog') ?>"
-                    class="px-3.5 py-2 text-sm rounded-lg transition <?= navActive('/blog') ?>">
-                    Insights
-                </a>
-                <a href="<?= url('/customer-support') ?>"
-                    class="px-3.5 py-2 text-sm rounded-lg transition <?= navActive('/customer-support') ?>">
-                    Support
-                </a>
             </nav>
 
             <!-- Action Button -->
@@ -218,34 +210,27 @@ function navActive($route)
         <a href="<?= url('/vetigo-mobicare') ?>"
             class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">VetiGo MobiCare</a>
         <a href="<?= url('/partnerships') ?>"
-            class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-800 hover:bg-slate-50">Partnerships (11
+            class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-800 hover:bg-slate-50">Partnerships (12
             MOUs)</a>
         <a href="<?= url('/gallery') ?>"
             class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-800 hover:bg-slate-50">Media &
             Certifications</a>
-        <a href="<?= url('/blog') ?>"
-            class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-800 hover:bg-slate-50">Insights &
-            Articles</a>
-        <a href="<?= url('/customer-support') ?>"
-            class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-800 hover:bg-slate-50">Support &
-            Helpdesk</a>
-        <div class="pt-4">
-            <a href="<?= url('/contact') ?>"
-                class="block w-full text-center px-4 py-3 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition shadow">
-                Get in Touch
-            </a>
-        </div>
+        <a href="<?= url('/contact') ?>"
+            class="block w-full text-center px-4 py-3 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition shadow">
+            Get in Touch
+        </a>
+    </div>
     </div>
 </header>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         const btn = document.getElementById("mobileMenuBtn");
         const drawer = document.getElementById("mobileDrawer");
         const icon = document.getElementById("mobileMenuIcon");
 
         if (btn && drawer) {
-            btn.addEventListener("click", function () {
+            btn.addEventListener("click", function() {
                 const isClosed = drawer.classList.contains("hidden");
                 if (isClosed) {
                     drawer.classList.remove("hidden");

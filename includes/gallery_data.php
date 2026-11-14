@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Mercora International - Master Photo Gallery Records
  * Extracted directly from Mercora Final Photo Gallery.docx
@@ -73,12 +74,8 @@ $GALLERY_EVENTS = array(
             'image13.jpg',
             'image14.jpg',
             'image15.jpg',
-            'image16.jpg',
             'image17.jpg',
-            'image18.jpg',
-            'image19.jpg',
             'image20.jpg',
-            'image21.jpg',
         ),
     ),
     array(
@@ -231,11 +228,8 @@ $GALLERY_EVENTS = array(
         'badge' => 'National Tech Summit',
         'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju participated in the India AI Impact Summit 2026 at Bharat Mandapam, New Delhi.',
         'images' => array(
-            'image48.jpg',
             'image49.jpg',
-            'image50.jpg',
             'image51.jpg',
-            'image52.jpg',
             'image53.jpg',
             'image54.jpg',
             'image55.jpg',
@@ -269,7 +263,6 @@ $GALLERY_EVENTS = array(
         'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with Tridantor Ideaus Pvt Ltd. Present: Mr. R.V. Ramakrishna, Founder and CEO.',
         'images' => array(
             'image63.jpg',
-            'image64.jpg',
         ),
     ),
     array(
@@ -422,18 +415,6 @@ Founder & Managing Partner, Mrs. D. Jaya Geetha Kiran, was honoured to be recogn
         'desc' => 'Shalini Naomi Bhatti is a Regional Manager at MSTC Limited (Northern Regional Office / New Delhi), a public sector undertaking under the Ministry of Steel, Government of Ind.   Shri Manoj Pandey is a Manager of Marketing at MSTC Limited (Metal Scrap Trade Corporation Limited), a Mini-Ratna Category-I Public Sector Undertaking under the Ministry of Steel, Government of India',
         'images' => array(
             'image94.jpg'
-        ),
-    ),
-    array(
-        'id' => 'vbit-hyderabad-2026',
-        'year' => '2026',
-        'date' => '27 October 2026',
-        'title' => 'Invited as the Chief Guest at VBIT, Hyderabad',
-        'category' => 'Student Innovation & Incubation',
-        'badge' => 'Chief Guest Honour',
-        'desc' => 'Heartiest Congratulations, Geetha Madam! On being invited as the Chief Guest at VBIT, Hyderabad. This is a great honour and a remarkable achievement. We are incredibly proud of you!',
-        'images' => array(
-            'image95.jpg'
         ),
     ),
 );
