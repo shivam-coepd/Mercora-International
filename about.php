@@ -29,21 +29,10 @@ require_once __DIR__ . '/includes/header.php';
                     class="relative w-full max-w-sm sm:max-w-md lg:max-w-none rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-50 p-2 group hover:border-amber-500/40 transition duration-300">
                     <div class="relative overflow-hidden rounded-xl bg-slate-100">
                         <img src="<?= url('assets/images/mercora/hero_about_us.jpg') ?>"
-                            alt="Mercora Leadership at National Workshop for Future Farming"
+                            alt="Mercors International Founder and Co-Founder"
                             class="w-full h-80 sm:h-96 lg:h-[460px] object-cover object-top rounded-xl transition duration-500 group-hover:scale-[1.02]" />
                         <div
-                            class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none rounded-xl">
-                        </div>
-                        <div class="absolute bottom-3 left-3 right-3 text-white text-xs">
-                            <div
-                                class="bg-slate-900/85 backdrop-blur-md border border-white/10 px-3.5 py-2.5 rounded-lg shadow-lg">
-                                <p class="font-semibold text-white text-[13px] leading-tight flex items-center gap-1.5">
-                                    <i class="ri-government-line text-amber-400"></i> National Workshop for Future
-                                    Farming
-                                </p>
-                                <p class="text-slate-300 text-[11px] mt-0.5">Leveraging Carbon Markets for Climate
-                                    Resilience · New Delhi</p>
-                            </div>
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-950/5 to-transparent pointer-events-none rounded-xl">
                         </div>
                     </div>
                 </div>

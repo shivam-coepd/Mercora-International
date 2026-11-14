@@ -171,6 +171,15 @@ $PARTNERS = [
         'summary' => 'ISO 9001:2015 certified company specializing in custom software development, web & mobile applications, LMS, and enterprise IT consulting.',
         'full_text' => 'Mercora International is associated with APT IT Solutions, a leading information technology and digital solutions company specializing in custom software development, web and mobile application development, e-commerce solutions, UI/UX design, digital marketing, SEO services, enterprise software development, learning management systems (LMS), and IT consulting services. Through this strategic partnership, Mercora International and APT IT Solutions collaborate to deliver innovative digital transformation solutions, business automation platforms, enterprise applications, cloud-enabled systems, e-governance solutions, website development, mobile applications, and technology consulting services for startups, SMEs, enterprises, educational institutions, and government organizations.',
     ],
+    'venkatesh-m-associates' => [
+        'name' => 'Venkatesh M. Associates',
+        'role' => 'Chartered Accountancy, Statutory & Tax Audits, GST, ROC Compliance, Company Incorporation, TDS and Virtual CFO Services',
+        'mou_date' => '20 October 2025',
+        'logo' => 'assets/images/mercora/partners/venkatesh-m-associates.png',
+        'tag' => 'Finance & Advisory Partner',
+        'summary' => 'Specialising in drone systems, robotics, Artificial Intelligence, automation, DaaS, and IoT solutions for precision agriculture, mining, and defence.',
+        'full_text' => "Mercora International is associated with Venkatesh M & Associates, a Hyderabad-based Chartered Accountancy firm established in 2022, specialising in statutory audits, income tax, Goods and Services Tax (GST), corporate compliance and financial advisory services. Through this professional collaboration, Mercora International and Venkatesh M & Associates aim to support enterprises, startups and SMEs in strengthening their financial management, regulatory compliance and business operations. The areas of collaboration include statutory and tax audits, GST and TDS compliance, ROC filings, company incorporation, financial planning and Virtual CFO services. Combining Mercora's strategic consulting and business development capabilities with the firm's professional expertise in accounting, taxation and financial advisory, the association seeks to facilitate business growth, improve financial governance and support sustainable enterprise development.",
+    ],
     'rishipal-gupta-sons' => [
         'name' => 'M/s RishiPal Gupta & Sons',
         'role' => 'Spices, Agri-Trade & Global Market Expansion Partner',
@@ -253,15 +262,6 @@ $PARTNERS = [
         'tag' => 'Strategic Drone & Robotics Partner',
         'summary' => 'Specialising in drone systems, robotics, Artificial Intelligence, automation, DaaS, and IoT solutions for precision agriculture, mining, and defence.',
         'full_text' => 'Mercora International is associated with X Dimension Robotics Private Limited, a technology company specialising in drone systems, robotics, Artificial Intelligence, automation and IoT solutions. Through this strategic collaboration, Mercora International and X Dimension Robotics work together to facilitate technology deployment and business opportunities across precision agriculture, drone-as-a-service (DaaS), mining surveys, infrastructure monitoring, defence, industrial automation and smart city applications. The collaboration also focuses on drone pilot training and certification, skill development, research and innovation, government and PSU projects, grant and subsidy opportunities, investment facilitation and enterprise solutions, combining Mercora’s market-access capabilities with X Dimension Robotics’ technical expertise to accelerate technology adoption and business growth across India.',
-    ],
-    'venkatesh-m-associates' => [
-        'name' => 'Venkatesh M. Associates',
-        'role' => 'Chartered Accountancy, Statutory & Tax Audits, GST, ROC Compliance, Company Incorporation, TDS and Virtual CFO Services',
-        'mou_date' => '20 October 2025',
-        'logo' => 'assets/images/mercora/partners/venkatesh-m-associates.png',
-        'tag' => 'Legal & Advisory Partner',
-        'summary' => 'Specialising in drone systems, robotics, Artificial Intelligence, automation, DaaS, and IoT solutions for precision agriculture, mining, and defence.',
-        'full_text' => "Mercora International is associated with Venkatesh M & Associates, a Hyderabad-based Chartered Accountancy firm established in 2022, specialising in statutory audits, income tax, Goods and Services Tax (GST), corporate compliance and financial advisory services. Through this professional collaboration, Mercora International and Venkatesh M & Associates aim to support enterprises, startups and SMEs in strengthening their financial management, regulatory compliance and business operations. The areas of collaboration include statutory and tax audits, GST and TDS compliance, ROC filings, company incorporation, financial planning and Virtual CFO services. Combining Mercora's strategic consulting and business development capabilities with the firm's professional expertise in accounting, taxation and financial advisory, the association seeks to facilitate business growth, improve financial governance and support sustainable enterprise development.",
     ],
 ];
 
@@ -346,7 +346,7 @@ $COMPANY_JOURNEY = [
     ],
     [
         'date' => '20 Oct 2025',
-        'badge' => 'LEGAL & ADVISORY PARTNER',
+        'badge' => 'FINANCE & ADVISORY PARTNER',
         'title' => 'Venkatesh M & Associates',
         'desc' => 'Strategic MOU signed with Venkatesh M & Associates to explore opportunities in Chartered Accountancy, Statutory & Tax Audits, GST, ROC Compliance, Company Incorporation, TDS and Virtual CFO Services.'
     ],

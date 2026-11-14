@@ -23,24 +23,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
     <!-- Info Section to the Left -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-8 sm:py-12 lg:py-14">
         <div class="max-w-xl lg:max-w-lg xl:max-w-xl space-y-4">
-
-            <!-- Category / Eyebrow Header -->
-            <!-- <div class="text-[#0c2340] font-extrabold text-xl sm:text-2xl lg:text-[25px] tracking-tight leading-snug">
-                MERCORA INTERNATIONAL –<br class="hidden sm:inline" />
-                Core Initiative in Precision Agriculture
-            </div> -->
-
-            <!-- Main Initiative Title with Leaf Icon -->
-            <!-- <div class="flex items-center gap-2.5 sm:gap-3 pt-1">
-                <span
-                    class="inline-flex items-center justify-center text-[#1ea84f] text-3xl sm:text-4xl lg:text-5xl shrink-0">
-                    <i class="ri-leaf-fill"></i>
-                </span>
-                <h1
-                    class="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-[#1ea84f] uppercase leading-none">
-                    SMART CROP DOCTOR
-                </h1>
-            </div> -->
+            <!-- Smart Crop Doctor Logo -->
             <div class="flex items-center justify-start w-full">
                 <img
                     src="/assets/images/initiatives/smart-crop-logo.png"

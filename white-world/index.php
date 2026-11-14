@@ -343,7 +343,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
             </div>
 
             <div class="flex items-start gap-3 mb-2">
-              <div class="w-20 h-24 rounded-xl overflow-hidden border border-[#ebdcc9] shrink-0 shadow-xs">
+              <div class="w-28 rounded-xl overflow-hidden border border-[#ebdcc9] shrink-0 shadow-xs">
                 <img src="/assets/images/team/veda-anjali.jpg" alt="D. R. Vedanjali" class="w-full h-full object-cover">
               </div>
               <div>
@@ -381,13 +381,6 @@ require_once dirname(__DIR__) . '/includes/header.php';
               and institutional partners interested in contributing to this integrated lifestyle and social impact
               initiative.
             </p>
-          </div>
-
-          <div class="pt-2">
-            <a href="/contact"
-              class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#b38738] via-[#c99e4b] to-[#a3792c] text-white text-xs font-semibold uppercase tracking-wider text-center block shadow-md hover:shadow-lg transition">
-              Partner With Us
-            </a>
           </div>
         </div>
 

@@ -175,31 +175,31 @@ $INDUSTRIES = [
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7">
             <?php foreach ($INDUSTRIES as $ind):
                 $imgUrl = url($ind['image']);
-                $absPath = dirname(__DIR__) . '/' . $ind['image'];
+                $absPath = __DIR__ . '/' . $ind['image'];
                 if (file_exists($absPath)) {
                     $imgUrl .= '?v=' . filemtime($absPath);
                 }
             ?>
                 <div id="<?= e($ind['id']) ?>"
-                    class="group relative rounded-2xl overflow-hidden h-[410px] sm:h-[430px] shadow-sm hover:shadow-xl bg-slate-950 cursor-pointer transition-all duration-300">
+                    class="group relative rounded-2xl overflow-hidden h-[410px] sm:h-[430px] shadow-md hover:shadow-2xl bg-[#0c2340] border cursor-pointer transition-all duration-300">
                     <!-- Background Photographic Image -->
                     <img src="<?= $imgUrl ?>" alt="<?= e($ind['title']) ?>"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
 
-                    <!-- Dark Vignette Gradient Overlay for Initial State -->
+                    <!-- Dark Navy Vignette Gradient Overlay for Initial State -->
                     <div
-                        class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-slate-950/20 transition-opacity duration-300 group-hover:opacity-20">
+                        class="absolute inset-0 bg-gradient-to-t from-[#0c2340]/95 via-[#0c2340]/55 to-[#0c2340]/25 transition-opacity duration-300 group-hover:opacity-20">
                     </div>
 
-                    <!-- Initial UI: Centered Cyan Line Icon & Bottom Name -->
+                    <!-- Initial UI: Centered Icon & Bottom Name -->
                     <div
                         class="absolute inset-0 flex flex-col items-center justify-between p-6 z-0 transition-opacity duration-300 group-hover:opacity-0 pointer-events-none">
                         <div></div> <!-- Spacer -->
 
-                        <!-- Glowing Cyan Line Icon in Center -->
+                        <!-- Icon in Center -->
                         <div class="flex flex-col items-center justify-center">
                             <div
-                                class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-slate-50/5 backdrop-blur-sm text-cyan-300 flex items-center justify-center text-3xl sm:text-4xl shadow-[0_0_30px_rgba(6,182,212,0.35)] transition-transform duration-300 group-hover:scale-110">
+                                class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white/10 backdrop-blur-md text-amber-400 border border-white/20 flex items-center justify-center text-3xl sm:text-4xl shadow-lg transition-transform duration-300 group-hover:scale-110">
                                 <i class="<?= e($ind['icon']) ?>"></i>
                             </div>
                         </div>
@@ -212,61 +212,61 @@ $INDUSTRIES = [
                         </div>
                     </div>
 
-                    <!-- Hover State: Content-Up Slide Animation Overlay -->
+                    <!-- Hover State: Content-Up Slide Animation Overlay in Theme Navy Blue -->
                     <div
-                        class="absolute inset-0 bg-white backdrop-blur-md p-5 sm:p-6 flex flex-col justify-between text-left translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-10 overflow-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                        class="absolute inset-0 bg-[#0c2340] border border-white/10 p-5 sm:p-6 flex flex-col justify-between text-left translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-10 overflow-hidden shadow-2xl [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                         <div>
                             <!-- Tag & Icon Header -->
                             <div class="flex items-center justify-between mb-2.5">
                                 <span
-                                    class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                                    class="inline-flex items-center px-2.5 py-1 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-400/15 text-amber-300 border border-amber-400/30">
                                     <?= e($ind['tag']) ?>
                                 </span>
                                 <div
-                                    class="w-7 h-7 rounded-lg bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-sm">
+                                    class="w-8 h-8 rounded-lg bg-white/10 border border-white/15 text-amber-400 flex items-center justify-center text-base">
                                     <i class="<?= e($ind['icon']) ?>"></i>
                                 </div>
                             </div>
 
                             <!-- Full Title -->
-                            <h4 class="text-base sm:text-lg font-bold mb-2 leading-snug">
-                                <?= e($ind['title']) ?>
-                            </h4>
+                                <h4 class="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
+                                    <?= e($ind['title']) ?>
+                                </h4>
 
-                            <!-- Description -->
-                            <p class="text-xs text-slate-700 leading-relaxed mb-3">
-                                <?= e($ind['desc']) ?>
-                            </p>
+                                <!-- Description -->
+                                <p class="text-xs text-slate-300 leading-relaxed mb-3 font-normal">
+                                    <?= e($ind['desc']) ?>
+                                </p>
 
-                            <!-- Focus Areas List -->
-                            <div class="pt-2 border-t border-slate-800/80">
-                                <span
-                                    class="block text-[10.5px] font-bold uppercase tracking-wider text-amber-400 mb-1.5">Key
-                                    Focus Areas:</span>
-                                <ul class="space-y-1 text-xs text-slate-200">
-                                    <?php foreach ($ind['highlights'] as $hl): ?>
-                                        <li class="flex items-start gap-1.5">
-                                            <i
-                                                class="ri-checkbox-circle-fill text-emerald-600 text-xs flex-shrink-0 mt-0.5"></i>
-                                            <span class="text-black"><?= e($hl) ?></span>
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
+                                <!-- Focus Areas List -->
+                                    <div class="pt-2.5 border-t border-white/10">
+                                        <span
+                                            class="block text-[10.5px] font-bold uppercase tracking-wider text-amber-400 mb-1.5">Key
+                                            Focus Areas:</span>
+                                            <ul class="space-y-1.5 text-xs text-slate-200">
+                                                <?php foreach ($ind['highlights'] as $hl): ?>
+                                                    <li class="flex items-start gap-1.5">
+                                                        <i
+                                                        class="ri-checkbox-circle-fill text-amber-400 text-xs flex-shrink-0 mt-0.5"></i>
+                                                        <span class="text-slate-200"><?= e($hl) ?></span>
+                                                    </li>
+                                                <?php endforeach; ?>
+                                            </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Bottom Action Link -->
+                                    <div class="pt-3 border-t border-white/10 mt-2">
+                                        <a href="<?= url('/contact') ?>?vertical=<?= urlencode($ind['title']) ?>"
+                                            class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition group/btn">
+                                            Inquire for This Sector <i class="ri-arrow-right-line ml-1.5 transition-transform group-hover/btn:translate-x-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
                         </div>
-
-                        <!-- Bottom Action Link -->
-                        <div class="pt-3 border-t border-slate-800/80 mt-2">
-                            <a href="<?= url('/contact') ?>?vertical=<?= urlencode($ind['title']) ?>"
-                                class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition">
-                                Inquire for This Sector <i class="ri-arrow-right-line ml-1.5"></i>
-                            </a>
-                        </div>
+                    <?php endforeach; ?>
                     </div>
                 </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
 </section>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
