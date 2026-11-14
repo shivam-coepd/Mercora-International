@@ -90,9 +90,8 @@ require_once __DIR__ . '/includes/header.php';
                         <i class="ri-eye-line"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Vision</h3>
-                    <p class="text-slate-600 text-base leading-relaxed">
-                        To be a globally trusted innovation and consulting partner — empowering entities through
-                        technology, sustainability, and strategic growth.
+                    <p class="text-slate-600 text-base leading-relaxed flex flex-col items-start">
+                        Empowering the Global Vision <span class="text-amber-600"></span> through Innovation and Inclusion
                     </p>
                 </div>
             </div>
