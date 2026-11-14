@@ -272,14 +272,14 @@ require_once __DIR__ . '/includes/header.php';
                                     <?= e($vertical['tag']) ?>
                                 </span>
                             </div>
-                                <h3 class="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
-                                    <?= e($vertical['title']) ?>
-                                </h3>
+                            <h3 class="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
+                                <?= e($vertical['title']) ?>
+                            </h3>
                         </div>
                         <div>
-                                <span class="inline-flex items-center text-xs font-bold text-amber-400 group-hover:text-amber-300 transition">
-                                    Explore Vertical <i class="ri-arrow-right-line ml-1"></i>
-                                </span>
+                            <span class="inline-flex items-center text-xs font-bold text-amber-400 group-hover:text-amber-300 transition">
+                                Explore Vertical <i class="ri-arrow-right-line ml-1"></i>
+                            </span>
                         </div>
                     </div>
 
@@ -297,25 +297,25 @@ require_once __DIR__ . '/includes/header.php';
                                     <?= e($vertical['tag']) ?>
                                 </span>
                             </div>
-                                <h3 class="text-base font-bold text-white mb-2 leading-snug">
-                                    <?= e($vertical['title']) ?>
-                                </h3>
-                                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-                                    <?= e($vertical['short']) ?>
-                                </p>
+                            <h3 class="text-base font-bold text-white mb-2 leading-snug">
+                                <?= e($vertical['title']) ?>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+                                <?= e($vertical['short']) ?>
+                            </p>
                         </div>
-                            <div class="pt-3 border-t border-white/10">
-                                <a href="<?= url('/industries') ?>#<?= e($vertical['id']) ?>"
-                                    class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition group/btn">
-                                    Explore Vertical <i
-                                        class="ri-arrow-right-line ml-1.5 transition-transform group-hover/btn:translate-x-1"></i>
-                                </a>
-                            </div>
+                        <div class="pt-3 border-t border-white/10">
+                            <a href="<?= url('/industries') ?>#<?= e($vertical['id']) ?>"
+                                class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition group/btn">
+                                Explore Vertical <i
+                                    class="ri-arrow-right-line ml-1.5 transition-transform group-hover/btn:translate-x-1"></i>
+                            </a>
                         </div>
                     </div>
-                <?php endforeach; ?>
                 </div>
+            <?php endforeach; ?>
         </div>
+    </div>
 </section>
 
 <!-- 1.3 About Mercora Snapshot Section -->

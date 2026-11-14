@@ -97,46 +97,194 @@ require_once __DIR__ . '/includes/header.php';
 <section id="partner-dossiers" class="py-12 sm:py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="space-y-8">
-            <?php foreach ($PARTNERS as $key => $p): ?>
+            <?php foreach ($PARTNERS as $key => $p): 
+                $collabImg = !empty($p['collab_image']) ? $p['collab_image'] : '';
+                $collabBadge = $p['collab_badge'] ?? 'Collaboration Record';
+                $collabCaption = $p['collab_caption'] ?? ($p['name'] . ' Collaboration');
+                $galleryId = $p['gallery_id'] ?? '';
+                $hasCollab = !empty($collabImg);
+                $isLogoOnly = in_array($key, ['venkatesh-m-associates', 'delhi-test-house']);
+            ?>
                 <article id="<?= e($key) ?>"
-                    class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 hover:border-slate-300 hover:shadow-sm transition scroll-mt-24">
-                    <div
-                        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-6 mb-6 border-b border-slate-100">
-                        <div class="flex items-center gap-5">
-                            <div
-                                class="w-28 h-16 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 flex-shrink-0">
-                                <img src="<?= url($p['logo']) ?>" alt="<?= e($p['name']) ?>"
-                                    class="max-h-12 max-w-[96px] object-contain" />
-                            </div>
-                            <div>
-                                <div class="flex flex-wrap items-center gap-2 mb-1">
-                                    <span
-                                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
-                                        <?= e($p['tag']) ?>
-                                    </span>
-                                    <span
-                                        class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
-                                        <i class="ri-calendar-check-fill text-emerald-600"></i>
-                                        MOU Signed: <?= e($p['mou_date']) ?>
-                                    </span>
+                    class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 hover:border-slate-300 hover:shadow-md transition duration-300 scroll-mt-24">
+                    
+                    <?php if ($hasCollab): ?>
+                        <!-- Two-Column Layout (With Collaboration Photo on Right) -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                            <!-- Left Side: Partner Credentials & Dossier Narrative -->
+                            <div class="lg:col-span-7 xl:col-span-8 flex flex-col justify-between h-full">
+                                <div>
+                                    <!-- Header: Partner Logo, Badges & Titles -->
+                                    <div class="flex items-start gap-4 sm:gap-5 pb-5 mb-5 border-b border-slate-100">
+                                        <div
+                                            class="w-24 sm:w-28 h-16 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2.5 flex-shrink-0 shadow-xs">
+                                            <img src="<?= url($p['logo']) ?>" alt="<?= e($p['name']) ?>"
+                                                class="max-h-12 max-w-[96px] object-contain" />
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                                                <span
+                                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-50 text-amber-800 border border-amber-200">
+                                                    <?= e($p['tag']) ?>
+                                                </span>
+                                                <span
+                                                    class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                                                    <i class="ri-calendar-check-fill text-emerald-600"></i>
+                                                    MOU Signed: <?= e($p['mou_date']) ?>
+                                                </span>
+                                            </div>
+                                            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 leading-tight">
+                                                <?= e($p['name']) ?>
+                                            </h3>
+                                            <p class="text-xs sm:text-sm font-semibold text-amber-700 mt-1">
+                                                <?= e($p['role']) ?>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Narrative Full Text -->
+                                    <div class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                                        <p><?= e($p['full_text']) ?></p>
+                                    </div>
                                 </div>
-                                <h3 class="text-xl sm:text-2xl font-bold text-slate-900"><?= e($p['name']) ?></h3>
-                                <p class="text-xs sm:text-sm font-medium text-slate-500 mt-0.5"><?= e($p['role']) ?></p>
+
+                                <!-- Bottom Actions & CTAs -->
+                                <div class="pt-5 mt-6 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4">
+                                    <div class="flex flex-wrap items-center gap-3">
+                                        <?php if ($key === 'native-araku-coffee' && !empty($p['cta']) && !empty($p['link'])): ?>
+                                            <a href="<?= url($p['link']) ?>"
+                                                class="inline-flex items-center justify-center px-4 py-2.5 text-xs sm:text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition shadow-sm whitespace-nowrap">
+                                                <?= e($p['cta']) ?> <i class="ri-arrow-right-line ml-1.5"></i>
+                                            </a>
+                                        <?php endif; ?>
+
+                                        <?php if (!empty($galleryId)): ?>
+                                            <a href="<?= url('/gallery') ?>#<?= e($galleryId) ?>"
+                                                class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition">
+                                                <i class="ri-camera-lens-line text-amber-600"></i> View in Gallery Records
+                                                <i class="ri-arrow-right-up-line ml-0.5 text-slate-400"></i>
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
+
+                                    <a href="#partner-inquiry"
+                                        class="inline-flex items-center text-xs font-semibold text-slate-500 hover:text-slate-800 transition">
+                                        Partnership Inquiries <i class="ri-arrow-down-line ml-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Right Side: Collaboration Photographic Record / Visual Showcase -->
+                            <div class="lg:col-span-5 xl:col-span-4 flex flex-col justify-start">
+                                <div
+                                    class="group/photo relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 shadow-xs hover:shadow-md transition duration-300">
+                                    <div
+                                        class="relative w-full aspect-[4/3] <?= $isLogoOnly ? 'p-6 flex items-center justify-center bg-white' : 'bg-slate-900 overflow-hidden' ?>">
+                                        <a href="<?= url($collabImg) ?>" class="mc-lightbox block w-full h-full relative"
+                                            data-gallery="partner-dossiers"
+                                            data-glightbox="title: <?= e($p['name']) ?>; description: <?= e($collabCaption) ?> &bull; MOU: <?= e($p['mou_date']) ?>;">
+                                            <img src="<?= url($collabImg) ?>" alt="<?= e($collabCaption) ?>"
+                                                loading="lazy"
+                                                class="w-full h-full <?= $isLogoOnly ? 'object-contain' : 'object-cover object-top' ?> transition duration-500 group-hover/photo:scale-105" />
+
+                                            <!-- Floating Badge Overlay -->
+                                            <div class="absolute top-3 left-3 z-10 pointer-events-none">
+                                                <span
+                                                    class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-950/85 backdrop-blur-md text-white border border-white/20 shadow-xs">
+                                                    <i class="ri-shield-check-line text-emerald-400"></i>
+                                                    <?= e($collabBadge) ?>
+                                                </span>
+                                            </div>
+
+                                            <!-- Hover Overlay with Zoom Icon -->
+                                            <div
+                                                class="absolute inset-0 bg-slate-950/25 opacity-0 group-hover/photo:opacity-100 transition duration-300 flex items-center justify-center pointer-events-none">
+                                                <div
+                                                    class="w-10 h-10 rounded-full bg-white/95 text-slate-900 flex items-center justify-center shadow-lg transform scale-90 group-hover/photo:scale-100 transition duration-300">
+                                                    <i class="ri-zoom-in-line text-base font-bold"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Image Caption & Cross-Link -->
+                                    <div class="p-3.5 bg-slate-50 border-t border-slate-200/80">
+                                        <div class="flex items-start justify-between gap-2">
+                                            <div class="flex items-start gap-1.5 text-xs text-slate-700 leading-snug">
+                                                <i class="ri-image-line text-amber-600 mt-0.5 flex-shrink-0"></i>
+                                                <span class="font-medium"><?= e($collabCaption) ?></span>
+                                            </div>
+                                            <?php if (!empty($galleryId)): ?>
+                                                <a href="<?= url('/gallery') ?>#<?= e($galleryId) ?>"
+                                                    title="View complete event record in gallery"
+                                                    class="text-[11px] font-bold text-amber-600 hover:text-amber-700 whitespace-nowrap flex-shrink-0">
+                                                    Gallery &rarr;
+                                                </a>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <?php if ($key === 'native-araku-coffee' && !empty($p['cta']) && !empty($p['link'])): ?>
-                            <div>
-                                <a href="<?= url($p['link']) ?>"
-                                    class="inline-flex items-center justify-center px-4 py-2.5 text-xs sm:text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition shadow-sm whitespace-nowrap">
-                                    <?= e($p['cta']) ?> <i class="ri-arrow-right-line ml-1.5"></i>
-                                </a>
-                            </div>
-                        <?php endif; ?>
-                    </div>
 
-                    <div class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                        <p><?= e($p['full_text']) ?></p>
-                    </div>
+                    <?php else: ?>
+                        <!-- Single Full-Width Column Layout (Default UI when no collaboration image is specified) -->
+                        <div
+                            class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-6 mb-6 border-b border-slate-100">
+                            <div class="flex items-center gap-5">
+                                <div
+                                    class="w-28 h-16 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 flex-shrink-0 shadow-xs">
+                                    <img src="<?= url($p['logo']) ?>" alt="<?= e($p['name']) ?>"
+                                        class="max-h-12 max-w-[96px] object-contain" />
+                                </div>
+                                <div>
+                                    <div class="flex flex-wrap items-center gap-2 mb-1">
+                                        <span
+                                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
+                                            <?= e($p['tag']) ?>
+                                        </span>
+                                        <span
+                                            class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                                            <i class="ri-calendar-check-fill text-emerald-600"></i>
+                                            MOU Signed: <?= e($p['mou_date']) ?>
+                                        </span>
+                                    </div>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900"><?= e($p['name']) ?></h3>
+                                    <p class="text-xs sm:text-sm font-semibold text-amber-700 mt-0.5"><?= e($p['role']) ?></p>
+                                </div>
+                            </div>
+                            <?php if ($key === 'native-araku-coffee' && !empty($p['cta']) && !empty($p['link'])): ?>
+                                <div>
+                                    <a href="<?= url($p['link']) ?>"
+                                        class="inline-flex items-center justify-center px-4 py-2.5 text-xs sm:text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition shadow-sm whitespace-nowrap">
+                                        <?= e($p['cta']) ?> <i class="ri-arrow-right-line ml-1.5"></i>
+                                    </a>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+
+                        <!-- Full Width Narrative -->
+                        <div class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                            <p><?= e($p['full_text']) ?></p>
+                        </div>
+
+                        <!-- Bottom Footer -->
+                        <div class="pt-5 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <div>
+                                <?php if (!empty($galleryId)): ?>
+                                    <a href="<?= url('/gallery') ?>#<?= e($galleryId) ?>"
+                                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition">
+                                        <i class="ri-camera-lens-line text-amber-600"></i> View in Gallery Records
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                            <a href="#partner-inquiry"
+                                class="inline-flex items-center text-xs font-semibold text-slate-500 hover:text-slate-800 transition">
+                                Partnership Inquiries <i class="ri-arrow-down-line ml-1"></i>
+                            </a>
+                        </div>
+                    <?php endif; ?>
+
                 </article>
             <?php endforeach; ?>
         </div>
