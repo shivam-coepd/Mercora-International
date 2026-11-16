@@ -173,15 +173,46 @@ $INDUSTRIES = [
 
         <!-- 11 Industry Cards Grid (4 columns on desktop, 2 on tablet, 1 on mobile) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7">
-            <?php foreach ($INDUSTRIES as $ind):
+            <?php
+            // Dedicated standalone pages for industries where available
+            $dedicatedRoutes = [
+                'agritech' => '/smart-crop-doctor',
+                'fmcg-coffee' => '/coffee-products',
+                'textile' => '/white-world',
+                'textile-apparel' => '/white-world',
+                'nextgen' => '/it-services',
+                'digital-trans' => '/it-services',
+            ];
+
+            // Alias IDs so anchors from config.php or index.php scroll smoothly
+            $aliasMap = [
+                'csr' => 'csr-sustainability',
+                'bfsi' => 'financial-advisory',
+                'trade' => 'global-trade',
+                'nextgen' => 'digital-trans',
+                'textile' => 'textile-apparel',
+                'women' => 'women-empowerment',
+            ];
+
+            foreach ($INDUSTRIES as $ind):
+                $indId = $ind['id'] ?? '';
+                $hasDedicated = isset($dedicatedRoutes[$indId]);
+                $dedicatedUrl = $hasDedicated ? url($dedicatedRoutes[$indId]) : null;
+
                 $imgUrl = url($ind['image']);
                 $absPath = __DIR__ . '/' . $ind['image'];
                 if (file_exists($absPath)) {
                     $imgUrl .= '?v=' . filemtime($absPath);
                 }
             ?>
-                <div id="<?= e($ind['id']) ?>"
-                    class="group relative rounded-2xl overflow-hidden h-[410px] sm:h-[430px] shadow-md hover:shadow-2xl bg-[#0c2340] border cursor-pointer transition-all duration-300">
+                <div id="<?= e($indId) ?>"
+                    <?= $hasDedicated ? 'data-nav-url="' . $dedicatedUrl . '"' : '' ?>
+                    class="industry-card group relative rounded-2xl overflow-hidden h-[410px] sm:h-[430px] shadow-md hover:shadow-2xl bg-[#0c2340] border <?= $hasDedicated ? 'cursor-pointer' : 'cursor-default' ?> transition-all duration-300">
+                    <?php if (isset($aliasMap[$indId])): ?>
+                        <!-- Anchor target for alias ID -->
+                        <span id="<?= e($aliasMap[$indId]) ?>" class="scroll-mt-28 -top-24 relative block"></span>
+                    <?php endif; ?>
+
                     <!-- Background Photographic Image -->
                     <img src="<?= $imgUrl ?>" alt="<?= e($ind['title']) ?>"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -229,44 +260,78 @@ $INDUSTRIES = [
                             </div>
 
                             <!-- Full Title -->
-                                <h4 class="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
-                                    <?= e($ind['title']) ?>
-                                </h4>
+                            <h4 class="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
+                                <?= e($ind['title']) ?>
+                            </h4>
 
-                                <!-- Description -->
-                                <p class="text-xs text-slate-300 leading-relaxed mb-3 font-normal">
-                                    <?= e($ind['desc']) ?>
-                                </p>
+                            <!-- Description -->
+                            <p class="text-xs text-slate-300 leading-relaxed mb-3 font-normal">
+                                <?= e($ind['desc']) ?>
+                            </p>
 
-                                <!-- Focus Areas List -->
-                                    <div class="pt-2.5 border-t border-white/10">
-                                        <span
-                                            class="block text-[10.5px] font-bold uppercase tracking-wider text-amber-400 mb-1.5">Key
-                                            Focus Areas:</span>
-                                            <ul class="space-y-1.5 text-xs text-slate-200">
-                                                <?php foreach ($ind['highlights'] as $hl): ?>
-                                                    <li class="flex items-start gap-1.5">
-                                                        <i
-                                                        class="ri-checkbox-circle-fill text-amber-400 text-xs flex-shrink-0 mt-0.5"></i>
-                                                        <span class="text-slate-200"><?= e($hl) ?></span>
-                                                    </li>
-                                                <?php endforeach; ?>
-                                            </ul>
-                                    </div>
-                                </div>
-
-                                <!-- Bottom Action Link -->
-                                    <div class="pt-3 border-t border-white/10 mt-2">
-                                        <a href="<?= url('/contact') ?>?vertical=<?= urlencode($ind['title']) ?>"
-                                            class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition group/btn">
-                                            Inquire for This Sector <i class="ri-arrow-right-line ml-1.5 transition-transform group-hover/btn:translate-x-1"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                            <!-- Focus Areas List -->
+                            <div class="pt-2.5 border-t border-white/10">
+                                <span
+                                    class="block text-[10.5px] font-bold uppercase tracking-wider text-amber-400 mb-1.5">Key Focus Areas:</span>
+                                <ul class="space-y-1.5 text-xs text-slate-200">
+                                    <?php foreach ($ind['highlights'] as $hl): ?>
+                                        <li class="flex items-start gap-1.5">
+                                            <i
+                                                class="ri-checkbox-circle-fill text-amber-400 text-xs flex-shrink-0 mt-0.5"></i>
+                                            <span class="text-slate-200"><?= e($hl) ?></span>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
                         </div>
-                    <?php endforeach; ?>
+
+                        <!-- Bottom Action Link(s) -->
+                        <div class="pt-3 border-t border-white/10 mt-2">
+                            <?php if ($hasDedicated): ?>
+                                <div class="flex items-center justify-between gap-2">
+                                    <a href="<?= $dedicatedUrl ?>"
+                                        class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition group/explore">
+                                        <span>Explore Page</span>
+                                        <i class="ri-arrow-right-up-line ml-1 text-amber-400 transition-transform group-hover/explore:translate-x-0.5 group-hover/explore:-translate-y-0.5"></i>
+                                    </a>
+                                    <a href="<?= url('/contact') ?>?vertical=<?= urlencode($ind['title']) ?>"
+                                        onclick="event.stopPropagation();"
+                                        class="inquire-btn inline-flex items-center text-xs font-semibold text-slate-300 hover:text-white transition group/btn">
+                                        <span>Inquire</span>
+                                        <i class="ri-arrow-right-line ml-1 transition-transform group-hover/btn:translate-x-0.5"></i>
+                                    </a>
+                                </div>
+                            <?php else: ?>
+                                <a href="<?= url('/contact') ?>?vertical=<?= urlencode($ind['title']) ?>"
+                                    onclick="event.stopPropagation();"
+                                    class="inquire-btn inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition group/btn">
+                                    Inquire for This Sector <i class="ri-arrow-right-line ml-1.5 transition-transform group-hover/btn:translate-x-1"></i>
+                                </a>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
 </section>
+
+<!-- Click handler for industry cards with dedicated pages -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".industry-card[data-nav-url]").forEach(function (card) {
+            card.addEventListener("click", function (e) {
+                // If clicked on or inside Inquire button (or an explicit link inside), let it handle naturally
+                if (e.target.closest(".inquire-btn")) {
+                    return;
+                }
+                var navUrl = this.getAttribute("data-nav-url");
+                if (navUrl) {
+                    window.location.href = navUrl;
+                }
+            });
+        });
+    });
+</script>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
