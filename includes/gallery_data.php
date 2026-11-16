@@ -79,18 +79,6 @@ $GALLERY_EVENTS = array(
         ),
     ),
     array(
-        'id' => 'aptit-solutions-collaboration-2025',
-        'year' => '2025',
-        'date' => '13 October 2025',
-        'title' => 'Collaboration with APTIT Solutions',
-        'category' => 'IT & Digital Services',
-        'badge' => 'Alliance Signing',
-        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with M/s APTIT Solutions, Mr. V. P. Dadhirao Sridhar, Director.',
-        'images' => array(
-            'image22.png',
-        ),
-    ),
-    array(
         'id' => 'world-mental-health-day-2025',
         'year' => '2025',
         'date' => '29 October 2025',
@@ -141,20 +129,6 @@ $GALLERY_EVENTS = array(
         ),
     ),
     array(
-        'id' => 'rishipal-gupta-collaboration-2025',
-        'year' => '2025',
-        'date' => '2 December 2025',
-        'title' => 'Collaboration with Rishipal Gupta and Sons Pvt Ltd',
-        'category' => 'Trade & Industry',
-        'badge' => 'MOU Formalization',
-        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with Rishipal Gupta and Sons Pvt ltd, Mr. Ankur Gupta, Managing Director.',
-        'images' => array(
-            'image38.png',
-            'image39.jpg',
-            'image40.jpg',
-        ),
-    ),
-    array(
         'id' => 'bathukamma-celebrations-delhi-2026',
         'year' => '2026',
         'date' => 'January 2026',
@@ -193,18 +167,6 @@ $GALLERY_EVENTS = array(
             'image43.jpeg',
             'image44.jpeg',
             'image45.jpeg',
-        ),
-    ),
-    array(
-        'id' => 'native-araku-coffee-mou-2026',
-        'year' => '2026',
-        'date' => '31 January 2026',
-        'title' => 'Collaboration Agreement with Native Araku Coffee',
-        'category' => 'Specialty Coffee & Livelihoods',
-        'badge' => 'Strategic MOU',
-        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with Native Araku Coffee. Present: Mr. Ram Kumar Varma, CEO.',
-        'images' => array(
-            'image46.jpg',
         ),
     ),
     array(
@@ -251,30 +213,6 @@ $GALLERY_EVENTS = array(
             'image60.jpg',
             'image61.jpg',
             'image62.jpg',
-        ),
-    ),
-    array(
-        'id' => 'tridantor-ideaus-collaboration-2026',
-        'year' => '2026',
-        'date' => '4 May 2026',
-        'title' => 'Collaboration with Tridantor Ideaus Pvt Ltd',
-        'category' => 'Defence & Deep-Tech',
-        'badge' => 'Strategic Alliance',
-        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with Tridantor Ideaus Pvt Ltd. Present: Mr. R.V. Ramakrishna, Founder and CEO.',
-        'images' => array(
-            'image63.jpg',
-        ),
-    ),
-    array(
-        'id' => 'arisetty-technologies-collaboration-2026',
-        'year' => '2026',
-        'date' => '6 May 2026',
-        'title' => 'Collaboration with Arisetty Technologies (KavachApp)',
-        'category' => 'SaaS & Cyber Security',
-        'badge' => 'SaaS Alliance',
-        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with Arisetty Technologies Private Limited. Present: Mr. Ravi Arisetty, Founder, and Mr. C.J. Babu, Chief Business Officer.',
-        'images' => array(
-            'image65.jpg',
         ),
     ),
     array(
@@ -415,6 +353,71 @@ Founder & Managing Partner, Mrs. D. Jaya Geetha Kiran, was honoured to be recogn
         'desc' => 'Shalini Naomi Bhatti is a Regional Manager at MSTC Limited (Northern Regional Office / New Delhi), a public sector undertaking under the Ministry of Steel, Government of Ind.   Shri Manoj Pandey is a Manager of Marketing at MSTC Limited (Metal Scrap Trade Corporation Limited), a Mini-Ratna Category-I Public Sector Undertaking under the Ministry of Steel, Government of India',
         'images' => array(
             'image94.jpg'
+        ),
+    ),
+);
+
+$MOU_GALLERY_EVENTS = array(
+    array(
+        'id' => 'aptit-solutions-collaboration-2025',
+        'year' => '2025',
+        'date' => '13 October 2025',
+        'title' => 'Collaboration with APT IT Solutions',
+        'category' => 'IT & Digital Services',
+        'badge' => 'Alliance Signing',
+        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with M/s APTIT Solutions, Mr. V. P. Dadhirao Sridhar, Director.',
+        'images' => array(
+            'image22.png',
+        ),
+    ),
+    array(
+        'id' => 'rishipal-gupta-collaboration-2025',
+        'year' => '2025',
+        'date' => '2 December 2025',
+        'title' => 'Collaboration with Rishipal Gupta and Sons Pvt Ltd',
+        'category' => 'Trade & Industry',
+        'badge' => 'MOU Formalization',
+        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with Rishipal Gupta and Sons Pvt ltd, Mr. Ankur Gupta, Managing Director.',
+        'images' => array(
+            'image38.png',
+            'image39.jpg',
+            'image40.jpg',
+        ),
+    ),
+    array(
+        'id' => 'native-araku-coffee-mou-2026',
+        'year' => '2026',
+        'date' => '31 January 2026',
+        'title' => 'Collaboration Agreement with Native Araku Coffee',
+        'category' => 'Specialty Coffee & Livelihoods',
+        'badge' => 'Strategic MOU',
+        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with Native Araku Coffee. Present: Mr. Ram Kumar Varma, CEO.',
+        'images' => array(
+            'image46.jpg',
+        ),
+    ),
+    array(
+        'id' => 'tridantor-ideaus-collaboration-2026',
+        'year' => '2026',
+        'date' => '4 May 2026',
+        'title' => 'Collaboration with Tridantor Ideaus Pvt Ltd',
+        'category' => 'Defence & Deep-Tech',
+        'badge' => 'Strategic Alliance',
+        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with Tridantor Ideaus Pvt Ltd. Present: Mr. R.V. Ramakrishna, Founder and CEO.',
+        'images' => array(
+            'image63.jpg',
+        ),
+    ),
+    array(
+        'id' => 'arisetty-technologies-collaboration-2026',
+        'year' => '2026',
+        'date' => '6 May 2026',
+        'title' => 'Collaboration with Arisetty Technologies (KavachApp)',
+        'category' => 'SaaS & Cyber Security',
+        'badge' => 'SaaS Alliance',
+        'desc' => 'Mercora International Founder and Managing Partner Mrs. Jaya Geetha Kiran Desaraju entered into a collaboration with Arisetty Technologies Private Limited. Present: Mr. Ravi Arisetty, Founder, and Mr. C.J. Babu, Chief Business Officer.',
+        'images' => array(
+            'image65.jpg',
         ),
     ),
 );
