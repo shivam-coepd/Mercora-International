@@ -241,15 +241,50 @@ require_once __DIR__ . '/includes/header.php';
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <?php
             $verticals = $BUSINESS_VERTICALS ?? ($GLOBALS['BUSINESS_VERTICALS'] ?? []);
+
+            // Dedicated standalone pages for verticals where available
+            $dedicatedRoutes = [
+                'agritech' => '/smart-crop-doctor',
+                'fmcg-coffee' => '/coffee-products',
+                'textile-apparel' => '/white-world',
+                'textile' => '/white-world',
+                'digital-trans' => '/it-services',
+                'nextgen' => '/it-services',
+            ];
+
+            // Matching anchor IDs on industries.php for verticals without dedicated pages
+            $industryAnchors = [
+                'agritech' => 'agritech',
+                'csr-sustainability' => 'csr',
+                'education' => 'education',
+                'financial-advisory' => 'bfsi',
+                'global-trade' => 'trade',
+                'healthcare' => 'healthcare',
+                'manufacturing' => 'manufacturing',
+                'digital-trans' => 'nextgen',
+                'fmcg-coffee' => 'fmcg-coffee',
+                'textile-apparel' => 'textile',
+                'women-empowerment' => 'women',
+            ];
+
             foreach ($verticals as $vertical):
+                $vId = $vertical['id'] ?? '';
+                $hasDedicated = isset($dedicatedRoutes[$vId]);
+                if ($hasDedicated) {
+                    $targetUrl = url($dedicatedRoutes[$vId]);
+                } else {
+                    $anchor = $industryAnchors[$vId] ?? $vId;
+                    $targetUrl = url('/industries') . '#' . $anchor;
+                }
+
                 $imgUrl = url($vertical['image']);
                 $absPath = __DIR__ . '/' . $vertical['image'];
                 if (file_exists($absPath)) {
                     $imgUrl .= '?v=' . filemtime($absPath);
                 }
             ?>
-                <div
-                    class="group relative rounded-2xl overflow-hidden bg-[#0c2340] shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between p-6 min-h-[300px]">
+                <div data-href="<?= $targetUrl ?>"
+                    class="vertical-card group relative rounded-2xl overflow-hidden bg-[#0c2340] shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between p-6 min-h-[300px] cursor-pointer">
                     <!-- Background Photographic Image (from Industries We Serve) -->
                     <img src="<?= $imgUrl ?>" alt="<?= e($vertical['title']) ?>"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -260,7 +295,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
 
                     <!-- Main Card Content (Resting State: Title, Icon, Tag, Explore link) -->
-                    <div class="relative z-10 flex flex-col justify-between h-full">
+                    <div class="relative z-10 flex flex-col justify-between h-full pointer-events-none">
                         <div>
                             <div class="flex items-center justify-between mb-4">
                                 <div
@@ -305,7 +340,7 @@ require_once __DIR__ . '/includes/header.php';
                             </p>
                         </div>
                         <div class="pt-3 border-t border-white/10">
-                            <a href="<?= url('/industries') ?>#<?= e($vertical['id']) ?>"
+                            <a href="<?= $targetUrl ?>"
                                 class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition group/btn">
                                 Explore Vertical <i
                                     class="ri-arrow-right-line ml-1.5 transition-transform group-hover/btn:translate-x-1"></i>
@@ -485,5 +520,20 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
+
+<!-- Click handler for vertical cards -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".vertical-card[data-href]").forEach(function (card) {
+            card.addEventListener("click", function (e) {
+                if (e.target.closest("a")) return;
+                var href = this.getAttribute("data-href");
+                if (href) {
+                    window.location.href = href;
+                }
+            });
+        });
+    });
+</script>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
