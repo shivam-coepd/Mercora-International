@@ -365,22 +365,26 @@ require_once dirname(__DIR__) . '/includes/header.php';
         <!-- Card 3: Partner With THE WHITE WORLD™ -->
         <div id="partner"
           class="bg-[#fdfbf7] border border-[#ecdcc8] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
-          <div>
-            <div class="flex items-center gap-2 mb-3 pb-2 border-b border-[#f1e5d7]">
-              <div
-                class="w-8 h-8 rounded-full bg-[#f3e7d5] flex items-center justify-center text-[#b38738] shrink-0 text-xs">
-                <i class="fas fa-handshake"></i>
+          <div class="flex items-start gap-4">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-[#b38738] text-lg"><i class="fas fa-handshake"></i></span>
+                <h3 class="text-lg font-serif font-bold text-[#2d2419]">Partner With<br>THE WHITE WORLD&trade;</h3>
               </div>
-              <h3 class="text-base font-serif font-bold text-[#2d2419] leading-tight">
-                Partner With THE WHITE WORLD&trade;
-              </h3>
+              <p class="text-xs text-[#615140] leading-relaxed font-light mb-2">
+                We welcome conversations with artisans, women-led enterprises, SHGs, suppliers, designers, manufacturers
+                and institutional partners interested in contributing to this integrated lifestyle and social impact
+                initiative.
+              </p>
             </div>
 
-            <p class="text-xs text-[#615140] leading-relaxed font-light mb-4">
-              We welcome conversations with artisans, women-led enterprises, SHGs, suppliers, designers, manufacturers
-              and institutional partners interested in contributing to this integrated lifestyle and social impact
-              initiative.
-            </p>
+            <!-- Arched Partner Image -->
+            <div class="w-24 sm:w-28 shrink-0">
+              <div class="rounded-t-full rounded-b-lg overflow-hidden border border-[#ebdcc9] shadow-xs">
+                <img src="/assets/images/mercora/white-world/partner-with.png"
+                  alt="Partner With THE WHITE WORLD™" class="w-full h-36 object-cover">
+              </div>
+            </div>
           </div>
         </div>
 
@@ -408,27 +412,21 @@ require_once dirname(__DIR__) . '/includes/header.php';
     <div
       class="max-w-6xl mx-auto bg-white/95 backdrop-blur-md rounded-2xl md:rounded-full py-4 sm:py-5 px-6 sm:px-8 lg:px-10 shadow-2xl border border-white/80 flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6">
 
-      <!-- Left Group: Icon + Title + Divider + Description -->
-      <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-center sm:text-left flex-1 min-w-0">
-        <div
-          class="w-11 h-11 rounded-full bg-[#f3e7d5] flex items-center justify-center text-[#b38738] shrink-0 text-xl shadow-2xs">
-          <i class="fas fa-seedling"></i>
-        </div>
-        <div class="shrink-0">
-          <h3 class="text-lg sm:text-xl font-serif font-bold text-[#2d2419] tracking-tight whitespace-nowrap">
-            Be Part of the Vision
-          </h3>
-        </div>
-        <div class="hidden lg:block w-px h-8 bg-[#b38738]/40 shrink-0 mx-1"></div>
-        <p class="text-xs sm:text-sm text-[#6e5d4a] font-light leading-relaxed">
-          Together, we can build an inclusive, sustainable and elegant white lifestyle ecosystem that creates value for
+      <!-- Left Headline Text -->
+      <div class="flex-1 text-center md:text-left">
+        <h3
+          class="text-lg sm:text-xl lg:text-[22px] font-bold italic tracking-tight text-[#0c2340] leading-snug">
+          Building an inclusive, sustainable and elegant white lifestyle ecosystem that creates value for
           people and communities.
-        </p>
+        </h3>
       </div>
+
+      <!-- Vertical Green Divider (Desktop) -->
+      <div class="hidden md:block w-px h-8 bg-[#84cc16]/50 shrink-0 mx-2"></div>
 
       <!-- Right CTA Button -->
       <div class="shrink-0">
-        <a href="<?= url('/contact') ?>?vertical=the-white-world"
+        <a href="<?= url('/contact') ?>?vertical=white-world"
           class="inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-[#b38738] via-[#c99e4b] to-[#a3792c] hover:from-[#a3792c] hover:to-[#8c6729] text-white font-semibold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all duration-200 whitespace-nowrap uppercase tracking-wider">
           <i class="far fa-envelope text-base"></i>
           <span>Contact Mercora International</span>

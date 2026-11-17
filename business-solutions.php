@@ -147,26 +147,25 @@ $BUSINESS_SOLUTIONS = [
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 border-t-4 border-t-emerald-600">
                 <div class="text-3xl sm:text-4xl font-extrabold text-emerald-700 mb-2">6 Months</div>
-                <h4 class="text-base font-bold text-slate-900 mb-2">Smart Crop Doctor ALEAP Loan</h4>
+                <h4 class="text-base font-bold text-slate-900 mb-2">Smart Crop Doctor – ALEAP Funding Support</h4>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    Commercial loan sanctioned via ALEAP within 6 months of obtaining DPIIT Startup India recognition (DIPP258473), accelerating deployment of multispectral drones.
-                </p>
+                    Funding support sanctioned through ALEAP within six months of obtaining DPIIT Startup India recognition, accelerating the deployment of multispectral drone technology. </p>
+                <p class="text-sm font-semibold leading-relaxed">
+                    Field trials for drone spraying successfully completed across northern states, demonstrating the technology’s operational performance and real-world applicability. </p>
             </div>
 
             <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 border-t-4 border-t-amber-500">
                 <div class="text-3xl sm:text-4xl font-extrabold text-amber-700 mb-2">12 Strategic MOUs</div>
                 <h4 class="text-base font-bold text-slate-900 mb-2">Strategic Institutional Network</h4>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    Formal bilateral and tripartite agreements signed across technology innovators, testing & certification bodies, robotics, defense, healthcare access, and global commodities.
-                </p>
+                    Formal bilateral and tripartite agreements signed across technology innovators, testing and certification bodies, robotics, defence, healthcare access and global commodities. </p>
             </div>
 
             <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 border-t-4 border-t-blue-600">
                 <div class="text-3xl sm:text-4xl font-extrabold text-blue-800 mb-2">100 Cafés</div>
-                <h4 class="text-base font-bold text-slate-900 mb-2">SERP AP Women-Driven Coffee Shops</h4>
+                <h4 class="text-base font-bold text-slate-900 mb-2">Authorised Native Araku Coffee Franchise Roll-out</h4>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    Authorised franchise roll-out activated in Hyderabad with government MOU via SERP AP, establishing 100 sustainable cafés operated by rural women entrepreneurs.
-                </p>
+                    Authorised franchise roll-out in partnership with SERP, supporting the establishment of 100 sustainable coffee shops operated by rural women entrepreneurs and creating long-term livelihood opportunities. </p>
             </div>
         </div>
     </div>

@@ -618,51 +618,29 @@ require_once dirname(__DIR__) . '/includes/header.php';
 <!-- Be Part of the Vision with Cattle & Meadow Silhouette Graphic  -->
 <!-- ============================================================== -->
 <section
-    class="relative overflow-hidden min-h-[160px] sm:min-h-[180px] bg-gradient-to-r from-[#edf8ee] via-[#f5fbf6] to-[#edf8ee] border-t border-[#d6e8da] py-8 sm:py-10 flex items-center">
+    class="relative overflow-hidden min-h-[220px] sm:min-h-[260px] lg:min-h-[280px] flex items-center py-10 sm:py-14 border-t border-[#ebdcc9]">
+    <!-- Background Image: cta-white-world.png -->
+    <div class="absolute inset-0 z-0">
+        <img src="<?= url('assets/images/mercora/cta-vetigo-mobicare.png') ?>" alt="Be Part of the Vision - VetoGo MobiCare"
+            class="w-full h-full object-cover object-center" />
+    </div>
 
+    <!-- Centered Floating Container (Matching Reference UI Design) -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-5 sm:gap-6">
+        <div
+            class="max-w-6xl mx-auto bg-white/95 backdrop-blur-md rounded-2xl md:rounded-full py-4 sm:py-5 px-6 sm:px-8 lg:px-10 shadow-2xl border border-white/80 flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6">
 
-            <!-- Left Info Block: Cattle Silhouette + Title + Divider + Description -->
-            <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left flex-1">
-
-                <!-- SVG Cattle Silhouette & Meadow (Matching Reference) -->
-                <div class="w-20 sm:w-24 shrink-0 text-[#1e873b]">
-                    <svg viewBox="0 0 110 65" class="w-full h-auto fill-current" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Cow silhouette -->
-                        <path
-                            d="M56 42 C54 38, 54 28, 49 26 C47 25, 45 25, 43 27 C41 29, 41 32, 38 32 C36 32, 34 29, 32 27 C31 25, 29 24, 27 24 C23 24, 20 26, 19 28 C17 31, 16 35, 14 36 C11 37, 9 38, 9 41 C9 44, 12 46, 16 46 C18 46, 20 45, 21 44 C23 43, 26 44, 28 46 C30 48, 32 50, 35 51 C36 51, 37 50, 37 48 C37 46, 36 45, 36 43 C37 41, 38 40, 41 41 C42 42, 43 45, 44 48 C45 51, 46 52, 47 52 C49 52, 51 49, 51 46 C53 46, 55 44, 56 42 Z M20 30 C21 30, 22 29, 22 28 C22 27, 21 26, 20 26 C19 26, 18 27, 18 28 C18 29, 19 30, 20 30 Z"
-                            opacity="0.95" />
-                        <!-- Sheep / Lamb silhouette beside cow -->
-                        <path
-                            d="M74 46 C73 43, 73 38, 70 36 C68 35, 66 35, 65 36 C63 37, 63 39, 60 39 C59 39, 58 37, 57 36 C56 35, 55 35, 54 35 C51 35, 49 36, 48 38 C47 40, 46 43, 45 44 C44 45, 43 45, 43 47 C43 49, 45 50, 47 50 C48 50, 49 49, 50 48 C52 48, 53 48, 54 50 C55 51, 56 52, 57 52 C58 52, 59 51, 59 50 C59 49, 58 48, 58 47 C59 46, 60 45, 62 46 C63 46, 63 48, 64 50 C65 52, 66 52, 67 52 C68 52, 70 50, 70 48 C71 48, 72 47, 74 46 Z"
-                            opacity="0.9" />
-                        <!-- Grass blades at base -->
-                        <path d="M2 58 Q10 52, 18 58 T34 58 T50 58 T66 58 T82 58 T98 58 T110 58 L110 64 L2 64 Z"
-                            opacity="0.35" />
-                        <path
-                            d="M6 56 L8 50 L10 56 M14 56 L16 48 L18 56 M24 56 L26 51 L28 56 M80 56 L82 49 L84 56 M92 56 L94 50 L96 56"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6" />
-                    </svg>
-                </div>
-
-                <!-- Headline -->
-                <div class="shrink-0">
-                    <h3 class="text-xl sm:text-2xl font-black text-[#0c2340] tracking-tight whitespace-nowrap">
-                        Be Part of the Vision
-                    </h3>
-                </div>
-
-                <!-- Vertical Divider (Desktop) -->
-                <div class="hidden lg:block w-px h-9 bg-[#1e873b]/40 shrink-0 mx-2"></div>
-
-                <!-- Subtitle / Vision Description -->
-                <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed max-w-xl">
-                    Together, we can work towards making accessible veterinary healthcare a reality for more animals and
+            <!-- Left Headline Text -->
+            <div class="flex-1 text-center md:text-left">
+                <h3
+                    class="text-lg sm:text-xl lg:text-[22px] font-bold italic tracking-tight text-[#0c2340] leading-snug">
+                    Working towards making accessible veterinary healthcare a reality for more animals and
                     communities.
-                </p>
-
+                </h3>
             </div>
+
+            <!-- Vertical Green Divider (Desktop) -->
+            <div class="hidden md:block w-px h-8 bg-[#84cc16]/50 shrink-0 mx-2"></div>
 
             <!-- Right CTA Button -->
             <div class="shrink-0">
