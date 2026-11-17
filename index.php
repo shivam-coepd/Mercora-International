@@ -411,10 +411,6 @@ require_once __DIR__ . '/includes/header.php';
                     class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition">
                     Read Our Full Journey <i class="ri-arrow-right-line ml-2"></i>
                 </a>
-                <a href="<?= url('/gallery') ?>"
-                    class="inline-flex items-center px-5 py-3 text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition">
-                    View Official Certifications
-                </a>
             </div>
         </div>
     </div>
@@ -523,9 +519,9 @@ require_once __DIR__ . '/includes/header.php';
 
 <!-- Click handler for vertical cards -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".vertical-card[data-href]").forEach(function (card) {
-            card.addEventListener("click", function (e) {
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".vertical-card[data-href]").forEach(function(card) {
+            card.addEventListener("click", function(e) {
                 if (e.target.closest("a")) return;
                 var href = this.getAttribute("data-href");
                 if (href) {

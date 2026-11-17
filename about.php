@@ -17,11 +17,7 @@ require_once __DIR__ . '/includes/header.php';
                     Multidisciplinary Consulting, Technology & Business Transformation
                 </h1>
                 <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-                    Mercora International is a registered partnership firm (Firm Reg.
-                    <strong><?= e(FIRM_REG_NO) ?></strong>), incorporated <strong><?= e(FIRM_INC_DATE) ?></strong>,
-                    based in Kondapur, Hyderabad. We partner with enterprises, government bodies, startups, and
-                    institutions to engineer scalable, innovation-led solutions that deliver measurable impact across
-                    industries and geographies.
+                    Mercora International is a registered partnership firm, incorporated on <strong>29 July 2025</strong> and <strong>headquartered in Kondapur, Hyderabad</strong>. Founded on the vision and entrepreneurial spirit of two women entrepreneurs, Mercora is a multidisciplinary business consulting and technology solutions firm focused on driving innovation, strategic partnerships and sustainable business growth. Bringing together consulting expertise, engineering capabilities and institutional alliances, Mercora delivers strategic consulting, digital transformation, IT solutions, international trade facilitation, renewable energy solutions, AgriTech innovation, business development and project management services. With a presence across diverse sectors, including Finance, Digital Technology, Agriculture, Education, Healthcare, Environment and Social Development, Mercora connects businesses, industries, government institutions and technology partners to unlock new opportunities, accelerate enterprise growth and create lasting impact through innovative, technology-driven and sustainable solutions.
                 </p>
             </div>
             <div class="lg:col-span-5 flex justify-center lg:justify-end">

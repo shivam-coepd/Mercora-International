@@ -30,7 +30,6 @@ DirectoryIndex index.php
     RewriteRule ^smart-crop-doctor/?$ smart-crop-doctor/index.php [L,QSA]
     RewriteRule ^crop-doctor/?$ smart-crop-doctor/index.php [L,QSA]
     RewriteRule ^white-world/?$ white-world/index.php [L,QSA]
-    RewriteRule ^the-white-world/?$ white-world/index.php [L,QSA]
     RewriteRule ^vetigo-mobicare/?$ vetigo-mobicare/index.php [L,QSA]
     RewriteRule ^vetigo/?$ vetigo-mobicare/index.php [L,QSA]
 
