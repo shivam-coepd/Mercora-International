@@ -173,7 +173,7 @@ $TECH_STACK = [
     </div>
 </section>
 
-<!-- 3.3 Project Enquiry Form & 3.4 Downloadable Resources -->
+<!-- 3.3 Project Enquiry Form -->
 <section id="enquiry" class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -261,7 +261,7 @@ $TECH_STACK = [
                 </form>
             </div>
 
-            <!-- Right: 3.4 Downloadable Resources & Partner Ecosystem -->
+            <!-- Right: 3.4 KavachApp Partner Ecosystem -->
             <div class="lg:col-span-5 space-y-6">
                 <!-- KavachApp Card -->
                 <div class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800">

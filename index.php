@@ -63,7 +63,7 @@ require_once __DIR__ . '/includes/header.php';
                     </h1>
 
                     <p
-                        class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-semibold">
                         Mercora International is a Hyderabad-based multidisciplinary consulting and business solutions
                         firm, established as a registered partnership in Hyderabad, Telangana on 29 July 2025.
                         We partner with enterprises, government organisations, startups, MSMEs and institutions to
@@ -105,7 +105,7 @@ require_once __DIR__ . '/includes/header.php';
                     </h1>
 
                     <p
-                        class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-semibold">
                         Our multidisciplinary business ecosystem spans IT and Digital Transformation, Artificial
                         Intelligence, Robotics and Automation, Drone Technology, Precision Agriculture, Defence and
                         Emerging Technologies, Healthcare and Insurance, Education and Wellbeing, Global Trade,
@@ -148,7 +148,7 @@ require_once __DIR__ . '/includes/header.php';
                     </h1>
 
                     <p
-                        class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        class="font-scope text-xs sm:text-base lg:text-[19px] text-slate-700 leading-relaxed max-w-2xl font-semibold">
                         We focus on transforming ideas into actionable business opportunities, connecting innovation
                         with industry requirements, empowering entrepreneurs and communities, and enabling organisations
                         to build scalable and sustainable business models.
@@ -436,7 +436,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div>
                     <div class="h-14 mb-3 flex items-center">
                         <img src="<?= url('assets/images/initiatives/smart-crop-logo.png') ?>"
-                            alt="Smart Crop Doctor" class="max-h-12 w-auto object-contain" />
+                            alt="Smart Crop Doctor" class="max-h-20 w-auto object-contain" />
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-2">Smart Crop Doctor</h3>
                     <p class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-4">AI-Powered Precision
@@ -464,7 +464,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div>
                     <div class="h-14 mb-3 flex items-center">
                         <img src="<?= url('assets/images/initiatives/white-world-logo.png') ?>"
-                            alt="The White World" class="max-h-12 w-auto object-contain" />
+                            alt="The White World" class="max-h-20 w-auto object-contain" />
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-2">The White World™</h3>
                     <p class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-4">Living Life with Elegance
@@ -492,7 +492,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div>
                     <div class="h-14 mb-3 flex items-center">
                         <img src="<?= url('assets/images/initiatives/vetigo-mobicare-logo.jpg') ?>"
-                            alt="VetiGo MobiCare" class="max-h-12 w-auto object-contain" />
+                            alt="VetiGo MobiCare" class="max-h-20 w-auto object-contain" />
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-2">VetiGo MobiCare</h3>
                     <p class="text-xs font-bold text-teal-700 uppercase tracking-wider mb-4">Compassion in Motion.

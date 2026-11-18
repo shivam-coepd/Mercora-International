@@ -26,15 +26,6 @@ require_once dirname(__DIR__) . '/includes/header.php';
     <!-- Left-aligned Info Section -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-8 sm:py-12 lg:py-14">
         <div class="max-w-xl lg:max-w-lg xl:max-w-xl space-y-3.5">
-
-            <!-- Breadcrumbs -->
-            <div class="flex items-center gap-1.5 text-xs text-[#0c2340] font-medium">
-                <i class="ri-home-4-line text-[#1e873b]"></i>
-                <a href="<?= url('/#initiatives') ?>" class="hover:text-[#1e873b] transition">Our Initiatives</a>
-                <span class="text-slate-400">&gt;</span>
-                <span class="font-bold text-[#0c2340]">VetiGo MobiCare</span>
-            </div>
-
             <!-- Main Title with Paw Brand Mark -->
             <div class="pt-1">
                 <h1

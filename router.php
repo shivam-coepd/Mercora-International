@@ -42,6 +42,7 @@ $routes = [
     '/support' => 'customer-support.php',
     '/faq' => 'customer-support.php',
     '/api/enquiry' => 'api/enquiry.php',
+    '/api/enquiry.php' => 'api/enquiry.php',
 ];
 
 if (isset($routes[$path])) {

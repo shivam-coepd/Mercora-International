@@ -35,7 +35,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
             <div>
                 <span
                     class="inline-block bg-[#137536] text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-1.5 rounded-full shadow-sm tracking-wide">
-                    AI-POWERED PRECISION CORE INITIATIVE
+                    Precision Agriculture Core Initiative
                 </span>
             </div>
 

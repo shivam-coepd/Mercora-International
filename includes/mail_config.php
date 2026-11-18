@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Mercora International - SMTP Email Configuration
  * 
@@ -22,11 +23,11 @@ if (!defined('MAIL_SMTP_SECURE')) {
 
 // Gmail Credentials
 if (!defined('MAIL_USERNAME')) {
-    define('MAIL_USERNAME', getenv('MAIL_USERNAME') ?: 'shivam.coepd@gmail.com');
+    define('MAIL_USERNAME', getenv('MAIL_USERNAME') ?: 'info@mercorainternational.com');
 }
 
 if (!defined('MAIL_PASSWORD')) {
-    define('MAIL_PASSWORD', getenv('MAIL_PASSWORD') ?: 'vwql yfxe agph bxgb');
+    define('MAIL_PASSWORD', getenv('MAIL_PASSWORD') ?: 'raza kvwm jnln akwy');
 }
 
 // Sender Display Details

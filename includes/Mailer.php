@@ -35,31 +35,65 @@ class Mailer
         $clientName = trim($formData['name'] ?? $formData['full_name'] ?? 'Website Visitor');
         $clientEmail = trim($formData['email'] ?? '');
 
-        // 3. Send via SMTP
-        return self::sendSmtp(
+        // 3. Attempt 1: Primary configured SMTP (default: Port 465 SSL)
+        $result = self::sendSmtp(
             $template['subject'],
             $template['html'],
             $template['text'],
             $clientEmail,
             $clientName
         );
+
+        if (!empty($result['success'])) {
+            return $result;
+        }
+
+        // 4. Attempt 2: If primary failed and was SSL/465, retry via Port 587 TLS (frequently needed on GoDaddy cPanel)
+        if (MAIL_SMTP_PORT == 465 || strtolower(MAIL_SMTP_SECURE) === 'ssl') {
+            self::log("Primary SMTP (port 465) failed. Retrying via Port 587 TLS...");
+            $altResult = self::sendSmtpDirect(
+                MAIL_SMTP_HOST,
+                587,
+                'tls',
+                $template['subject'],
+                $template['html'],
+                $template['text'],
+                $clientEmail,
+                $clientName
+            );
+            if (!empty($altResult['success'])) {
+                return $altResult;
+            }
+        }
+
+        // 5. Attempt 3: GoDaddy hosting fallback via native PHP mail()
+        self::log("SMTP socket connections failed or blocked by host firewall. Falling back to native PHP mail()...");
+        return self::sendNativeMail($template['subject'], $template['html'], $clientEmail, $clientName);
     }
 
     /**
-     * Direct SMTP Socket Sender
-     *
-     * @param string $subject
-     * @param string $htmlBody
-     * @param string $textBody
-     * @param string $replyToEmail
-     * @param string $replyToName
-     * @return array ['success' => bool, 'message' => string]
+     * Direct SMTP Socket Sender using configured constants
      */
     public static function sendSmtp($subject, $htmlBody, $textBody = '', $replyToEmail = '', $replyToName = '')
     {
-        $host = MAIL_SMTP_HOST;
-        $port = MAIL_SMTP_PORT;
-        $secure = strtolower(MAIL_SMTP_SECURE);
+        return self::sendSmtpDirect(
+            MAIL_SMTP_HOST,
+            MAIL_SMTP_PORT,
+            MAIL_SMTP_SECURE,
+            $subject,
+            $htmlBody,
+            $textBody,
+            $replyToEmail,
+            $replyToName
+        );
+    }
+
+    /**
+     * Direct SMTP Socket Sender with explicit connection parameters
+     */
+    public static function sendSmtpDirect($host, $port, $secure, $subject, $htmlBody, $textBody = '', $replyToEmail = '', $replyToName = '')
+    {
+        $secure = strtolower($secure);
         $username = MAIL_USERNAME;
         $password = MAIL_PASSWORD;
         $fromEmail = MAIL_FROM_EMAIL;
@@ -68,7 +102,7 @@ class Mailer
         $toName = MAIL_RECEIVER_NAME;
 
         $target = ($secure === 'ssl') ? "ssl://{$host}:{$port}" : "tcp://{$host}:{$port}";
-        $timeout = 15;
+        $timeout = 10;
 
         $context = stream_context_create([
             'ssl' => [
@@ -219,6 +253,42 @@ class Mailer
 
         self::log("Email successfully dispatched to {$toEmail} with subject: {$subject}");
         return ['success' => true, 'message' => 'Email sent successfully.'];
+    }
+
+    /**
+     * Fallback to native PHP mail() function (critical for cPanel hosts like GoDaddy that block outbound SMTP ports)
+     */
+    public static function sendNativeMail($subject, $htmlBody, $replyToEmail = '', $replyToName = '')
+    {
+        $toEmail = MAIL_RECEIVER_EMAIL;
+        $fromEmail = MAIL_FROM_EMAIL;
+        $fromName = MAIL_FROM_NAME;
+
+        $encodedSubject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
+        $encodedFromName = "=?UTF-8?B?" . base64_encode($fromName) . "?=";
+
+        $headers = [];
+        $headers[] = "MIME-Version: 1.0";
+        $headers[] = "Content-Type: text/html; charset=UTF-8";
+        $headers[] = "From: {$encodedFromName} <{$fromEmail}>";
+        if (!empty($replyToEmail)) {
+            $replyName = !empty($replyToName) ? "=?UTF-8?B?" . base64_encode($replyToName) . "?= " : '';
+            $headers[] = "Reply-To: {$replyName}<{$replyToEmail}>";
+        }
+        $headers[] = "X-Mailer: Mercora cPanel Fallback Mailer/1.0";
+
+        $headersStr = implode("\r\n", $headers);
+        $sent = (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN')
+            ? @mail($toEmail, $encodedSubject, $htmlBody, $headersStr)
+            : @mail($toEmail, $encodedSubject, $htmlBody, $headersStr, "-f" . escapeshellarg($fromEmail));
+
+        if ($sent) {
+            self::log("Email successfully dispatched via PHP mail() fallback to {$toEmail}");
+            return ['success' => true, 'message' => 'Email sent via PHP mail fallback.'];
+        }
+
+        self::log("PHP mail() fallback also failed to deliver to {$toEmail}");
+        return ['success' => false, 'message' => 'All delivery attempts failed (SMTP ports blocked and PHP mail unavailable).'];
     }
 
     /**
