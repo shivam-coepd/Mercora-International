@@ -82,7 +82,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
                             Platform Overview
                         </h2>
                     </div>
-                    <p class="text-slate-600 text-sm sm:text-[14.5px] leading-relaxed">
+                    <p class="text-slate-900 text-md font-medium sm:text-[14.5px] leading-relaxed ">
                         The SMART CROP DOCTOR is an AI-integrated diagnostic platform designed to help farmers detect
                         crop health issues, identify plant diseases, assess nutrient deficiencies, monitor crop growth,
                         and provide timely preventive and corrective advisories.
@@ -105,12 +105,12 @@ require_once dirname(__DIR__) . '/includes/header.php';
                     </div>
 
                     <!-- 6 Checkmark Points -->
-                    <ul class="space-y-2.5 text-slate-700 text-xs sm:text-sm font-medium">
-                        <li class="flex items-start gap-2.5">
+                    <ul class="text-slate-900 text-xs sm:text-sm font-semibold">
+                        <li class="flex items-start gap-1.5">
                             <i class="ri-checkbox-circle-fill text-[#208a3c] text-lg shrink-0 mt-0.5"></i>
                             <span>To minimize crop losses.</span>
                         </li>
-                        <li class="flex items-start gap-2.5">
+                        <li class="flex items-start gap-1.5">
                             <i class="ri-checkbox-circle-fill text-[#208a3c] text-lg shrink-0 mt-0.5"></i>
                             <span>To improve productivity.</span>
                         </li>
@@ -118,15 +118,15 @@ require_once dirname(__DIR__) . '/includes/header.php';
                             <i class="ri-checkbox-circle-fill text-[#208a3c] text-lg shrink-0 mt-0.5"></i>
                             <span>To enhance farm profitability.</span>
                         </li>
-                        <li class="flex items-start gap-2.5">
+                        <li class="flex items-start gap-1.5">
                             <i class="ri-checkbox-circle-fill text-[#208a3c] text-lg shrink-0 mt-0.5"></i>
                             <span>To empower farmers with accurate, technology-driven decision support.</span>
                         </li>
-                        <li class="flex items-start gap-2.5">
+                        <li class="flex items-start gap-1.5">
                             <i class="ri-checkbox-circle-fill text-[#208a3c] text-lg shrink-0 mt-0.5"></i>
                             <span>By enabling early diagnosis and timely intervention.</span>
                         </li>
-                        <li class="flex items-start gap-2.5">
+                        <li class="flex items-start gap-1.5">
                             <i class="ri-checkbox-circle-fill text-[#208a3c] text-lg shrink-0 mt-0.5"></i>
                             <span>To support sustainable agricultural practices, food security and rural
                                 livelihoods.</span>
@@ -153,7 +153,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
                             Recognition and Startup Support
                         </h2>
                     </div>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    <p class="text-slate-900 text-xs font-medium sm:text-sm leading-relaxed">
                         In recognition of its innovation and social impact, the SMART CROP DOCTOR concept has been
                         shortlisted through ALEAP Incubation and has been selected by the Government of India under the
                         DPIIT Startup India Seed Fund Scheme, sanctioning an amount of ₹10.00 lakh to support its
@@ -175,7 +175,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
                             Our Commitment to Sustainable Agriculture
                         </h2>
                     </div>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    <p class="text-slate-900 text-xs font-medium sm:text-sm leading-relaxed">
                         This achievement reflects MERCORA INTERNATIONAL's vision of leveraging Artificial Intelligence
                         for inclusive agricultural development. It reinforces our commitment to empowering farmers,
                         increasing crop yields, reducing agricultural risks, and creating a resilient farming ecosystem
@@ -197,7 +197,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
                             Collaboration and Partnership
                         </h2>
                     </div>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    <p class="text-slate-900 text-xs font-medium sm:text-sm leading-relaxed">
                         Through strategic collaborations with Farmer Producer Organizations (FPOs), Self-Help Groups
                         (SHGs), cooperatives, research institutions, agri-tech partners, and government agencies,
                         MERCORA INTERNATIONAL aims to scale SMART CROP DOCTOR across India, enabling farmers to embrace

@@ -139,7 +139,7 @@ function navActive($route)
                                     <i class="ri-t-shirt-2-line text-lg"></i>
                                 </div>
                                 <div>
-                                    <div class="text-sm font-semibold text-slate-900">The White World™</div>
+                                    <div class="text-sm font-semibold text-slate-900">The White World</div>
                                     <div class="text-xs text-slate-500 mt-0.5">Curated Lifestyle & Social Impact</div>
                                 </div>
                             </a>
@@ -206,7 +206,7 @@ function navActive($route)
         <a href="<?= url('/smart-crop-doctor') ?>"
             class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">Smart Crop Doctor</a>
         <a href="<?= url('/white-world') ?>"
-            class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">The White World™</a>
+            class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">The White World</a>
         <a href="<?= url('/vetigo-mobicare') ?>"
             class="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-50 pl-6">VetiGo MobiCare</a>
         <a href="<?= url('/partnerships') ?>"

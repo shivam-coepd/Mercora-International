@@ -108,20 +108,15 @@ require_once __DIR__ . '/includes/header.php';
                     <ul class="space-y-3 text-slate-600 text-sm sm:text-base">
                         <li class="flex items-start gap-3">
                             <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
-                            <span>Accelerate adoption of emerging technologies</span>
+                            <span>Driving Innovation</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
-                            <span>Build sustainable and scalable ecosystems</span>
+                            <span>Enabling Sustainable Growth</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
-                            <span>Empower communities through entrepreneurship and skill development</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="ri-checkbox-circle-fill text-emerald-600 mt-0.5 text-base flex-shrink-0"></i>
-                            <span>Deliver measurable business value through innovation, expertise, and operational
-                                excellence</span>
+                            <span>Delivering Measurable Business Impact</span>
                         </li>
                     </ul>
                 </div>

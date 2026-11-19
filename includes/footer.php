@@ -58,7 +58,7 @@ if (!defined('SITE_NAME')) {
                 <ul class="space-y-2 text-xs">
                     <li><a href="<?= url('/smart-crop-doctor') ?>" class="hover:text-white transition">Smart Crop
                             Doctor</a></li>
-                    <li><a href="<?= url('/white-world') ?>" class="hover:text-white transition">The White World™
+                    <li><a href="<?= url('/white-world') ?>" class="hover:text-white transition">The White World
                             Lifestyle</a></li>
                     <li><a href="<?= url('/vetigo-mobicare') ?>" class="hover:text-white transition">VetiGo
                             MobiCare</a></li>

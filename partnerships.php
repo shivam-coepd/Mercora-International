@@ -97,7 +97,7 @@ require_once __DIR__ . '/includes/header.php';
 <section id="partner-dossiers" class="py-12 sm:py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="space-y-8">
-            <?php foreach ($PARTNERS as $key => $p): 
+            <?php foreach ($PARTNERS as $key => $p):
                 $collabImg = !empty($p['collab_image']) ? $p['collab_image'] : '';
                 $collabBadge = $p['collab_badge'] ?? 'Collaboration Record';
                 $collabCaption = $p['collab_caption'] ?? ($p['name'] . ' Collaboration');
@@ -107,7 +107,7 @@ require_once __DIR__ . '/includes/header.php';
             ?>
                 <article id="<?= e($key) ?>"
                     class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 hover:border-slate-300 hover:shadow-md transition duration-300 scroll-mt-24">
-                    
+
                     <?php if ($hasCollab): ?>
                         <!-- Two-Column Layout (With Collaboration Photo on Right) -->
                         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -350,7 +350,7 @@ require_once __DIR__ . '/includes/header.php';
                                 <option value="Defence Deep-Tech & iDEX">Defence Deep-Tech (iDEX / Surveillance / Tridantor)</option>
                                 <option value="Enterprise SaaS & Mercosys">Enterprise SaaS & Mercosys (KavachApp / APT IT)</option>
                                 <option value="Specialty Coffee & Franchise">Specialty Coffee & Franchise (Native Araku Coffee)</option>
-                                <option value="The White World Lifestyle">The White World™ Lifestyle Marketplace</option>
+                                <option value="The White World Lifestyle">The White World Lifestyle Marketplace</option>
                                 <option value="VetiGo MobiCare">VetiGo MobiCare Mobile Veterinary</option>
                                 <option value="Women Entrepreneurship & CSR">Women Entrepreneurship & CSR</option>
                             </select>

@@ -466,7 +466,7 @@ require_once __DIR__ . '/includes/header.php';
                         <img src="<?= url('assets/images/initiatives/white-world-logo.png') ?>"
                             alt="The White World" class="max-h-20 w-auto object-contain" />
                     </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-2">The White World™</h3>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">The White World</h3>
                     <p class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-4">Living Life with Elegance
                     </p>
                     <p class="text-sm text-slate-600 leading-relaxed mb-6">
